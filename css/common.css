@@ -513,27 +513,27 @@ a.btn-txt:hover {
 /* 버튼 아이콘 개별 매핑 */
 .btn-txt.ico-share::after,
 .btn-txt.ico-share::before {
-  background-image: url("/images/ico/ico-share.svg");
+  background-image: url("./images/ico/ico-share.svg");
 }
 .btn-txt.ico-heart::after,
 .btn-txt.ico-heart::before {
-  background-image: url("/images/ico/ico-heart.svg");
+  background-image: url("./images/ico/ico-heart.svg");
 }
 .btn-txt.ico-logout::after,
 .btn-txt.ico-logout::before {
-  background-image: url("/images/ico/ico-logout.svg");
+  background-image: url("./images/ico/ico-logout.svg");
 }
 .btn-txt.ico-login::after,
 .btn-txt.ico-login::before {
-  background-image: url("/images/ico/ico-login.svg");
+  background-image: url("./images/ico/ico-login.svg");
 }
 .btn-txt.ico-download::after,
 .btn-txt.ico-download::before {
-  background-image: url("/images/ico/ico-download.svg");
+  background-image: url("./images/ico/ico-download.svg");
 }
 .btn-txt.ico-arrow-right::after,
 .btn-txt.ico-arrow-right::before {
-  background-image: url("/images/ico/ico-arrow-right.svg");
+  background-image: url("./images/ico/ico-arrow-right.svg");
 }
 
 /* 아이콘 */
@@ -573,50 +573,50 @@ a.btn-txt:hover {
 
 /* 아이콘 설정*/
 .ico-menu {
-  background-image: url("/images/ico/ico-menu.svg");
+  background-image: url("./images/ico/ico-menu.svg");
 }
 .ico-join {
-  background-image: url("/images/ico/ico-join.svg");
+  background-image: url("./images/ico/ico-join.svg");
 }
 .ico-search {
-  background-image: url("/images/ico/ico-search.svg");
+  background-image: url("./images/ico/ico-search.svg");
 }
 .ico-youtube {
-  background-image: url("/images/ico/ico-youtube.svg");
+  background-image: url("./images/ico/ico-youtube.svg");
 }
 .ico-facebook {
-  background-image: url("/images/ico/ico-facebook.svg");
+  background-image: url("./images/ico/ico-facebook.svg");
 }
 .ico-instagram {
-  background-image: url("/images/ico/ico-instagram.svg");
+  background-image: url("./images/ico/ico-instagram.svg");
 }
 .ico-twitter {
-  background-image: url("/images/ico/ico-X_twitter.svg");
+  background-image: url("./images/ico/ico-X_twitter.svg");
 }
 .ico-blog {
-  background-image: url("/images/ico/ico-naver_blog.svg");
+  background-image: url("./images/ico/ico-naver_blog.svg");
 }
 .ico-close {
-  background-image: url("/images/ico/ico-close.svg");
+  background-image: url("./images/ico/ico-close.svg");
 }
 .ico-delete {
-  background-image: url("/images/ico/ico-delete.svg");
+  background-image: url("./images/ico/ico-delete.svg");
 }
 .ico-pwd-view {
-  background-image: url("/images/ico/ico-pwd-view.svg");
+  background-image: url("./images/ico/ico-pwd-view.svg");
 }
 .ico-pwd-view-off {
-  background-image: url("/images/ico/ico-pwd-view-off.svg");
+  background-image: url("./images/ico/ico-pwd-view-off.svg");
 }
 .ico-attach {
-  background-image: url("/images/ico/ico-attach.svg");
+  background-image: url("./images/ico/ico-attach.svg");
 }
 .ico-refresh {
-  background-image: url("/images/ico/ico-refresh.svg");
+  background-image: url("./images/ico/ico-refresh.svg");
 }
 
 .ico-dataset {
-  background-image: url("/images/content/dataset.svg");
+  background-image: url("./images/content/dataset.svg");
 }
 
 /* font */
@@ -726,16 +726,16 @@ a.btn-txt:hover {
   background-size: 100% auto;
 }
 .pagination .page-navi.first::before {
-  background-image: url("/images/ico/ico-arrow-left_f.svg");
+  background-image: url("./images/ico/ico-arrow-left_f.svg");
 }
 .pagination .page-navi.prev::before {
-  background-image: url("/images/ico/ico-arrow-left.svg");
+  background-image: url("./images/ico/ico-arrow-left.svg");
 }
 .pagination .page-navi.next::after {
-  background-image: url("/images/ico/ico-arrow-right.svg");
+  background-image: url("./images/ico/ico-arrow-right.svg");
 }
 .pagination .page-navi.last::after {
-  background-image: url("/images/ico/ico-arrow-right_e.svg");
+  background-image: url("./images/ico/ico-arrow-right_e.svg");
 }
 .pagination .page-links {
   display: flex;
@@ -756,7 +756,7 @@ a.btn-txt:hover {
   text-decoration: none;
 }
 .pagination .page-links span.link-dot {
-  background: url("/images/ico/ico-page_dot.svg") no-repeat center;
+  background: url("./images/ico/ico-page_dot.svg") no-repeat center;
   background-size: 2.4rem;
 }
 .pagination .page-navi:hover,
@@ -790,16 +790,16 @@ a.btn-txt:hover {
   outline: none;
 }
 .pagination .page-navi.first.disabled::before {
-  background-image: url("/images/ico/dis-arrow-left_f.svg");
+  background-image: url("./images/ico/dis-arrow-left_f.svg");
 }
 .pagination .page-navi.prev.disabled::before {
-  background-image: url("/images/ico/dis-arrow-left.svg");
+  background-image: url("./images/ico/dis-arrow-left.svg");
 }
 .pagination .page-navi.next.disabled::after {
-  background-image: url("/images/ico/dis-arrow-right.svg");
+  background-image: url("./images/ico/dis-arrow-right.svg");
 }
 .pagination .page-navi.last.disabled::after {
-  background-image: url("/images/ico/dis-arrow-right_e.svg");
+  background-image: url("./images/ico/dis-arrow-right_e.svg");
 }
 
 /* 모바일 */
@@ -1343,7 +1343,7 @@ input.input.lg {
   margin-right: 0.4rem;
   margin-top: 0.2rem;
   vertical-align: top;
-  background: url("/images/ico/ico-info.svg") no-repeat center;
+  background: url("./images/ico/ico-info.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -1351,28 +1351,28 @@ input.input.lg {
   color: var(--gg-danger-60);
 }
 .form-hint.error::before {
-  background-image: url("/images/ico/ico-error.svg");
+  background-image: url("./images/ico/ico-error.svg");
 }
 
 .form-hint.warning {
   color: var(--gg-warning-60);
 }
 .form-hint.warning::before {
-  background-image: url("/images/ico/ico-warning.svg");
+  background-image: url("./images/ico/ico-warning.svg");
 }
 
 .form-hint.success {
   color: var(--gg-success-60);
 }
 .form-hint.success::before {
-  background-image: url("/images/ico/ico-success.svg");
+  background-image: url("./images/ico/ico-success.svg");
 }
 
 .form-hint.info {
   color: var(--gg-info-60);
 }
 .form-hint.info::before {
-  background-image: url("/images/ico/ico-info.svg");
+  background-image: url("./images/ico/ico-info.svg");
 }
 
 /* checkbox, radio (default size: 20) */
@@ -1481,7 +1481,7 @@ input.input.lg {
   width: 1.2rem;
   height: 1.2rem;
   background-color: transparent;
-  background-image: url("/images/ico/ico-w-chk.svg");
+  background-image: url("./images/ico/ico-w-chk.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
@@ -1492,7 +1492,7 @@ input.input.lg {
   transition-delay: 0.2s;
 }
 .form-check input[type="checkbox"][disabled] + label:after {
-  background-image: url("/images/ico/ico-w-chk.svg");
+  background-image: url("./images/ico/ico-w-chk.svg");
 }
 
 /* form-check.dash */
@@ -1501,11 +1501,11 @@ input.input.lg {
   top: 0.2rem;
   width: 2rem;
   height: 2rem;
-  background-image: url("/images/ico/dis-chk-dash.svg");
+  background-image: url("./images/ico/dis-chk-dash.svg");
   transition-delay: 0s;
 }
 .form-check.dash input[type="checkbox"][disabled] + label:after {
-  background-image: url("/images/ico/dis-chk.svg");
+  background-image: url("./images/ico/dis-chk.svg");
 }
 
 /* radio */
@@ -1679,7 +1679,7 @@ button.tag-chip:hover .label {
   content: "";
   width: 100%;
   height: 100%;
-  background: url("/images/ico/ico-delete.svg") no-repeat center;
+  background: url("./images/ico/ico-delete.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -2064,7 +2064,7 @@ body.modal-open {
   display: block;
   width: 1.6rem;
   height: 1.6rem;
-  background: url("/images/ico/ico-refresh.svg");
+  background: url("./images/ico/ico-refresh.svg");
   background-size: contain;
 }
 .filter-chip {
@@ -2342,12 +2342,12 @@ body.modal-open {
 .list-step li.done::after {
   outline: none;
   background-color: transparent;
-  background-image: url("/images/content/step-done.svg");
+  background-image: url("./images/content/step-done.svg");
 }
 .list-step li.active::after {
   outline: none;
   background-color: transparent;
-  background-image: url("/images/content/step-active.svg");
+  background-image: url("./images/content/step-active.svg");
 }
 .list-step li span {
   display: block;
@@ -2433,7 +2433,7 @@ body.modal-open {
   margin-right: var(--space-2); 
   width: 2.4rem;
   height: 2.4rem;
-  background-image: url("/images/ico/ico-helper-info.svg");
+  background-image: url("./images/ico/ico-helper-info.svg");
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -2592,31 +2592,31 @@ body.modal-open {
 }
 /* 첨부파일 아이콘 */
 .file-list-wrap .file-list li .file-img.hwp::before {
-  background-image: url("/images/ico/ico-file-hwp.svg");
+  background-image: url("./images/ico/ico-file-hwp.svg");
 }
 .file-list-wrap .file-list li .file-img.ppt::before {
-  background-image: url("/images/ico/ico-file-ppt.svg");
+  background-image: url("./images/ico/ico-file-ppt.svg");
 }
 .file-list-wrap .file-list li .file-img.zip::before {
-  background-image: url("/images/ico/ico-file-zip.svg");
+  background-image: url("./images/ico/ico-file-zip.svg");
 }
 .file-list-wrap .file-list li .file-img.xls::before {
-  background-image: url("/images/ico/ico-file-xls.svg");
+  background-image: url("./images/ico/ico-file-xls.svg");
 }
 .file-list-wrap .file-list li .file-img.txt::before {
-  background-image: url("/images/ico/ico-file-txt.svg");
+  background-image: url("./images/ico/ico-file-txt.svg");
 }
 .file-list-wrap .file-list li .file-img.video::before {
-  background-image: url("/images/ico/ico-file-video.svg");
+  background-image: url("./images/ico/ico-file-video.svg");
 }
 .file-list-wrap .file-list li .file-img.pdf::before {
-  background-image: url("/images/ico/ico-file-pdf.svg");
+  background-image: url("./images/ico/ico-file-pdf.svg");
 }
 .file-list-wrap .file-list li .file-img.img::before {
-  background-image: url("/images/ico/ico-file-img.svg");
+  background-image: url("./images/ico/ico-file-img.svg");
 }
 .file-list-wrap .file-list li .file-img.doc::before {
-  background-image: url("/images/ico/ico-file-doc.svg");
+  background-image: url("./images/ico/ico-file-doc.svg");
 }
 
 @media (max-width: 767px) {

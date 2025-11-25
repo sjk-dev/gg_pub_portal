@@ -210,7 +210,7 @@
   height: 30rem;
   padding: var(--space-10) var(--space-6);
   box-sizing: border-box;
-  background: url("/images/content/bg-member-complete.svg") no-repeat center;
+  background: url("./images/content/bg-member-complete.svg") no-repeat center;
   background-size: contain;
   font-size: var(--gg-fz-lg);
   font-weight: bold;
@@ -297,22 +297,22 @@
 }
 
 .member .list-item .any-id .certify-type li .login-link.naver::before {
-  background-image: url("/images/ico/ico-anyid-naver.svg");
+  background-image: url("./images/ico/ico-anyid-naver.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.google::before {
-  background-image: url("/images/ico/ico-anyid-google.svg");
+  background-image: url("./images/ico/ico-anyid-google.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.kakao::before {
-  background-image: url("/images/ico/ico-anyid-kakao.svg");
+  background-image: url("./images/ico/ico-anyid-kakao.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.facebook::before {
-  background-image: url("/images/ico/ico-anyid-facebook.svg");
+  background-image: url("./images/ico/ico-anyid-facebook.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.line::before {
-  background-image: url("/images/ico/ico-anyid-line.svg");
+  background-image: url("./images/ico/ico-anyid-line.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.mail::before {
-  background-image: url("/images/ico/ico-anyid-mail.svg");
+  background-image: url("./images/ico/ico-anyid-mail.svg");
 }
 
 .member .list-item .any-id .certify-type li .login-link::after {
@@ -328,7 +328,7 @@
   pointer-events: none;
 }
 .member .list-item .any-id .certify-type li .login-link::after {
-  background-image: url("/images/ico/ico-shortcut.svg");
+  background-image: url("./images/ico/ico-shortcut.svg");
 }
 
 /* 간편로그인 메일 팝업 */
@@ -345,7 +345,7 @@
   height: 1.6rem;
   margin-top: 0.2rem;
   vertical-align: top;
-  background: url("/images/ico/ico-b-open-new-window.svg") no-repeat center;
+  background: url("./images/ico/ico-b-open-new-window.svg") no-repeat center;
   background-size: contain;
 }
 .auth-wrap {
