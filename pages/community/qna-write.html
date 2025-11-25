@@ -1,0 +1,220 @@
+<div class="container">
+  <!-- 페이지별 헤더 영역 -->
+  <div class="page-header">
+    <div class="inner">
+      <!-- breadcrumb -->
+      <div class="breadcrumb-wrap">
+        <nav class="breadcrumb">
+          <ul>
+            <li class="home"><a href="/" class="txt">홈</a></li>
+            <li><a href="#" class="txt">참여·소통</a></li>
+            <li><a href="#" class="txt on">문의하기</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- title -->
+      <div class="page-title-wrap section-2 inner narrow">
+        <div class="page-title col">
+          <h1>문의하기</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 페이지별 헤더 영역 -->
+
+  <!-- 페이지별 컨텐츠 영역 -->
+  <div class="page-content">
+    <div class="member inner narrow">
+      <div class="flex-col gap-10">
+        <div class="card outline">
+          <div class="section-4">
+            <fieldset class="section-2">
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">작성자</label>
+                </div>
+                <div class="form-conts">
+                  <input
+                    type="text"
+                    id=""
+                    class="input lg"
+                    readonly
+                    tabindex="-1"
+                    value="홍길동"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">분류<span class="red-point">*</span></label>
+                </div>
+                <div class="form-conts">
+                  <select name="" id="" class="form-select lg">
+                    <option value="">선택해주세요.</option>
+                  </select>
+                </div>
+                <p class="form-hint error">분류를 선택해주세요.</p>
+              </div>
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">제목<span class="red-point">*</span></label>
+                </div>
+                <div class="form-conts">
+                  <input
+                    type="text"
+                    id=""
+                    class="input lg"
+                    placeholder="제목을 입력하세요."
+                  />
+                </div>
+                <p class="form-hint error">제목을 입력해주세요.</p>
+              </div>
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">내용<span class="red-point">*</span></label>
+                </div>
+                <div class="form-conts flex-col">
+                  <textarea
+                    class="input"
+                    placeholder="내용을 입력하세요."
+                  ></textarea>
+                </div>
+                <div class="justify-between">
+                  <p class="form-hint error">내용을 입력해주세요.</p>
+                  <p class="textarea-count">
+                    <span class="count-now">0</span>
+                    <span class="count-total">/ 100</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- file upload -->
+              <div class="krds-file-upload line">
+                <!-- 파일 업로드 상단 -->
+                <div class="file-head">
+                  <h3 class="tit">첨부파일</h3>
+                  <div>
+                    <p>컨텐츠 영역</p>
+                  </div>
+                </div>
+                <!-- //파일 업로드 상단 -->
+
+                <!-- 파일 업로드 영역 -->
+                <div class="file-upload">
+                  <p class="txt">
+                    첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러
+                    파일을 직접 선택해주세요.
+                  </p>
+                  <div class="file-upload-btn-wrap">
+                    <input type="file" name="myFile" id="fileu-upload" hidden />
+                    <label for="fileu-upload">
+                      <button type="button" class="btn">
+                        <i class="svg-icon ico-upload"></i>파일선택
+                      </button>
+                    </label>
+                  </div>
+                </div>
+                <!-- //파일 업로드 영역 -->
+                <!-- 파일 리스트 영역 -->
+                <div class="file-list">
+                  <div class="total">
+                    <span class="current">3개</span> / 10개
+                  </div>
+                  <ul class="upload-list">
+                    <li>
+                      <div class="file-info">
+                        <div class="file-name">
+                          위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp,
+                          17KB]
+                        </div>
+                        <div class="btn-wrap">
+                          <span class="krds-spinner" role="status">
+                            <span class="sr-only">업로드 중</span>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="file-info">
+                        <div class="file-name">
+                          위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp,
+                          17KB]
+                        </div>
+                        <div class="btn-wrap">
+                          <span class="ico-invalid complete">
+                            <em class="sr-only">업로드 완료</em>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="file-info">
+                        <div class="file-name">
+                          위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp,
+                          17KB]
+                        </div>
+                        <div class="btn-wrap">
+                          <button type="button" class="krds-btn medium text">
+                            삭제 <i class="svg-icon ico-delete-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="is-error">
+                      <div class="file-info">
+                        <div class="file-name">
+                          전입재등록신고서 [주민등록법 시행령 : 별지서식 15,
+                          15호의2호] [hwp, 17KB]
+                        </div>
+                        <div class="btn-wrap">
+                          <button type="button" class="krds-btn medium text">
+                            삭제 <i class="svg-icon ico-delete-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <p class="file-hint-invalid">
+                        등록 가능한 파일 용량을 초과하였습니다.<br />
+                        20MB 미만의 파일만 등록할 수 있습니다.
+                      </p>
+                    </li>
+                    <li>
+                      <div class="file-info m-column">
+                        <div class="file-name">
+                          위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp,
+                          17KB]
+                        </div>
+                        <div class="btn-wrap">
+                          <button type="button" class="krds-btn medium text">
+                            다운로드 <i class="svg-icon ico-down"></i>
+                          </button>
+                          <button type="button" class="krds-btn medium text">
+                            바로보기 <i class="svg-icon ico-angle right"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="upload-delete-btn">
+                    <button type="button" class="krds-btn xsmall tertiary">
+                      전체 파일 삭제<i class="svg-icon ico-angle right"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- //파일 리스트 영역 -->
+              </div>
+              <!-- //file upload -->
+            </fieldset>
+          </div>
+        </div>
+        <!-- // card end -->
+
+        <div class="btn-wrap">
+          <button type="button" class="btn xl tertiary">취소</button>
+          <button type="button" class="btn xl primary disabled">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 페이지별 컨텐츠 영역 -->
+</div>

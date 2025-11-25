@@ -1,0 +1,435 @@
+<div class="container">
+  <!-- 페이지별 헤더 영역 -->
+  <div class="page-header">
+    <div class="inner">
+      <!-- breadcrumb -->
+      <div class="breadcrumb-wrap">
+        <nav class="breadcrumb">
+          <ul>
+            <li class="home"><a href="/" class="txt">홈</a></li>
+            <li><a href="#" class="txt">참여소통</a></li>
+            <li><a href="#" class="txt on">새소식</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- title -->
+      <div class="page-title-wrap section-2">
+        <div class="page-title">
+          <h1>새소식</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 페이지별 헤더 영역 -->
+
+  <!-- 페이지별 컨텐츠 영역 -->
+  <div class="page-content">
+    <div class="inner section-2">
+      <!-- tab bar-->
+      <div class="tab-area">
+        <div class="section-2">
+          <div class="tab-list fill full">
+            <ul role="tablist">
+              <li>
+                <button
+                  id="news_tab_01"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="news_tab_panel_01"
+                  type="button"
+                  class="btn-tab active"
+                  tabindex="0"
+                >
+                  전체
+                </button>
+              </li>
+              <li>
+                <button
+                  id="news_tab_02"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="news_tab_panel_02"
+                  type="button"
+                  class="btn-tab"
+                  tabindex="-1"
+                >
+                  개방
+                </button>
+              </li>
+              <li>
+                <button
+                  id="news_tab_03"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="news_tab_panel_03"
+                  type="button"
+                  class="btn-tab"
+                  tabindex="-1"
+                >
+                  통계
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-con-wrap">
+            <div
+              id="news_tab_panel_01"
+              role="tabpanel"
+              aria-labelledby="news_tab_01"
+              class="tab-con active"
+            >
+              <div class="section-4">
+                <div class="search-list-top">
+                  <ul class="sch-info">
+                    <li>검색 결과 <span class="point">22,777</span>건</li>
+                  </ul>
+                  <ul class="sch-sort">
+                    <li>
+                      <strong class="sort-label"
+                        ><label for="">정렬기준</label>
+                      </strong>
+                      <div class="w-sort-btn">
+                        <button class="btn-txt on">최신순</button>
+                        <button class="btn-txt">데이터명순</button>
+                        <button class="btn-txt">높은조회순</button>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="sort-label">
+                        <label for="search_result_count"></label>
+                        목록 표시 개수
+                      </strong>
+                      <select
+                        name=""
+                        id="search_result_count"
+                        class="form-select"
+                      >
+                        <option value="">10개</option>
+                      </select>
+                    </li>
+                    <!-- <li class="w-hide">
+                      <button type="button">
+                        <span class="span">필터</span>
+                      </button>
+                    </li> -->
+                  </ul>
+                </div>
+
+                <section>
+                  <div class="con-wrap">
+                    <table class="p-table mobile">
+                      <caption>
+                        새소식 전체 리스트
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col style="width: 30%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="row">번호</th>
+                          <th scope="row">분류</th>
+                          <th scope="row" class="text-left">서비스</th>
+                          <th scope="row">첨부파일</th>
+                          <th scope="row">조회수</th>
+                          <th scope="row">등록일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td class="web-only">
+                            <span class="add-head">번호</span>
+                            <span class="tds">1</span>
+                          </td>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds">통계</span>
+                          </td>
+                          <td
+                            class="text-left"
+                            onclick="navigate('news_detail'); return false"
+                          >
+                            <span class="add-head">서비스</span>
+                            <span class="tds">2025년 8월 경기도 고용동향</span>
+                          </td>
+                          <td>
+                            <span class="add-head">첨부파일</span>
+                            <button
+                              class="ico ico-attach"
+                              aria-label="다운로드"
+                            ></button>
+                          </td>
+                          <td class="web-only">
+                            <span class="add-head">조회수</span>
+                            <span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head">등록일</span>
+                            <span class="tds">2025.07.29</span>
+                          </td>
+                        </tr>
+                        <tr class="text-center">
+                          <td class="web-only">
+                            <span class="add-head">번호</span>
+                            <span class="tds">2</span>
+                          </td>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds">통계</span>
+                          </td>
+                          <td class="text-left">
+                            <span class="add-head">서비스</span>
+                            <span class="tds">2025년 8월 경기도 고용동향</span>
+                          </td>
+                          <td class="web-only">
+                            <span class="add-head">첨부파일</span>
+                            <button
+                              class="ico ico-attach"
+                              aria-label="다운로드"
+                            ></button>
+                          </td>
+                          <td class="web-only">
+                            <span class="add-head">조회수</span>
+                            <span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head">등록일</span>
+                            <span class="tds">2025.07.29</span>
+                          </td>
+                        </tr>
+                        <tr class="text-center">
+                          <td class="web-only">
+                            <span class="add-head">번호</span>
+                            <span class="tds">3</span>
+                          </td>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds">통계</span>
+                          </td>
+                          <td class="text-left">
+                            <span class="add-head">서비스</span>
+                            <span class="tds">2025년 8월 경기도 고용동향</span>
+                          </td>
+                          <td class="web-only">
+                            <span class="add-head">첨부파일</span>
+                            <button
+                              class="ico ico-attach"
+                              aria-label="다운로드"
+                            ></button>
+                          </td>
+                          <td class="web-only">
+                            <span class="add-head">조회수</span>
+                            <span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head">등록일</span>
+                            <span class="tds">2025.07.29</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!-- pagination -->
+                    <div class="pagination-wrap">
+                      <div class="pagination">
+                        <a class="page-navi first disabled" href="#">처음</a>
+                        <span class="page-navi prev disabled" href="#"
+                          >이전</span
+                        >
+                        <div class="page-links">
+                          <a class="page-link" href="#">1</a>
+                          <a class="page-link" href="#">2</a>
+                          <a class="page-link" href="#">3</a>
+                          <a class="page-link active" href="#"
+                            ><span class="sr-only">현재페이지 </span>4</a
+                          >
+                          <a class="page-link" href="#">5</a>
+                          <a class="page-link" href="#">6</a>
+                          <a class="page-link" href="#">7</a>
+                          <a class="page-link" href="#">8</a>
+                          <span class="page-link link-dot"></span>
+                          <a class="page-link" href="#">99</a>
+                        </div>
+                        <a class="page-navi next" href="#">다음</a>
+                        <a class="page-navi last" href="#">끝</a>
+                      </div>
+
+                      <!-- 직접 이동 -->
+                      <div class="page-goto">
+                        <input
+                          type="number"
+                          min="1"
+                          max="99"
+                          style="width: 50px"
+                          class="input sm text-center"
+                        />
+                        <p>/ <span>99</span></p>
+                        <button type="submit" class="btn sm secondary">
+                          이동
+                        </button>
+                      </div>
+                    </div>
+                    <!-- //pagination -->
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div
+              id="news_tab_panel_02"
+              role="tabpanel"
+              aria-labelledby="news_tab_02"
+              class="tab-con"
+            >
+              <div class="section-4">
+                <div class="search-list-top">
+                  <ul class="sch-info">
+                    <li>검색 결과 <span class="point">0</span>건</li>
+                  </ul>
+                  <ul class="sch-sort">
+                    <li>
+                      <strong class="sort-label"
+                        ><label for="">정렬기준</label>
+                      </strong>
+                      <div class="w-sort-btn">
+                        <button class="btn-txt on">최신순</button>
+                        <button class="btn-txt">데이터명순</button>
+                        <button class="btn-txt">높은조회순</button>
+                      </div>
+                    </li>
+                    <li>
+                      <strong class="sort-label">
+                        <label for="search_result_count"></label>
+                        목록 표시 개수
+                      </strong>
+                      <select
+                        name=""
+                        id="search_result_count"
+                        class="form-select"
+                      >
+                        <option value="">10개</option>
+                      </select>
+                    </li>
+                    <!-- <li class="w-hide">
+                      <button type="button">
+                        <span class="span">필터</span>
+                      </button>
+                    </li> -->
+                  </ul>
+                </div>
+
+                <section>
+                  <div class="con-wrap">
+                    <table class="p-table">
+                      <caption>
+                        새소식 리스트
+                      </caption>
+                      <colgroup>
+                        <col />
+                        <col />
+                        <col style="width: 30%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="row">번호</th>
+                          <th scope="row">분류</th>
+                          <th scope="row" class="text-left">서비스</th>
+                          <th scope="row">첨부파일</th>
+                          <th scope="row">조회수</th>
+                          <th scope="row">등록일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="text-center">
+                          <td colspan="6">
+                            <strong>검색 결과가 없습니다.</strong>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <!-- pagination -->
+                    <div class="pagination-wrap">
+                      <div class="pagination">
+                        <a class="page-navi first disabled" href="#">처음</a>
+                        <span class="page-navi prev disabled" href="#"
+                          >이전</span
+                        >
+                        <div class="page-links">
+                          <a class="page-link" href="#">1</a>
+                          <a class="page-link" href="#">2</a>
+                          <a class="page-link" href="#">3</a>
+                          <a class="page-link active" href="#"
+                            ><span class="sr-only">현재페이지 </span>4</a
+                          >
+                          <a class="page-link" href="#">5</a>
+                          <a class="page-link" href="#">6</a>
+                          <a class="page-link" href="#">7</a>
+                          <a class="page-link" href="#">8</a>
+                          <span class="page-link link-dot"></span>
+                          <a class="page-link" href="#">99</a>
+                        </div>
+                        <a class="page-navi next" href="#">다음</a>
+                        <a class="page-navi last" href="#">끝</a>
+                      </div>
+
+                      <!-- 직접 이동 -->
+                      <div class="page-goto">
+                        <input
+                          type="number"
+                          min="1"
+                          max="99"
+                          style="width: 50px"
+                          class="input sm text-center"
+                        />
+                        <p>/ <span>99</span></p>
+                        <button type="submit" class="btn sm secondary">
+                          이동
+                        </button>
+                      </div>
+                    </div>
+                    <!-- //pagination -->
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div
+              id="news_tab_panel_03"
+              role="tabpanel"
+              aria-labelledby="news_tab_03"
+              class="tab-con"
+            >
+              <div>tab 03 컨텐츠</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // tab bar-->
+
+      <!-- 검색바 -->
+      <div class="search-top-box mt-40">
+        <div class="sch-filter-box">
+          <div class="filter-form">
+            <div class="sch-bar-input mw-100">
+              <label for="" class="label">검색어</label>
+              <div class="sch-input">
+                <div class="input-fn">
+                  <input
+                    type="text"
+                    id=""
+                    class="input"
+                    placeholder="검색어를 입력해주세요."
+                  />
+                  <button class="ico ico-search"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // 검색바 -->
+    </div>
+  </div>
+  <!-- // 페이지별 컨텐츠 영역 -->
+</div>

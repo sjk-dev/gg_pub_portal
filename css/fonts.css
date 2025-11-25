@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 경기도 서체 */
+@font-face {
+  font-family: "Gyeonggi";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Title_Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard GOV";
+  font-weight: 700;
+  font-display: swap;
+  src:  url('../fonts/PretendardGOV-Bold.woff2') format('woff2'),
+        url("../fonts/PretendardGOV-Bold.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Pretendard GOV";
+  font-weight: 400;
+  font-display: swap;
+  src:  url('../fonts/PretendardGOV-Regular.woff2') format('woff2'),
+        url("../fonts/PretendardGOV-Regular.woff") format("woff")
+}

@@ -1,0 +1,669 @@
+<div class="gov-top-bar">
+  <img src="/images/content/bg-top_Line.svg" alt="top-line" />
+  <div class="inner">
+    <p class="txt">이 누리집은 대한민국 공식 전자정부 누리집입니다.</p>
+  </div>
+</div>
+
+<header id="gg-header">
+  <div class="header-in">
+    <div class="header-body">
+      <div class="header-top justify-between">
+        <h2 class="logo">
+          <a href="/">
+            <span class="sr-only">경기데이터포털</span>
+          </a>
+        </h2>
+
+        <div class="search-container">
+          <div class="search-wrapper" id="searchWrapper">
+            <div class="search-box">
+              <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="검색어를 입력하세요."
+                autocomplete="off"
+              />
+              <button class="clear-btn" id="clearBtn">
+                <svg
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              <button class="btn-txt btn-ai-search ico-before ico-ai-search">
+                AI찾아드림
+              </button>
+              <button class="ico ico-search xlg">
+                <span class="sr-only">검색버튼</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <ul class="util">
+          <li class="menu">
+            <button
+              type="button"
+              class="flex-col items-center btn-open"
+              data-popup="#ggAllMenuPop"
+            >
+              <span class="ico ico-menu sm"></span>
+              <span class="text">전체메뉴</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="m-util">
+          <!-- <li class="search">
+            <button class="flex-col items-center">
+              <span class="ico ico-search sm"></span>
+              <span class="text">통합검색</span>
+            </button>
+          </li> -->
+          <li class="menu">
+            <button id="m-lnb-open" class="flex-col items-center">
+              <span class="ico ico-menu sm"></span>
+              <span class="text">전체메뉴</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="gnb">
+        <div class="wrap">
+          <div class="justify-between">
+            <ul class="gnb-list">
+              <li class="li">
+                <button class="mn">메뉴1</button>
+                <div class="w-gnb-wrap">
+                  <div class="wrap">
+                    <div class="w-gnb-menu">
+                      <div class="menu-wrap" style="min-height: 31.2rem">
+                        <ul class="ul">
+                          <li>
+                            <button type="button" class="sm">개방</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a
+                                    href="#"
+                                    class="btn-txt ico-arr-right"
+                                    onclick="navigate('dataset'); return false"
+                                  >
+                                    개방
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a
+                                      href="#"
+                                      onclick="navigate('test'); return false"
+                                    >
+                                      하위메뉴1
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      onclick="navigate('test2'); return false"
+                                    >
+                                      하위메뉴2
+                                    </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 2</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt ico-arr-right">
+                                    서브메뉴 2 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴 1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴 2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴 3 </a></li>
+                                  <li><a href="#"> 하위메뉴 4 </a></li>
+                                  <li><a href="#"> 하위메뉴 5 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //menu-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //w-gnb-wrap -->
+              </li>
+              <li class="li">
+                <button class="mn">메뉴2</button>
+                <div class="w-gnb-wrap">
+                  <div class="wrap">
+                    <div class="w-gnb-menu">
+                      <div class="menu-wrap" style="min-height: 31.2rem">
+                        <ul class="ul">
+                          <li>
+                            <button type="button" class="sm">서브메뉴 1</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 1 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#" target="_blank"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //menu-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //w-gnb-wrap -->
+              </li>
+              <li class="li">
+                <button class="mn">메뉴3</button>
+                <div class="w-gnb-wrap">
+                  <div class="wrap">
+                    <div class="w-gnb-menu">
+                      <div class="menu-wrap" style="min-height: 31.2rem">
+                        <ul class="ul">
+                          <li>
+                            <button type="button" class="sm">서브메뉴 1</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 1 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 2</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 2 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 3</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 3 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 4</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 4 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                  <li><a href="#"> 하위메뉴5 </a></li>
+                                  <li><a href="#"> 하위메뉴6 </a></li>
+                                  <li><a href="#"> 하위메뉴7 </a></li>
+                                  <li><a href="#"> 하위메뉴8 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //menu-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //w-gnb-wrap -->
+              </li>
+              <li class="li">
+                <button class="mn">메뉴4</button>
+                <div class="w-gnb-wrap">
+                  <div class="wrap">
+                    <div class="w-gnb-menu">
+                      <div class="menu-wrap" style="min-height: 31.2rem">
+                        <ul class="ul">
+                          <li>
+                            <button type="button" class="sm">서브메뉴 1</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 1 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 2</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 2 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 3</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 3 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">서브메뉴 4</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a href="#" class="btn-txt">
+                                    서브메뉴 4 타이틀
+                                  </a>
+                                </h3>
+                                <ul class="sub-ul">
+                                  <li>
+                                    <a href="#"> 하위메뉴1 </a>
+                                  </li>
+                                  <li>
+                                    <a href="#"> 하위메뉴2 </a>
+                                  </li>
+                                  <li><a href="#"> 하위메뉴3 </a></li>
+                                  <li><a href="#"> 하위메뉴4 </a></li>
+                                  <li><a href="#"> 하위메뉴5 </a></li>
+                                  <li><a href="#"> 하위메뉴6 </a></li>
+                                  <li><a href="#"> 하위메뉴7 </a></li>
+                                  <li><a href="#"> 하위메뉴8 </a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //menu-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //w-gnb-wrap -->
+              </li>
+              <li class="li">
+                <button class="mn">참여·소통</button>
+                <div class="w-gnb-wrap">
+                  <div class="wrap">
+                    <div class="w-gnb-menu">
+                      <div class="menu-wrap" style="min-height: 31.2rem">
+                        <ul class="ul">
+                          <li>
+                            <button type="button" class="sm">새소식</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a
+                                    href="#"
+                                    class="btn-txt ico-arr-right"
+                                    onclick="navigate('news'); return false"
+                                  >
+                                    새소식
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">공지사항</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a
+                                    href="#"
+                                    class="btn-txt ico-arr-right"
+                                    onclick="navigate('notice'); return false"
+                                  >
+                                    공지사항
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">
+                              자주 묻는 질문
+                            </button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a
+                                    href="#"
+                                    class="btn-txt ico-arr-right"
+                                    onclick="navigate('faq'); return false"
+                                  >
+                                    자주 묻는 질문
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="sm">문의하기</button>
+                            <div class="submenu-wrap">
+                              <div class="sub-in">
+                                <h3 class="sub-tit">
+                                  <a
+                                    href="#"
+                                    class="btn-txt ico-arr-right"
+                                    onclick="navigate('qna_write'); return false"
+                                  >
+                                    문의하기
+                                  </a>
+                                </h3>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //menu-wrap -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //w-gnb-wrap -->
+              </li>
+            </ul>
+
+            <ul class="my-info">
+              <li class="li">
+                <button class="mn-login" onclick="navigate('login')">
+                  로그인
+                </button>
+                <button class="mn-logout" style="display: none">
+                  로그아웃
+                </button>
+              </li>
+              <li class="li">
+                <button
+                  class="mn-join"
+                  onclick="navigate('join'); return false"
+                >
+                  회원가입
+                </button>
+              </li>
+              <li class="li">
+                <div class="drop-wrap">
+                  <button type="button" class="mn-mypage drop-btn">
+                    마이페이지<span class="sr-only">열기</span>
+                  </button>
+                  <div class="drop-menu">
+                    <div class="drop-in">
+                      <div class="drop-top"><span>홍길동</span>님</div>
+                      <ul class="drop-list">
+                        <li><a href="#" class="item-link">마이페이지 홈</a></li>
+                        <li><a href="#" class="item-link">나의 문의내역</a></li>
+                        <li>
+                          <a href="#" class="item-link">나의 활용갤러리</a>
+                        </li>
+                        <li><a href="#" class="item-link">나의 신청관리</a></li>
+                        <li><a href="#" class="item-link">나의 정보관리</a></li>
+                      </ul>
+                      <div class="drop-btm-btn">
+                        <button
+                          type="button"
+                          class="btn btn-txt ico-before ico-logout"
+                        >
+                          로그아웃
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- 모바일 전체메뉴 -->
+  <nav id="m-lnb" class="m-lnb-wrap" aria-hidden="true">
+    <div class="m-lnb-in" tabindex="0">
+      <div class="m-lnb-head">
+        <div class="m-lnb-top-etc">
+          <button type="button" class="btn-close ico ico-close">
+            <span class="sr-only">전체메뉴 닫기</span>
+          </button>
+        </div>
+        <div class="m-lnb-login justify-between">
+          <!-- <button type="button" class="btn-txt ico-before ico-login">
+            로그인을 해주세요
+          </button> -->
+          <p class="name"><span>홍길동</span>님</p>
+          <button type="button" class="btn-txt ico-before ico-logout">
+            로그아웃
+          </button>
+        </div>
+      </div>
+      <div class="m-lnb-body">
+        <div class="m-lnb-menu">
+          <div class="menu-wrap">
+            <ul class="ul">
+              <li>
+                <a href="#mlnb-anchor1" target="_self" class="mn active"
+                  >메뉴1</a
+                >
+              </li>
+              <li>
+                <a href="#mlnb-anchor2" target="_self" class="mn">메뉴2</a>
+              </li>
+            </ul>
+          </div>
+          <div class="submenu-wrap">
+            <div class="dl" id="mlnb-anchor1">
+              <dl>
+                <dt class="dt">메뉴1</dt>
+                <dd class="dd">
+                  <a href="#" target="_self" class="sm">데이터</a>
+                  <ul class="sub-ul">
+                    <li>
+                      <a
+                        href="#"
+                        target="_self"
+                        class="subm"
+                        onclick="navigate('news'); return false;"
+                        >새소식</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_self"
+                        class="subm"
+                        onclick="navigate('login'); return false;"
+                        >로그인</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_self"
+                        class="subm"
+                        onclick="navigate('join'); return false"
+                        >회원가입</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="dl" id="mlnb-anchor2">
+              <dl>
+                <dt class="dt">메뉴2</dt>
+                <dd class="dd">
+                  <a href="#" target="_self" class="sm">서브메뉴</a>
+                  <ul class="sub-ul">
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                    <li>
+                      <a href="#" target="_self" class="subm">하위메뉴</a>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="m-lnb-body-btm"></div>
+      </div>
+    </div>
+  </nav>
+</header>
