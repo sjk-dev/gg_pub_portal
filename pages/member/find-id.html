@@ -1,77 +1,94 @@
 <div class="container">
-  <!-- 페이지별 헤더 영역 -->
-  <div class="page-header">
-    <div class="inner">
-      <!-- breadcrumb -->
-      <div class="breadcrumb-wrap">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="home"><a href="/" class="txt">홈</a></li>
-            <li><a href="" class="txt on">회원</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt on">회원</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
 
-      <!-- title -->
-      <div class="page-title-wrap section-2 inner narrow">
-        <div class="page-title col">
-          <h1>아이디 찾기</h1>
-        </div>
+    <div class="inner narrow">
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">아이디 찾기</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
 
-        <div class="step-info-wrap">
-          <h3>본인인증으로 찾기</h3>
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area step-type mt-40">
+        <div class="conts-wrap">
+          <div class="step-info-wrap">
+            <h3>본인인증으로 찾기</h3>
+          </div>
+          <div>
+            <div class="find-member">
+              <div class="section-4">
+                <!-- card -->
+                <div class="card outline">
+                  <p class="txt">본인인증으로 아이디를 찾을 수 있습니다.</p>
+                </div>
+                <!-- //card end -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- //컨텐츠 영역 -->
+
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column justify-end">
+        <div class="btn-wrap">
+          <button class="krds-btn xlarge primary">본인인증</button>
+        </div>
+      </div>
+      <!-- //페이지 버튼 영역 -->
     </div>
   </div>
-  <!-- // 페이지별 헤더 영역 -->
-
-  <!-- 페이지별 컨텐츠 영역 -->
-  <div class="page-content">
-    <div class="find-member inner narrow">
-      <div class="flex-col gap-10">
-        <div class="card outline">
-          <p class="txt">본인인증으로 아이디를 찾을 수 있습니다.</p>
-        </div>
-        <!-- // card end -->
-
-        <div class="btn-wrap justify-end">
-          <button type="button" class="btn xl primary">본인인증</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- // 페이지별 컨텐츠 영역 -->
 </div>
 
 <!-- 팝업 -->
 <!-- 아이디 찾기 결과 - 일치하는 아이디 있을 시 -->
-<div
-  id=""
-  class="gg-modal-alert m-bottom-sheet"
+<section
+  id="example_pop"
+  class="krds-modal medium fade m-bottom-sheet"
   role="dialog"
-  aria-hidden="true"
+  aria-labelledby="tit_example_pop"
 >
-  <div class="modal-wrap">
-    <div class="modal-dialog" tabindex="0">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
       <div class="modal-header">
-        <h3 class="modal-title">아이디 찾기</h3>
+        <h2 id="tit_example_pop" class="modal-title">아이디 찾기</h2>
       </div>
-      <div class="modal-body">
-        <p>입력하신 정보와 일치하는 아이디 정보 입니다.</p>
-        <div class="card outline sm">
-          <p>아이디&nbsp; <span class="font-bold">ho***23</span></p>
-          <p>아이디&nbsp; <span class="font-bold">ho***23</span></p>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <p>입력하신 정보와 일치하는 아이디 정보 입니다.</p>
+          <div class="card outline sm">
+            <p>아이디&nbsp; <span class="font-bold">ho***23</span></p>
+            <p>아이디&nbsp; <span class="font-bold">ho***23</span></p>
+          </div>
+          <p>위의 아이디로 로그인할 수 있습니다.</p>
         </div>
       </div>
-      <div class="modal-footer">
-        <div class="modal-btn btn-wrap">
-          <button type="button" class="btn primary">확인</button>
-        </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          확인
+        </button>
       </div>
-      <button class="btn-close ico ico-close">
-        <span class="sr-only">팝업 닫기</span>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
       </button>
+      <!-- //close button -->
     </div>
   </div>
-</div>
+  <div class="modal-back in"></div>
+</section>

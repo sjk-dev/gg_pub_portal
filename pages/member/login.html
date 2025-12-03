@@ -1,35 +1,27 @@
 <div class="container">
-  <!-- 페이지별 헤더 영역 -->
-  <div class="page-header">
-    <div class="inner">
-      <!-- breadcrumb -->
-      <div class="breadcrumb-wrap">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="home"><a href="/" class="txt">홈</a></li>
-            <li><a href="" class="txt on">회원</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt on">회원</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
 
-      <!-- title -->
-      <div class="page-title-wrap section-2">
-        <div class="page-title">
-          <h1>로그인</h1>
-        </div>
-      </div>
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">로그인</h1>
     </div>
-  </div>
-  <!-- // 페이지별 헤더 영역 -->
+    <!-- //페이지 타이틀 영역 -->
 
-  <!-- 페이지별 컨텐츠 영역 -->
-  <div class="page-content">
-    <div class="member inner">
-      <div class="card outline flex-col section-2 pd-32">
+    <!-- 컨텐츠 영역 -->
+    <div class="member mt-40">
+      <div class="card outline section-4 pd-36">
         <div class="con-title-wrap">
           <div class="con-title">
             <span class="small-txt">경기데이터포털 사용자 로그인</span>
-            <h3 class="txt">아이디/비밀번호 로그인</h3>
+            <div class="txt">아이디/비밀번호 로그인</div>
           </div>
         </div>
 
@@ -38,59 +30,77 @@
             <div class="section-3">
               <fieldset class="section-3">
                 <legend>로그인 정보 입력</legend>
-                <div class="form-group">
-                  <div class="form-tit">
-                    <label for="" class="font-normal">아이디</label>
+                <!-- 폼그룹 -->
+                <div class="form-group is-error">
+                  <div class="form-tit font-normal">
+                    <label for="form_delete">아이디</label>
                   </div>
-                  <div class="form-conts">
-                    <div class="input-fn lg error">
-                      <!-- 
-                      input에 focus시 input-fn클래스에 focus 추가
-                      input에 값 잘못 입력시 input-fn클래스에 error 추가
-                    -->
-                      <input
-                        type="text"
-                        id=""
-                        class="input"
-                        placeholder="아이디를 입력하세요."
-                      />
-                      <button class="ico ico-delete"></button>
+                  <div class="form-conts btn-ico-wrap" data-delete="true">
+                    <input
+                      type="text"
+                      id="form_delete"
+                      class="krds-input"
+                      placeholder="아이디를 입력하세요"
+                    />
+                    <button
+                      type="button"
+                      class="krds-btn medium icon pure btn-delete-input"
+                    >
+                      <span class="sr-only">내용 삭제</span>
+                      <i class="svg-icon ico-delete-fill"></i>
+                    </button>
+                  </div>
+                  <p class="form-hint-invalid">아이디를 확인해 주세요.</p>
+                </div>
+                <!-- //폼그룹 -->
+                <!-- 폼그룹 -->
+                <div class="form-group">
+                  <div class="form-tit font-normal">
+                    <label for="form_btn_multiple">비밀번호</label>
+                  </div>
+                  <div class="form-conts btn-ico-wrap" data-delete="true">
+                    <input
+                      type="password"
+                      id="form_btn_multiple"
+                      class="krds-input"
+                      placeholder="비밀번호를 입력하세요."
+                    />
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="krds-btn medium icon pure btn-delete-input"
+                      >
+                        <span class="sr-only">내용 삭제</span>
+                        <i class="svg-icon ico-delete-fill"></i>
+                      </button>
+                      <button type="button" class="krds-btn medium icon">
+                        <span class="sr-only">입력한 비밀번호 보기</span>
+                        <i class="svg-icon ico-pw-visible"></i>
+                      </button>
                     </div>
                   </div>
-                  <!--
-                  인풋 하단 도움 메세지
-                  <p class="form-hint info">아이디를 입력해 주세요.</p>
-                -->
-                  <p class="form-hint error">아이디를 확인해 주세요.</p>
+
+                  <p class="form-hint-invalid">비밀번호가 일치하지 않습니다.</p>
                 </div>
+                <!-- //폼그룹 -->
+                <!-- 폼그룹 -->
                 <div class="form-group">
-                  <div class="form-tit">
-                    <label for="" class="font-normal">비밀번호</label>
-                  </div>
                   <div class="form-conts">
-                    <div class="input-fn lg">
-                      <input
-                        type="password"
-                        id=""
-                        class="input"
-                        placeholder="비밀번호를 입력하세요."
-                      />
-                      <button class="ico ico-pwd-view"></button>
-                      <!-- 
-                      비밀번호 보기 끄기 버튼
-                      <button class="ico ico-pwd-view-off"></button>
-                    --></div>
+                    <div class="krds-check-area">
+                      <div class="krds-form-check">
+                        <input type="checkbox" id="id-save" />
+                        <label for="id-save">아이디 저장</label>
+                      </div>
+                    </div>
                   </div>
-                  <p class="form-hint error">비밀번호가 일치하지 않습니다.</p>
                 </div>
-                <div class="form-check">
-                  <input type="checkbox" id="id-save" />
-                  <label for="id-save">아이디 저장</label>
-                </div>
+                <!-- //폼그룹 -->
               </fieldset>
 
               <div class="form-group">
-                <button type="submit" class="btn primary lg">로그인</button>
+                <button type="submit" class="krds-btn primary large">
+                  로그인
+                </button>
               </div>
 
               <div class="link-wrap">
@@ -149,7 +159,6 @@
           </div>
         </div>
       </div>
-      <!-- // card  -->
 
       <!-- 도움박스 -->
       <div class="helper-box mt-40">
@@ -160,98 +169,100 @@
       </div>
       <!-- // 도움박스 -->
     </div>
+    <!-- //컨텐츠 영역-->
   </div>
-  <!-- // 페이지별 컨텐츠 영역 -->
 </div>
 
 <!-- 팝업 -->
 <!-- 간편로그인 - 메일주소로 로그인 팝업 -->
-<div
-  id="loginByMailPopup"
-  class="gg-modal-alert m-bottom-sheet"
+<section
+  id="example_pop"
+  class="krds-modal medium fade m-bottom-sheet"
   role="dialog"
-  aria-hidden="true"
+  aria-labelledby="tit_example_pop"
 >
-  <div class="modal-wrap">
-    <div class="modal-dialog" tabindex="0">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
       <div class="modal-header">
         <p class="small-txt">간편 로그인</p>
-        <h3 class="modal-title">메일 주소로 로그인</h3>
+        <h2 id="tit_example_pop" class="modal-title">메일 주소로 로그인</h2>
       </div>
-      <div class="modal-body">
-        <p>이메일을 입력하시면, 해당 주소로 로그인 경로를 전달 드립니다.</p>
-        <div class="form-group">
-          <div class="form-tit sm">
-            <label for="">이메일</label>
-          </div>
-          <div class="form-conts">
-            <input
-              type="text"
-              id=""
-              class="input lg"
-              placeholder="이메일주소를 입력해주세요."
-            />
-            <button type="button" class="btn lg secondary">이메일 인증</button>
-          </div>
-          <p class="form-hint success">올바른 이메일 주소입니다.</p>
-        </div>
-        <div class="form-group">
-          <div class="form-tit">
-            <label for=""
-              >인증메일이 도착하지 않았나요?
-              <span class="re-code">인증메일 다시 받기</span></label
-            >
-          </div>
-          <div class="form-conts auth-wrap">
-            <div class="auth-top">
-              <input
-                type="text"
-                id=""
-                class="input lg"
-                placeholder="인증번호를 입력하세요."
-              />
-              <span class="timer">03:00</span>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <p>이메일을 입력하시면, 해당 주소로 로그인 경로를 전달 드립니다.</p>
+          <fieldset class="section-4">
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-tit font-normal">
+                <label for="">이메일</label>
+              </div>
+              <div class="form-conts is-success">
+                <div class="input-group m-column">
+                  <input
+                    type="text"
+                    id=""
+                    class="krds-input"
+                    placeholder="이메일주소를 입력해주세요."
+                  />
+                  <button type="button" class="krds-btn large secondary">
+                    이메일 인증
+                  </button>
+                </div>
+              </div>
+              <p class="form-hint-success">올바른 이메일 주소입니다.</p>
             </div>
-            <button type="button" class="btn lg secondary">인증 확인</button>
-          </div>
-
-          <p class="form-hint success">인증이 완료되었습니다.</p>
+            <!--// 폼그룹 -->
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-tit font-normal">
+                <label for="">
+                  인증메일이 도착하지 않았나요?
+                  <span class="re-code">인증메일 다시 받기</span>
+                </label>
+              </div>
+              <div class="form-conts is-success">
+                <div class="input-group auth-wrap">
+                  <div class="auth-top">
+                    <input
+                      type="text"
+                      id=""
+                      class="krds-input"
+                      placeholder="인증번호를 입력하세요."
+                    />
+                    <span class="timer">03:00</span>
+                  </div>
+                  <button type="button" class="krds-btn large secondary">
+                    인증 확인
+                  </button>
+                </div>
+              </div>
+              <p class="form-hint-success">인증이 완료되었습니다.</p>
+            </div>
+            <!-- //폼그룹 -->
+          </fieldset>
         </div>
       </div>
-      <div class="modal-footer">
-        <div class="modal-btn btn-wrap">
-          <button type="button" class="btn tertiary close-modal">취소</button>
-          <button type="button" class="btn primary">로그인</button>
-        </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium tertiary close-modal">
+          취소
+        </button>
+        <button type="button" class="krds-btn medium primary close-modal">
+          로그인
+        </button>
       </div>
-      <button class="btn-close ico ico-close">
-        <span class="sr-only">팝업 닫기</span>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
       </button>
+      <!-- //close button -->
     </div>
   </div>
-</div>
-
-<!-- 간편로그인 - 로그인 성공 팝업 -->
-<div class="gg-modal-alert m-bottom-sheet" role="dialog" aria-hidden="true">
-  <div class="modal-wrap">
-    <div class="modal-dialog" tabindex="0">
-      <div class="modal-header">
-        <h3 class="modal-title">로그인에 성공했습니다.</h3>
-      </div>
-      <div class="modal-body">
-        <p>
-          <span class="text-blue font-bold">홍길동</span>님 반가워요.<br />확인을
-          누르시면, 메인페이지로 이동합니다.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <div class="modal-btn btn-wrap">
-          <button type="button" class="btn primary">확인</button>
-        </div>
-      </div>
-      <button class="btn-close ico ico-close">
-        <span class="sr-only">팝업 닫기</span>
-      </button>
-    </div>
-  </div>
-</div>
+  <div class="modal-back in"></div>
+</section>

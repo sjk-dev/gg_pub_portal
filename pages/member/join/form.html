@@ -1,130 +1,177 @@
 <div class="container">
-  <!-- 페이지별 헤더 영역 -->
-  <div class="page-header">
-    <div class="inner">
-      <!-- breadcrumb -->
-      <div class="breadcrumb-wrap">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="home"><a href="/" class="txt">홈</a></li>
-            <li><a href="" class="txt on">회원</a></li>
-          </ul>
-        </nav>
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt on">회원</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <div class="inner narrow">
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">회원가입</h1>
+        <!-- 스텝 -->
+        <ol class="krds-step-wrap">
+          <li class="done">
+            <span>
+              <i class="step">1단계</i>
+              <span class="step-tit">약관동의</span>
+            </span>
+          </li>
+          <li class="done">
+            <span>
+              <i class="step">2단계</i>
+              <span class="step-tit">본인인증</span>
+            </span>
+          </li>
+          <li class="active">
+            <span>
+              <em class="sr-only">현재단계</em>
+              <i class="step">3단계</i>
+              <span class="step-tit">정보입력</span>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i class="step">4단계</i>
+              <span class="step-tit">가입완료</span>
+            </span>
+          </li>
+        </ol>
+        <!-- //스텝 -->
       </div>
+      <!-- //페이지 타이틀 영역 -->
 
-      <!-- title -->
-      <div class="page-title-wrap section-2 inner narrow">
-        <div class="page-title col">
-          <h1>회원가입</h1>
-          <div class="step-wrap">
-            <ol class="list-step">
-              <li class="done">
-                <span class="sr-only">현재 단계</span>
-                <span class="step">1단계</span>
-                <span class="step-tit">약관동의</span>
-              </li>
-              <li class="done">
-                <span class="step">2단계</span>
-                <span class="step-tit">본인인증</span>
-              </li>
-              <li class="active">
-                <span class="step">3단계</span>
-                <span class="step-tit">정보입력</span>
-              </li>
-              <li>
-                <span class="step">4단계</span>
-                <span class="step-tit">가입완료</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-
-        <div class="step-info-wrap">
-          <div class="step-info">
-            <span class="step-current">3단계</span> / 4단계
-          </div>
-          <h3>정보입력</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- // 페이지별 헤더 영역 -->
-
-  <!-- 페이지별 컨텐츠 영역 -->
-  <div class="page-content">
-    <div class="member inner narrow">
-      <div class="flex-col gap-10">
-        <div class="card outline">
-          <div class="section-4">
-            <div class="info-txt">
-              <span class="red-point">*</span>표시는 필수 입력 사항입니다.
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area step-type">
+        <div class="conts-wrap">
+          <div class="step-info-wrap">
+            <div class="step-info">
+              <span class="step-current">3단계</span> / 4단계
             </div>
-            <fieldset class="section-2">
-              <div class="form-group">
-                <div class="form-tit lg">
-                  <label for="">이름</label>
+            <h3>정보입력</h3>
+          </div>
+          <div>
+            <div class="member">
+              <div class="section-4">
+                <!-- card -->
+                <div class="card outline">
+                  <div class="section-4">
+                    <div class="info-txt">
+                      <span class="red-point">*</span>표시는 필수 입력
+                      사항입니다.
+                    </div>
+                    <fieldset class="section-2">
+                      <!-- 폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-tit">
+                          <label for="">이름</label>
+                        </div>
+                        <div class="form-conts">
+                          <input
+                            type="text"
+                            id=""
+                            class="krds-input"
+                            value="홍길동"
+                            readonly
+                          />
+                        </div>
+                      </div>
+                      <!-- //폼그룹 -->
+                      <!-- 폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-tit lg">
+                          <label for=""
+                            >아이디<span class="red-point">*</span></label
+                          >
+                        </div>
+                        <div class="form-conts">
+                          <div class="input-group m-column">
+                            <input
+                              type="text"
+                              id=""
+                              class="krds-input"
+                              placeholder="아이디를 입력하세요."
+                            />
+                            <button
+                              type="button"
+                              class="krds-btn large secondary"
+                            >
+                              아이디 확인
+                            </button>
+                          </div>
+                        </div>
+                        <!-- <p class="form-hint info">아이디를 입력해 주세요.</p> -->
+                        <p class="form-hint-invalid">
+                          동일한 아이디가 이미 존재합니다. 다른 아이디를 입력해
+                          주세요.
+                        </p>
+                      </div>
+                      <!-- //폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-tit lg">
+                          <label for=""
+                            >비밀번호<span class="red-point">*</span></label
+                          >
+                        </div>
+                        <p class="atomic-msg">
+                          영문자(대,소문자), 숫자, 특수문자를 포함하여 최소 8자
+                          이상 작성 해야 합니다.
+                        </p>
+                        <div class="form-conts">
+                          <input
+                            type="password"
+                            id=""
+                            class="krds-input"
+                            placeholder="비밀번호를 입력하세요."
+                          />
+                        </div>
+                        <p class="form-hint-invalid">
+                          비밀번호 규칙에 맞지 않습니다.
+                        </p>
+                      </div>
+                      <!-- 폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-conts">
+                          <input
+                            type="password"
+                            id=""
+                            class="krds-input"
+                            placeholder="비밀번호를 한번 더 입력하세요."
+                          />
+                        </div>
+                        <p class="form-hint-invalid">
+                          비밀번호가 동일하지 않습니다.
+                        </p>
+                      </div>
+                      <!-- //폼그룹 -->
+                    </fieldset>
+                  </div>
                 </div>
-                <div class="form-conts">
-                  <input
-                    type="text"
-                    id=""
-                    class="input lg"
-                    readonly
-                    tabindex="-1"
-                  />
-                </div>
+                <!-- //card end -->
               </div>
-              <div class="form-group">
-                <div class="form-tit lg">
-                  <label for="">아이디<span class="red-point">*</span></label>
-                </div>
-                <div class="form-conts">
-                  <input type="text" id="" class="input lg" />
-                  <button type="button" class="btn lg secondary">
-                    아이디 확인
-                  </button>
-                </div>
-                <!-- <p class="form-hint info">아이디를 입력해 주세요.</p> -->
-                <p class="form-hint error">
-                  동일한 아이디가 이미 존재합니다. 다른 아이디를 입력해 주세요.
-                </p>
-              </div>
-              <div class="form-group">
-                <div class="form-tit lg">
-                  <label for="">비밀번호<span class="red-point">*</span></label>
-                </div>
-                <p class="atomic-msg">
-                  영문자(대,소문자), 숫자, 특수문자를 포함하여 최소 8자 이상
-                  작성 해야 합니다.
-                </p>
-                <div class="form-conts">
-                  <input type="password" id="" class="input lg" />
-                </div>
-                <p class="form-hint error">비밀번호 규칙에 맞지 않습니다.</p>
-              </div>
-              <div class="form-group">
-                <div class="form-conts">
-                  <input type="password" id="" class="input lg" />
-                </div>
-                <p class="form-hint error">비밀번호가 동일하지 않습니다.</p>
-              </div>
-            </fieldset>
+            </div>
           </div>
         </div>
-        <!-- // card end -->
+      </div>
+      <!-- //컨텐츠 영역 -->
 
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column">
+        <button class="krds-btn xlarge tertiary">취소</button>
         <div class="btn-wrap">
-          <button type="button" class="btn xl tertiary">취소</button>
           <button
-            type="button"
-            class="btn xl primary disabled"
-            onclick="navigate('join_complete'); return false"
+            class="krds-btn xlarge primary"
+            onclick="navigate('join_complete'); return false;"
           >
             저장
           </button>
         </div>
       </div>
+      <!-- //페이지 버튼 영역 -->
     </div>
   </div>
-  <!-- // 페이지별 컨텐츠 영역 -->
 </div>

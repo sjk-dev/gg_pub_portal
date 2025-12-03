@@ -1,33 +1,24 @@
 <div class="container">
-  <!-- 페이지별 헤더 영역 -->
-  <div class="page-header">
-    <div class="inner">
-      <!-- breadcrumb -->
-      <div class="breadcrumb-wrap">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="home"><a href="/" class="txt">홈</a></li>
-            <li><a href="" class="txt on">회원</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt on">회원</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
 
-      <!-- title -->
-      <div class="page-title-wrap section-2 inner narrow">
-        <div class="page-title">
-          <h1>회원전환</h1>
-        </div>
+    <div class="inner narrow">
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">회원전환</h1>
       </div>
-    </div>
-  </div>
-  <!-- // 페이지별 헤더 영역 -->
+      <!-- //페이지 타이틀 영역 -->
 
-  <!-- 페이지별 컨텐츠 영역 -->
-  <div class="page-content">
-    <div class="member inner narrow">
-      <div class="section-2">
-        <div class="card outline flex-col gap-10">
-          <div class="mt-24">
+      <div class="member mt-40">
+        <div class="card outline section-4">
+          <div class="inner narrow">
             <div class="con-title-wrap">
               <div class="con-title">
                 <span class="small-txt">경기데이터포털 회원전환</span>
@@ -53,20 +44,21 @@
             </div>
           </div>
         </div>
-        <!-- // card end -->
+      </div>
 
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column">
+        <button class="krds-btn xlarge tertiary">취소</button>
         <div class="btn-wrap">
-          <button type="button" class="btn xl tertiary">취소</button>
           <button
-            type="button"
-            class="btn xl primary"
-            onclick="navigate('convert'); return false"
+            class="krds-btn xlarge primary"
+            onclick="navigate('convert'); return false;"
           >
             통합회원전환
           </button>
         </div>
       </div>
+      <!-- //페이지 버튼 영역 -->
     </div>
   </div>
-  <!-- // 페이지별 컨텐츠 영역 -->
 </div>

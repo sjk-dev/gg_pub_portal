@@ -1,117 +1,159 @@
 <div class="container">
-  <!-- 페이지별 헤더 영역 -->
-  <div class="page-header">
-    <div class="inner">
-      <!-- breadcrumb -->
-      <div class="breadcrumb-wrap">
-        <nav class="breadcrumb">
-          <ul>
-            <li class="home"><a href="/" class="txt">홈</a></li>
-            <li><a href="" class="txt on">회원</a></li>
-          </ul>
-        </nav>
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt on">회원</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <div class="inner narrow">
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">비밀번호 찾기</h1>
       </div>
+      <!-- //페이지 타이틀 영역 -->
 
-      <!-- title -->
-      <div class="page-title-wrap section-2 inner narrow">
-        <div class="page-title col">
-          <h1>비밀번호 찾기</h1>
-        </div>
-
-        <div class="step-info-wrap">
-          <h3>본인인증으로 재설정</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- // 페이지별 헤더 영역 -->
-
-  <!-- 페이지별 컨텐츠 영역 -->
-  <div class="page-content">
-    <div class="find-member inner narrow">
-      <div class="flex-col gap-10">
-        <div class="card outline section-4">
-          <p class="txt">
-            비밀번호 재설정을 위해 계정을 입력하고 본인인증을 진행해 주세요.
-          </p>
-          <div class="form-group">
-            <div class="form-tit">
-              <label for="">아이디</label>
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area step-type mt-40">
+        <div class="conts-wrap">
+          <div class="step-info-wrap">
+            <h3>본인인증으로 재설정</h3>
+          </div>
+          <div>
+            <div class="find-member">
+              <div class="section-4">
+                <!-- card -->
+                <div class="card outline">
+                  <p class="txt">
+                    비밀번호 재설정을 위해 계정을 입력하고 본인인증을 진행해
+                    주세요.
+                  </p>
+                  <div class="form-group is-error mt-24">
+                    <div class="form-tit font-normal">
+                      <label for="form_delete">아이디</label>
+                    </div>
+                    <div class="form-conts btn-ico-wrap" data-delete="true">
+                      <input
+                        type="text"
+                        id="form_delete"
+                        class="krds-input"
+                        placeholder="아이디를 입력하세요"
+                      />
+                      <button
+                        type="button"
+                        class="krds-btn medium icon pure btn-delete-input"
+                      >
+                        <span class="sr-only">내용 삭제</span>
+                        <i class="svg-icon ico-delete-fill"></i>
+                      </button>
+                    </div>
+                    <p class="form-hint-invalid">아이디를 입력해주세요.</p>
+                  </div>
+                </div>
+                <!-- //card end -->
+              </div>
             </div>
-            <div class="form-conts">
-              <input type="text" id="" class="input lg" />
-            </div>
-            <p class="form-hint error">아이디를 확인해 주세요.</p>
           </div>
         </div>
-        <!-- // card end -->
+      </div>
+      <!-- //컨텐츠 영역 -->
 
-        <div class="btn-wrap justify-end">
-          <button type="button" class="btn xl primary disabled">
-            본인인증
-          </button>
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column justify-end">
+        <div class="btn-wrap">
+          <button class="krds-btn xlarge primary">본인인증</button>
         </div>
       </div>
+      <!-- //페이지 버튼 영역 -->
     </div>
   </div>
-  <!-- // 페이지별 컨텐츠 영역 -->
 </div>
 
 <!-- 팝업 -->
 <!-- 비밀번호 찾기 - 비밀번호 변경 팝업 -->
-<div
-  id="loginByMailPopup"
-  class="gg-modal-alert m-bottom-sheet"
+<section
+  id="example_pop"
+  class="krds-modal medium fade m-bottom-sheet"
   role="dialog"
-  aria-hidden="true"
+  aria-labelledby="tit_example_pop"
 >
-  <div class="modal-wrap">
-    <div class="modal-dialog" tabindex="0">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
       <div class="modal-header">
-        <h3 class="modal-title">비밀번호 변경</h3>
+        <h2 id="tit_example_pop" class="modal-title">비밀번호 변경</h2>
       </div>
-      <div class="modal-body">
-        <p class="font-bold">새 비밀번호를 입력해 주세요.</p>
-        <fieldset class="section-4">
-          <div class="form-group">
-            <p class="atomic-msg mt-8">
-              영문자(대,소문자), 숫자, 특수문자를 포함하여 최소 8자 이상 작성
-              해야 합니다.
-            </p>
-            <div class="form-conts">
-              <input
-                type="password"
-                id=""
-                class="input lg"
-                placeholder="비밀번호"
-              />
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <p class="font-bold">새 비밀번호를 입력해 주세요.</p>
+          <fieldset class="section-4">
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <p class="atomic-msg">
+                영문자(대,소문자), 숫자, 특수문자를 포함하여 최소 8자 이상 작성
+                해야 합니다.
+              </p>
+              <div class="form-conts btn-ico-wrap" data-delete="true">
+                <input
+                  type="password"
+                  id="form_delete"
+                  class="krds-input"
+                  placeholder="비밀번호"
+                />
+                <button
+                  type="button"
+                  class="krds-btn medium icon pure btn-delete-input"
+                >
+                  <span class="sr-only">내용 삭제</span>
+                  <i class="svg-icon ico-delete-fill"></i>
+                </button>
+              </div>
+              <p class="form-hint-invalid">비밀번호가 규칙에 맞지 않습니다.</p>
             </div>
-            <p class="form-hint error">비밀번호가 규칙에 맞지 않습니다.</p>
-          </div>
-          <div class="form-group">
-            <div class="form-tit">
-              <!-- <label for="">비밀번호 확인</label> -->
+            <!--// 폼그룹 -->
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-conts btn-ico-wrap" data-delete="true">
+                <input
+                  type="password"
+                  id="form_delete"
+                  class="krds-input"
+                  placeholder="비밀번호 확인"
+                />
+                <button
+                  type="button"
+                  class="krds-btn medium icon pure btn-delete-input"
+                >
+                  <span class="sr-only">내용 삭제</span>
+                  <i class="svg-icon ico-delete-fill"></i>
+                </button>
+              </div>
+              <p class="form-hint-invalid">비밀번호가 동일하지 않습니다.</p>
             </div>
-            <div class="form-conts">
-              <input
-                type="password"
-                id=""
-                class="input lg"
-                placeholder="비밀번호 확인"
-              />
-            </div>
-            <p class="form-hint error">비밀번호가 동일하지 않습니다.</p>
-          </div>
-        </fieldset>
-      </div>
-      <div class="modal-footer">
-        <div class="modal-btn btn-wrap">
-          <button type="button" class="btn primary">확인</button>
+            <!-- //폼그룹 -->
+          </fieldset>
         </div>
       </div>
-      <button class="btn-close ico ico-close">
-        <span class="sr-only">팝업 닫기</span>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          확인
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
       </button>
+      <!-- //close button -->
     </div>
   </div>
-</div>
+  <div class="modal-back in"></div>
+</section>
