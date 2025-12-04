@@ -8780,8 +8780,8 @@
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: contain;
-    -webkit-mask-image: url(/resources/img/component/icon/ico_ellipsis.svg);
-    mask-image: url(/resources/img/component/icon/ico_ellipsis.svg);
+    -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_ellipsis.svg);
+    mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_ellipsis.svg);
   }
   .krds-breadcrumb-wrap
     .breadcrumb
@@ -8792,8 +8792,8 @@
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: contain;
-    -webkit-mask-image: url(/resources/img/component/icon/ico_angle.svg);
-    mask-image: url(/resources/img/component/icon/ico_angle.svg);
+    -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+    mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
     transform: rotate(-90deg);
   }
   .krds-breadcrumb-wrap

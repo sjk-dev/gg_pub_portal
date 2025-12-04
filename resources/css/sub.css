@@ -69,7 +69,7 @@
   flex-shrink: 0;
   width: 2rem;
   height: 2rem;
-  background-image: url("/resources/img/component/icon/ico_arrow_right.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_arrow_right.svg");
   content: "";
   margin-bottom: 0.5rem;
 }
@@ -172,7 +172,7 @@
   height: 30rem;
   padding: 4rem 2.4rem;
   box-sizing: border-box;
-  background: url("/resources/img/bg/bg_member_complete.svg") no-repeat center !important;
+  background: url("/gg_pub_portal/resources/img/bg/bg_member_complete.svg") no-repeat center !important;
   background-size: contain !important;
   font-size: var(--krds-pc-font-size-heading-large);
   font-weight: bold;
@@ -249,22 +249,22 @@
 }
 /* 간편로그인 이미지 */
 .member .list-item .any-id .certify-type li .login-link.naver::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_naver.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_naver.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.google::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_google.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_google.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.kakao::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_kakao.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_kakao.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.facebook::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_facebook.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_facebook.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.line::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_line.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_line.svg");
 }
 .member .list-item .any-id .certify-type li .login-link.mail::before {
-  background-image: url("/resources/img/component/icon/ico_anyid_mail.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_anyid_mail.svg");
 }
 
 .member .list-item .any-id .certify-type li .login-link::after {
@@ -280,7 +280,7 @@
   pointer-events: none;
 }
 .member .list-item .any-id .certify-type li .login-link::after {
-  background-image: url("/resources/img/component/icon/ico-shortcut.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico-shortcut.svg");
 }
 .form-group .font-normal {
   margin-bottom: 0 !important;
@@ -323,7 +323,7 @@
   height: 1.6rem;
   margin-top: 0.2rem;
   vertical-align: top;
-  background: url("/resources/img/component/icon/ico_b_open_new_window.svg") no-repeat center;
+  background: url("/gg_pub_portal/resources/img/component/icon/ico_b_open_new_window.svg") no-repeat center;
   background-size: contain;
 }
 .auth-wrap {

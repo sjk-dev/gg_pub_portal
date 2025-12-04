@@ -93,7 +93,7 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
   min-width: 18rem;
 }
 #krds-header .header-container .logo a {
-  background-image: url(/resources/img/component/icon/h_logo.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/h_logo.svg);
 }
 #krds-header .header-container .header-branding {
   padding-top: 1.6rem;
@@ -151,15 +151,15 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  -webkit-mask-image: url(/resources/img/component/icon/ico_all.svg);
-  mask-image: url(/resources/img/component/icon/ico_all.svg);
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_all.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_all.svg);
 }
 
 /* my-info 이미지 */
-.my-info .li .mn-mypage::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/resources/img/component/icon/ico_my.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
-.my-info .li .mn-login::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/resources/img/component/icon/ico_login.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
-.my-info .li .mn-logout::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/resources/img/component/icon/ico_logout.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
-.my-info .li .mn-join::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/resources/img/component/icon/ico_join.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
+.my-info .li .mn-mypage::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/gg_pub_portal/resources/img/component/icon/ico_my.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
+.my-info .li .mn-login::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/gg_pub_portal/resources/img/component/icon/ico_login.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
+.my-info .li .mn-logout::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/gg_pub_portal/resources/img/component/icon/ico_logout.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
+.my-info .li .mn-join::before { display: inline-flex; width: 2rem; height: 2rem; background: url(/gg_pub_portal/resources/img/component/icon/ico_join.svg) no-repeat center; background-size: contain; content: ""; transition: transform 0.4s ease-in-out; } 
 
 
 /* header search bar */
@@ -297,7 +297,7 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
 }
 .btn-txt.ico-ai-search::after,
 .btn-txt.ico-ai-search::before {
-  background-image: url("/resources/img/component/icon/ico-ai-search.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico-ai-search.svg");
 }
 .btn-txt.ico-ai-search:hover {
   cursor: pointer;
@@ -479,19 +479,19 @@ a.btn-txt:hover {
   display: inline-block;
 }
 .share-list li.facebook a {
-  background-image: url(/resources/img/component/icon/ico-share-facebook.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-share-facebook.svg);
 }
 .share-list li.twitter a {
-  background-image: url(/resources/img/component/icon/ico-share-twitter.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-share-twitter.svg);
 }
 .share-list li.band a {
-  background-image: url(/resources/img/component/icon/ico-share-band.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-share-band.svg);
 }
 .share-list li.blog a {
-  background-image: url(/resources/img/component/icon/ico-share-blog.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-share-blog.svg);
 }
 .share-list li.kakao a {
-  background-image: url(/resources/img/component/icon/ico-share-kakao.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-share-kakao.svg);
 }
 .tooltip-contents .btn-wrap .justify-between {
   gap: 1.6rem;
@@ -566,40 +566,40 @@ a.btn-txt:hover {
   margin-right: 5rem;
 }
 .svg-icon.ico-file-zip {
-  mask-image: url(/resources/img/component/icon/ico-file-zip.svg);
-  background-image: url(/resources/img/component/icon/ico-file-zip.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-zip.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-zip.svg);
 }
 .svg-icon.ico-file-doc {
-  mask-image: url(/resources/img/component/icon/ico-file-doc.svg);
-  background-image: url(/resources/img/component/icon/ico-file-doc.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-doc.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-doc.svg);
 }
 .svg-icon.ico-file-hwp {
-  mask-image: url(/resources/img/component/icon/ico-file-hwp.svg);
-  background-image: url(/resources/img/component/icon/ico-file-hwp.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-hwp.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-hwp.svg);
 }
 .svg-icon.ico-file-img {
-  mask-image: url(/resources/img/component/icon/ico-file-img.svg);
-  background-image: url(/resources/img/component/icon/ico-file-img.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-img.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-img.svg);
 }
 .svg-icon.ico-file-pdf {
-  mask-image: url(/resources/img/component/icon/ico-file-pdf.svg);
-  background-image: url(/resources/img/component/icon/ico-file-pdf.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-pdf.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-pdf.svg);
 }
 .svg-icon.ico-file-ppt {
-  mask-image: url(/resources/img/component/icon/ico-file-ppt.svg);
-  background-image: url(/resources/img/component/icon/ico-file-ppt.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-ppt.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-ppt.svg);
 }
 .svg-icon.ico-file-txt {
-  mask-image: url(/resources/img/component/icon/ico-file-txt.svg);
-  background-image: url(/resources/img/component/icon/ico-file-txt.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-txt.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-txt.svg);
 }
 .svg-icon.ico-file-video {
-  mask-image: url(/resources/img/component/icon/ico-file-video.svg);
-  background-image: url(/resources/img/component/icon/ico-file-video.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-video.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-video.svg);
 }
 .svg-icon.ico-file-xls {
-  mask-image: url(/resources/img/component/icon/ico-file-xls.svg);
-  background-image: url(/resources/img/component/icon/ico-file-xls.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-xls.svg);
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico-file-xls.svg);
 }
 
 
@@ -981,7 +981,7 @@ a.btn-txt:hover {
 
 /* form */
 .form-group .form-hint-invalid::before {
-  background-image: url("/resources/img/component/icon/ico_error.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_error.svg");
 }
 
 /* footer */
@@ -1187,7 +1187,7 @@ a.btn-txt:hover {
   margin-right: var(--space-2);
   width: 2.4rem;
   height: 2.4rem;
-  background-image: url("/resources/img/component/icon/ico_helper_info.svg");
+  background-image: url("/gg_pub_portal/resources/img/component/icon/ico_helper_info.svg");
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -1292,8 +1292,8 @@ table.mobile .add-head{
   mask-repeat: no-repeat !important;
   mask-position: center center !important;
   mask-size: contain;
-  -webkit-mask-image: url(/resources/img/component/icon/ico_angle_double.svg);
-  mask-image: url(/resources/img/component/icon/ico_angle_double.svg) !important;
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle_double.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle_double.svg) !important;
   transform: rotate(90deg) !important;
   background-color: var(--krds-pagination--color-text);
   margin-right: 0.4rem;
@@ -1306,8 +1306,8 @@ table.mobile .add-head{
   mask-repeat: no-repeat !important;
   mask-position: center center !important;
   mask-size: contain;
-  -webkit-mask-image: url(/resources/img/component/icon/ico_angle_double.svg);
-  mask-image: url(/resources/img/component/icon/ico_angle_double.svg) !important;
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle_double.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle_double.svg) !important;
   transform: rotate(-90deg) !important;
   background-color: var(--krds-pagination--color-text);
   margin-left: 0.4rem;
