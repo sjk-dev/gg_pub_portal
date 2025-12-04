@@ -83,6 +83,15 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
   color: var(--krds-color-light-primary-80) !important;
 }
 
+/* breadcrumb */
+.krds-breadcrumb-wrap .breadcrumb .home .txt::before {
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_bread_home.svg);
+}
+.krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
+
+
 /* header */
 #krds-masthead img {
   width: 100%;
