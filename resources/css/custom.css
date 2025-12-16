@@ -1785,3 +1785,9 @@ table.mobile .tds a.link {
   width: 100%;
   height: auto;
 }
+
+/* git 이미지 안나와서 share용에만 추가 */
+.swiper-button-next::after, .swiper-button-prev::after {
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
