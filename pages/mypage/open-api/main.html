@@ -1,0 +1,784 @@
+<div class="container">
+  <div class="inner in-between">
+    <!-- side navigation -->
+    <nav class="krds-side-navigation">
+      <h2 class="lnb-tit">마이페이지</h2>
+      <!-- lnb-list -->
+      <ul class="lnb-list" role="menubar">
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">마이페이지 홈</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 문의내역</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem"
+            >나의 활용갤러리</a
+          >
+        </li>
+        <li class="lnb-item active" role="none">
+          <button
+            type="button"
+            class="lnb-btn lnb-toggle"
+            role="menuitem"
+            aria-controls="lnbmenu-6"
+            aria-expanded="true"
+          >
+            나의 신청관리
+          </button>
+          <!-- lnb-submenu -->
+          <div class="lnb-submenu">
+            <ul id="lnbmenu-6" role="menu">
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link active" role="menuitem"
+                  >Open API 인증키 발급 관리</a
+                >
+              </li>
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >분석 센터 신청 관리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //lnb-submenu -->
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 정보관리</a>
+        </li>
+      </ul>
+      <!-- //lnb-list -->
+    </nav>
+    <!-- side navigation -->
+
+    <div class="contents">
+      <!-- breadcrumb -->
+      <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home"><a href="#" class="txt">홈</a></li>
+          <li><a href="#" class="txt">마이페이지</a></li>
+          <li><a href="#" class="txt on">나의 신청관리</a></li>
+        </ol>
+      </nav>
+      <!-- breadcrumb -->
+
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">Open API 인증키 발급 관리</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
+
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area">
+        <!-- tab -->
+        <div class="krds-tab-area layer">
+          <!-- 탭 리스트 -->
+          <div class="tab fill full">
+            <ul role="tablist">
+              <li
+                id="openApiTab01"
+                role="tab"
+                aria-selected="true"
+                aria-controls="openApiPanel01"
+                class="active"
+              >
+                <button type="button" class="btn-tab">
+                  인증키 발급 내역<i class="sr-only">선택됨</i>
+                </button>
+              </li>
+              <li
+                id="openApiTab02"
+                role="tab"
+                aria-selected="false"
+                aria-controls="openApiPanel02"
+              >
+                <button type="button" class="btn-tab">인증키 이용 내역</button>
+              </li>
+              <li
+                id="openApiTab03"
+                role="tab"
+                aria-selected="false"
+                aria-controls="openApiPanel03"
+              >
+                <button type="button" class="btn-tab">인증키 발급</button>
+              </li>
+              <li
+                id="openApiTab04"
+                role="tab"
+                aria-selected="false"
+                aria-controls="openApiPanel04"
+              >
+                <button type="button" class="btn-tab">Open API 테스트</button>
+              </li>
+            </ul>
+          </div>
+          <!-- //탭 리스트 -->
+
+          <!-- 탭 콘텐츠 -->
+          <div class="tab-conts-wrap">
+            <section
+              id="openApiPanel01"
+              role="tabpanel"
+              aria-labelledby="openApiTab01"
+              class="tab-conts active"
+            >
+              <h2 class="sr-only">인증키 발급 내역</h2>
+              <!-- 검색결과 : 리스트 상단 -->
+              <div class="search-list-top mt-0">
+                <ul class="sch-info" aria-live="polite">
+                  <li>전체 <span class="point">6</span>개</li>
+                </ul>
+              </div>
+              <!-- //검색 결과 : 리스트 상단 -->
+              <!-- table -->
+              <div class="krds-table-wrap">
+                <table class="tbl col data center-table mobile no-pointer">
+                  <caption>
+                    인증키 발급 내역에 대한 표
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col" class="text-left">인증키</th>
+                      <th scope="col" class="text-left">활용용도</th>
+                      <th scope="col" class="text-left">발급일</th>
+                      <th scope="col">호출건수</th>
+                      <th scope="col">사용여부</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- 해당 데이터 없을 시 -->
+                    <!-- <tr>
+                      <td colspan="6" class="no-pointer">
+                        <strong>해당 자료가 없습니다.</strong>
+                      </td>
+                    </tr> -->
+                    <!-- //해당 데이터 없을 시 -->
+
+                    <tr>
+                      <td>
+                        <span class="add-head">번호</span>
+                        <span class="tds">1</span>
+                      </td>
+                      <td>
+                        <span class="add-head">인증키</span
+                        ><span class="tds"
+                          >6fe86b3dac154275b9c78bcc013d03b8</span
+                        >
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">활용용도</span>
+                        <span class="tds">프로그램 개발 (웹, 모바일)</span>
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">발급일</span>
+                        <span class="tds"><a href="#">2025.07.29</a></span>
+                      </td>
+                      <td class="text-right">
+                        <span class="add-head">호출건수</span>
+                        <span class="tds">0</span>
+                      </td>
+                      <td>
+                        <span class="add-head">사용여부</span>
+                        <span class="tds">정상</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="add-head">번호</span>
+                        <span class="tds">2</span>
+                      </td>
+                      <td>
+                        <span class="add-head">인증키</span
+                        ><span class="tds"
+                          >6fe86b3dac154275b9c78bcc013d03b8</span
+                        >
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">활용용도</span>
+                        <span class="tds">프로그램 개발 (웹, 모바일)</span>
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">발급일</span>
+                        <span class="tds"><a href="#">2025.07.29</a></span>
+                      </td>
+                      <td class="text-right">
+                        <span class="add-head">호출건수</span>
+                        <span class="tds">0</span>
+                      </td>
+                      <td>
+                        <span class="add-head">사용여부</span>
+                        <span class="tds">정상</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="add-head">번호</span>
+                        <span class="tds">3</span>
+                      </td>
+                      <td>
+                        <span class="add-head">인증키</span
+                        ><span class="tds"
+                          >6fe86b3dac154275b9c78bcc013d03b8</span
+                        >
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">활용용도</span>
+                        <span class="tds">프로그램 개발 (웹, 모바일)</span>
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">발급일</span>
+                        <span class="tds"><a href="#">2025.07.29</a></span>
+                      </td>
+                      <td class="text-right">
+                        <span class="add-head">호출건수</span>
+                        <span class="tds">0</span>
+                      </td>
+                      <td>
+                        <span class="add-head">사용여부</span>
+                        <span class="tds">정상</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="add-head">번호</span>
+                        <span class="tds">4</span>
+                      </td>
+                      <td>
+                        <span class="add-head">인증키</span
+                        ><span class="tds"
+                          >6fe86b3dac154275b9c78bcc013d03b8</span
+                        >
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">활용용도</span>
+                        <span class="tds">프로그램 개발 (웹, 모바일)</span>
+                      </td>
+                      <td class="text-left">
+                        <span class="add-head">발급일</span>
+                        <span class="tds"><a href="#">2025.07.29</a></span>
+                      </td>
+                      <td class="text-right">
+                        <span class="add-head">호출건수</span>
+                        <span class="tds">0</span>
+                      </td>
+                      <td>
+                        <span class="add-head">사용여부</span>
+                        <span class="tds">정상</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- //table -->
+
+              <!-- 도움박스 -->
+              <div class="section-5 helper-box mt-40">
+                <p class="helper-tit">Open API 활용 인증키에 대하여</p>
+                <ul class="krds-info-list decimal">
+                  <li>
+                    인증키 사용에 대한 자세한 내용은 인증키 이용내역을 통해
+                    확인할 수 있습니다.
+                  </li>
+                  <li>
+                    정상 상태의 인증키는 최대 15개까지 발급받을 수 있습니다.
+                  </li>
+                  <li>
+                    최근 2년 동안 이용 실적이 없는 인증키는 자동으로 폐기됩니다.
+                  </li>
+                  <li>신청하신 인증키는 타인에게 양도할 수 없습니다.</li>
+                  <li>
+                    발급받은 인증키는 관리목적상 활용용도 별로 구분한 것으로
+                    경기데이터드림의 모든 Open API에 활용 가능합니다.
+                  </li>
+                  <li>
+                    자세한 내용은 ‘개방 > OpenAPI >
+                    <a href="#" class="underline">Open API 사용방법</a>을
+                    참조하시기 바랍니다.
+                  </li>
+                </ul>
+              </div>
+              <!-- // 도움박스 -->
+            </section>
+            <section
+              id="openApiPanel02"
+              role="tabpanel"
+              aria-labelledby="openApiTab02"
+              class="tab-conts"
+            >
+              <div class="section-2">
+                <h2 class="sr-only">인증키 이용 내역</h2>
+                <div class="section-4 card filled">
+                  <p>최근 3개월 ~ 어제까지의 인증키 내역을 보실 수 있습니다.</p>
+                  <!-- 폼그룹 -->
+                  <div class="form-group">
+                    <div class="form-conts">
+                      <div class="input-group m-column">
+                        <select
+                          id="select_size_large"
+                          class="krds-form-select large"
+                          title="선택"
+                        >
+                          <option value="" selected>인증키를 선택하세요</option>
+                          <option value="">
+                            연구 (논문, 분석 등)
+                            (552105800b314adc9fb9807db92b232c) (정상)
+                          </option>
+                        </select>
+                        <button type="button" class="krds-btn large secondary">
+                          출력
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //폼그룹 -->
+                </div>
+                <!-- table -->
+                <div class="krds-table-wrap">
+                  <!-- 검색결과 : 리스트 상단 -->
+                  <div class="search-list-top mt-0">
+                    <ul class="sch-info" aria-live="polite">
+                      <li>전체 <span class="point">1</span>개</li>
+                    </ul>
+                  </div>
+                  <!-- //검색 결과 : 리스트 상단 -->
+
+                  <table class="tbl col data center-table mobile no-pointer">
+                    <caption>
+                      인증키 이용 내역에 대한 표
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col" class="text-left">이용일시</th>
+                        <th scope="col" class="text-left">호출(건)</th>
+                        <th scope="col" class="text-left">데이터(건)</th>
+                        <th scope="col">평균응답속도(초)</th>
+                        <th scope="col">호출량(KB)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- 해당 데이터 없을 시 -->
+                      <!-- <tr>
+                        <td colspan="6" class="no-pointer">
+                          <strong>해당 자료가 없습니다.</strong>
+                        </td>
+                      </tr> -->
+                      <!-- //해당 데이터 없을 시 -->
+
+                      <tr>
+                        <td>
+                          <span class="add-head">번호</span>
+                          <span class="tds">1</span>
+                        </td>
+                        <td class="text-left">
+                          <span class="add-head">이용일시</span>
+                          <span class="tds">2025.11.18 11:32:24</span>
+                        </td>
+                        <td class="text-right">
+                          <span class="add-head">호출(건)</span>
+                          <span class="tds">100</span>
+                        </td>
+                        <td class="text-right">
+                          <span class="add-head">데이터(건)</span>
+                          <span class="tds"><a href="#">10,435</a></span>
+                        </td>
+                        <td class="text-right">
+                          <span class="add-head">평균응답속도(초)</span>
+                          <span class="tds">0.4</span>
+                        </td>
+                        <td class="text-right">
+                          <span class="add-head">호출량(KB)</span>
+                          <span class="tds">3,024</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- pagination -->
+                  <div class="pagination-wrap">
+                    <div class="krds-pagination">
+                      <a class="page-navi first disabled" href="#">처음</a>
+                      <a class="page-navi prev" href="#">이전</a>
+                      <div class="page-links">
+                        <a class="page-link" href="#">1</a>
+                        <a class="page-link" href="#">2</a>
+                        <a class="page-link" href="#">3</a>
+                        <a class="page-link active" href="#"
+                          ><span class="sr-only">현재페이지 </span>4</a
+                        >
+                        <a class="page-link" href="#">5</a>
+                        <a class="page-link" href="#">6</a>
+                        <a class="page-link" href="#">7</a>
+                        <a class="page-link" href="#">8</a>
+                        <a class="page-link" href="#">9</a>
+                        <span class="page-link link-dot"></span>
+                        <a class="page-link" href="#">99</a>
+                      </div>
+                      <a class="page-navi next" href="#">다음</a>
+                      <a class="page-navi last" href="#">끝</a>
+                    </div>
+
+                    <!-- 직접 이동 -->
+                    <div class="page-jump-area">
+                      <input
+                        type="number"
+                        min="1"
+                        max="99"
+                        class="krds-input small text-center"
+                      />
+                      <p>/ <span>99</span></p>
+                      <button type="button" class="krds-btn secondary small">
+                        이동
+                      </button>
+                    </div>
+                    <!-- //직접 이동 -->
+                  </div>
+                  <!-- //pagination -->
+                </div>
+                <!-- //table -->
+              </div>
+            </section>
+            <section
+              id="openApiPanel03"
+              role="tabpanel"
+              aria-labelledby="openApiTab03"
+              class="tab-conts"
+            >
+              <h2 class="sr-only">인증키 발급</h2>
+              인증키 발급 관련 내용 수급 예정
+            </section>
+            <section
+              id="openApiPanel04"
+              role="tabpanel"
+              aria-labelledby="openApiTab04"
+              class="tab-conts"
+            >
+              <h2 class="sr-only">Open API 테스트</h2>
+              <div class="section-2">
+                <!-- 검색바 -->
+                <div class="search-top-box">
+                  <div class="sch-filter-box mt-0">
+                    <div class="filter-form">
+                      <!-- 폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-tit m-hide">
+                          <label for="form_delete" class="font-bold"
+                            >API검색</label
+                          >
+                        </div>
+                        <div class="sch-input w-100">
+                          <input
+                            type="text"
+                            class="krds-input"
+                            placeholder="검색어를 입력해주세요"
+                            title="검색어 입력"
+                          />
+                          <button
+                            type="button"
+                            class="krds-btn medium icon ico-search"
+                          >
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-sch"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- //폼그룹 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- // 검색바 -->
+
+                <!-- table -->
+                <div class="krds-table-wrap">
+                  <!-- 검색결과 : 리스트 상단 -->
+                  <div class="search-list-top mt-0">
+                    <ul class="sch-info" aria-live="polite">
+                      <li>검색 결과 <span class="point">24</span>개</li>
+                    </ul>
+                    <ul class="sch-sort">
+                      <li>
+                        <strong class="sort-label"
+                          ><label for="sort">정렬기준</label></strong
+                        >
+                        <div class="w-sort-btn">
+                          <button type="button" class="active">최신순</button>
+                          <button type="button">데이터명순</button>
+                          <button type="button">높은조회순</button>
+                        </div>
+                        <div class="m-sort-btn">
+                          <select class="krds-form-select-sort" id="sort">
+                            <option>최신순</option>
+                            <option>데이터명순</option>
+                            <option>높은조회순</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li class="m-hide">
+                        <strong class="sort-label"
+                          ><label for="search_result_count"
+                            >목록 표시 개수</label
+                          ></strong
+                        >
+                        <select
+                          class="krds-form-select-sort"
+                          id="search_result_count"
+                        >
+                          <option>12개</option>
+                          <option>9개</option>
+                        </select>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- //검색 결과 : 리스트 상단 -->
+
+                  <table class="tbl col data center-table mobile no-pointer">
+                    <caption>
+                      인증키 발급 내역에 대한 표
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col" class="text-left">API명</th>
+                        <th scope="col">선택</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- 해당 데이터 없을 시 -->
+                      <!-- <tr>
+                      <td colspan="6" class="no-pointer">
+                        <strong>해당 자료가 없습니다.</strong>
+                      </td>
+                    </tr> -->
+                      <!-- //해당 데이터 없을 시 -->
+
+                      <tr>
+                        <td>
+                          <span class="add-head">번호</span>
+                          <span class="tds">1</span>
+                        </td>
+                        <td class="text-left">
+                          <span class="add-head">API명</span
+                          ><span class="tds"
+                            >경기도 데이터분석 행정동 분석마트 인구세대 기본
+                            정보</span
+                          >
+                        </td>
+                        <td>
+                          <span class="add-head">선택</span>
+                          <span class="tds justify-center"
+                            ><button
+                              class="align-center open-modal"
+                              data-target="modal_open_api_test"
+                            >
+                              <i class="svg-icon ico-print"></i></button
+                          ></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="add-head">번호</span>
+                          <span class="tds">2</span>
+                        </td>
+                        <td class="text-left">
+                          <span class="add-head">API명</span
+                          ><span class="tds"
+                            >경기도 데이터분석 행정동 분석마트 인구세대 기본
+                            정보</span
+                          >
+                        </td>
+                        <td>
+                          <span class="add-head">선택</span>
+                          <span class="tds justify-center"
+                            ><button
+                              class="align-center open-modal"
+                              data-target="modal_open_api_test"
+                            >
+                              <i class="svg-icon ico-print"></i></button
+                          ></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="add-head">번호</span>
+                          <span class="tds">3</span>
+                        </td>
+                        <td class="text-left">
+                          <span class="add-head">API명</span
+                          ><span class="tds"
+                            >경기도 데이터분석 행정동 분석마트 인구세대 기본
+                            정보</span
+                          >
+                        </td>
+                        <td>
+                          <span class="add-head">선택</span>
+                          <span class="tds justify-center"
+                            ><button class="align-center">
+                              <i class="svg-icon ico-print"></i></button
+                          ></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!-- pagination -->
+                  <div class="pagination-wrap">
+                    <div class="krds-pagination">
+                      <a class="page-navi first disabled" href="#">처음</a>
+                      <a class="page-navi prev" href="#">이전</a>
+                      <div class="page-links">
+                        <a class="page-link" href="#">1</a>
+                        <a class="page-link" href="#">2</a>
+                        <a class="page-link" href="#">3</a>
+                        <a class="page-link active" href="#"
+                          ><span class="sr-only">현재페이지 </span>4</a
+                        >
+                        <a class="page-link" href="#">5</a>
+                        <a class="page-link" href="#">6</a>
+                        <a class="page-link" href="#">7</a>
+                        <a class="page-link" href="#">8</a>
+                        <a class="page-link" href="#">9</a>
+                        <span class="page-link link-dot"></span>
+                        <a class="page-link" href="#">99</a>
+                      </div>
+                      <a class="page-navi next" href="#">다음</a>
+                      <a class="page-navi last" href="#">끝</a>
+                    </div>
+
+                    <!-- 직접 이동 -->
+                    <div class="page-jump-area">
+                      <input
+                        type="number"
+                        min="1"
+                        max="99"
+                        class="krds-input small text-center"
+                      />
+                      <p>/ <span>99</span></p>
+                      <button type="button" class="krds-btn secondary small">
+                        이동
+                      </button>
+                    </div>
+                    <!-- //직접 이동 -->
+                  </div>
+                  <!-- //pagination -->
+                </div>
+                <!-- //table -->
+              </div>
+            </section>
+          </div>
+          <!-- //탭 콘텐츠 -->
+        </div>
+        <!-- //tab -->
+
+        <!-- pagination -->
+        <!-- <div class="pagination-wrap">
+          <div class="krds-pagination">
+            <a class="page-navi first disabled" href="#">처음</a>
+            <a class="page-navi prev" href="#">이전</a>
+            <div class="page-links">
+              <a class="page-link" href="#">1</a>
+              <a class="page-link" href="#">2</a>
+              <a class="page-link" href="#">3</a>
+              <a class="page-link active" href="#"
+                ><span class="sr-only">현재페이지 </span>4</a
+              >
+              <a class="page-link" href="#">5</a>
+              <a class="page-link" href="#">6</a>
+              <a class="page-link" href="#">7</a>
+              <a class="page-link" href="#">8</a>
+              <a class="page-link" href="#">9</a>
+              <span class="page-link link-dot"></span>
+              <a class="page-link" href="#">99</a>
+            </div>
+            <a class="page-navi next" href="#">다음</a>
+            <a class="page-navi last" href="#">끝</a>
+          </div>
+
+          <div class="page-jump-area">
+            <input
+              type="number"
+              min="1"
+              max="99"
+              class="krds-input small text-center"
+            />
+            <p>/ <span>99</span></p>
+            <button type="button" class="krds-btn secondary small">이동</button>
+          </div>
+        </div> -->
+        <!-- //pagination -->
+      </div>
+      <!-- //컨텐츠 영역-->
+    </div>
+  </div>
+</div>
+
+<!-- Open API 테스트 모달 팝업 -->
+<section
+  id="modal_open_api_test"
+  class="krds-modal fade m-bottom-sheet"
+  role="dialog"
+  aria-labelledby="tit_modal_open_api_test"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_modal_open_api_test" class="modal-title">Open API 결과</h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <!-- 폼그룹 -->
+          <div class="form-group auth-row col-6">
+            <div class="form-tit font-normal">
+              <label for="">요청주소</label>
+            </div>
+            <div class="form-conts">
+              <input
+                type="text"
+                class="krds-input"
+                value="https://openapi.gg.go.kr/Mrrgsttuspopltn?"
+              />
+            </div>
+          </div>
+          <!-- //폼그룹 -->
+          <!-- 폼그룹 -->
+          <div class="form-group">
+            <div class="form-tit font-normal">
+              <label for="textarea">내용</label>
+            </div>
+            <div class="form-conts">
+              <div class="textarea-wrap">
+                <textarea class="krds-input" id="textarea">
+<?xml version="1.0" encoding="UTF-8"?>
+<RESULT>
+  <CODE>ERROR-500</CODE>
+  <MESSAGE>서버 오류입니다. 지속적으로 발생시 홈페이지로 문의(Q&amp;A) 바랍니다.</MESSAGE>
+</RESULT>
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <!-- //폼그룹 -->
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          확인
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>
+<!-- //Open API 테스트 모달 팝업 -->

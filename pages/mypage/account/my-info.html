@@ -1,0 +1,263 @@
+<div class="container">
+  <div class="inner in-between">
+    <!-- side navigation -->
+    <nav class="krds-side-navigation">
+      <h2 class="lnb-tit">마이페이지</h2>
+      <!-- lnb-list -->
+      <ul class="lnb-list" role="menubar">
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">마이페이지 홈</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 문의내역</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem"
+            >나의 활용갤러리</a
+          >
+        </li>
+        <li class="lnb-item" role="none">
+          <button
+            type="button"
+            class="lnb-btn lnb-toggle"
+            role="menuitem"
+            aria-controls="lnbmenu-6"
+            aria-expanded="false"
+          >
+            나의 신청관리
+          </button>
+          <!-- lnb-submenu -->
+          <div class="lnb-submenu">
+            <ul id="lnbmenu-6" role="menu">
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >Open API 인증키 발급 관리</a
+                >
+              </li>
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >분석 센터 신청 관리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //lnb-submenu -->
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link active" role="menuitem"
+            >나의 정보관리</a
+          >
+        </li>
+      </ul>
+      <!-- //lnb-list -->
+    </nav>
+    <!-- side navigation -->
+
+    <div class="contents">
+      <!-- breadcrumb -->
+      <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home"><a href="#" class="txt">홈</a></li>
+          <li><a href="#" class="txt on">마이페이지</a></li>
+        </ol>
+      </nav>
+      <!-- breadcrumb -->
+
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">나의 정보관리</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
+
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area">
+        <div class="section-1">
+          <div class="section-4">
+            <h2 class="sec-tit">회원정보</h2>
+
+            <div class="card filled">
+              <!-- def-list-wrap -->
+              <div class="def-list-wrap">
+                <dl class="def-list plain fz-b-large">
+                  <dt>이름</dt>
+                  <dd>홍*동</dd>
+                  <dt>아이디</dt>
+                  <dd>hon***3</dd>
+                  <dt>비밀번호</dt>
+                  <dd>
+                    <button class="krds-btn secondary small">
+                      비밀번호 변경
+                    </button>
+                  </dd>
+                </dl>
+              </div>
+              <!-- //def-list-wrap -->
+            </div>
+          </div>
+
+          <div class="section-4">
+            <h2 class="sec-tit mb-0">간편 로그인 연동 정보</h2>
+            <div class="card outline">
+              <ul class="any-id-list">
+                <li>
+                  <p>카카오로그인</p>
+                  <span>ggdata@kakao.com</span>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_kakao_switch" />
+                    <label for="login_kakao_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>네이버로그인</p>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_naver_switch" checked />
+                    <label for="login_naver_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>구글로그인</p>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_google_switch" checked />
+                    <label for="login_google_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>페이스북로그인</p>
+                  <span>ggdata@kakao.com</span>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_facebook_switch" />
+                    <label for="login_facebook_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>라인로그인</p>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_line_switch" checked />
+                    <label for="login_line_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <p>이메일로그인</p>
+                  <span>ggdata@kakao.com</span>
+                  <div class="krds-form-toggle-switch medium">
+                    <input type="checkbox" id="login_email_switch" />
+                    <label for="login_email_switch"
+                      ><span class="switch-toggle"><i></i></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="justify-between">
+            <h2 class="sec-tit mb-0">회원탈퇴</h2>
+            <button
+              class="krds-btn tertiary btn-mem-del"
+              onclick="navigate('account_delete'); return false;"
+            >
+              회원탈퇴 <i class="svg-icon ico-angle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역-->
+    </div>
+  </div>
+</div>
+
+<!-- 팝업 -->
+<!-- 비밀번호 찾기 - 비밀번호 변경 팝업 -->
+<section
+  id="example_pop"
+  class="krds-modal medium fade m-bottom-sheet"
+  role="dialog"
+  aria-labelledby="tit_example_pop"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_example_pop" class="modal-title">비밀번호 변경</h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <p class="font-bold">새 비밀번호를 입력해 주세요.</p>
+          <fieldset class="section-4">
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <p class="atomic-msg">
+                영문자(대,소문자), 숫자, 특수문자를 포함하여 최소 8자 이상 작성
+                해야 합니다.
+              </p>
+              <div class="form-conts btn-ico-wrap" data-delete="true">
+                <input
+                  type="password"
+                  id="form_delete"
+                  class="krds-input"
+                  placeholder="비밀번호"
+                />
+                <button
+                  type="button"
+                  class="krds-btn medium icon pure btn-delete-input"
+                >
+                  <span class="sr-only">내용 삭제</span>
+                  <i class="svg-icon ico-delete-fill"></i>
+                </button>
+              </div>
+              <p class="form-hint-invalid">비밀번호가 규칙에 맞지 않습니다.</p>
+            </div>
+            <!--// 폼그룹 -->
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-conts btn-ico-wrap" data-delete="true">
+                <input
+                  type="password"
+                  id="form_delete"
+                  class="krds-input"
+                  placeholder="비밀번호 확인"
+                />
+                <button
+                  type="button"
+                  class="krds-btn medium icon pure btn-delete-input"
+                >
+                  <span class="sr-only">내용 삭제</span>
+                  <i class="svg-icon ico-delete-fill"></i>
+                </button>
+              </div>
+              <p class="form-hint-invalid">비밀번호가 동일하지 않습니다.</p>
+            </div>
+            <!-- //폼그룹 -->
+          </fieldset>
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          확인
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>

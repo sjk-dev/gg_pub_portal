@@ -1,0 +1,202 @@
+<div class="container">
+  <div class="inner in-between">
+    <!-- side navigation -->
+    <nav class="krds-side-navigation">
+      <h2 class="lnb-tit">마이페이지</h2>
+      <!-- lnb-list -->
+      <ul class="lnb-list" role="menubar">
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">마이페이지 홈</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link active" role="menuitem"
+            >나의 문의내역</a
+          >
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem"
+            >나의 활용갤러리</a
+          >
+        </li>
+        <li class="lnb-item" role="none">
+          <button
+            type="button"
+            class="lnb-btn lnb-toggle"
+            role="menuitem"
+            aria-controls="lnbmenu-6"
+            aria-expanded="false"
+          >
+            나의 신청관리
+          </button>
+          <!-- lnb-submenu -->
+          <div class="lnb-submenu">
+            <ul id="lnbmenu-6" role="menu">
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >Open API 인증키 발급 관리</a
+                >
+              </li>
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >분석 센터 신청 관리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //lnb-submenu -->
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 정보관리</a>
+        </li>
+      </ul>
+      <!-- //lnb-list -->
+    </nav>
+    <!-- side navigation -->
+
+    <div class="contents">
+      <!-- breadcrumb -->
+      <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home"><a href="#" class="txt">홈</a></li>
+          <li><a href="#" class="txt on">마이페이지</a></li>
+        </ol>
+      </nav>
+      <!-- breadcrumb -->
+
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">나의 문의 내역</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
+
+      <!-- 컨텐츠 영역 -->
+      <div class="section-2 conts-area">
+        <div class="section-4">
+          <div class="justify-between">
+            <h2 class="sec-tit mb-0">문의하기</h2>
+          </div>
+          <div class="card outline">
+            <fieldset class="section-2">
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="">작성자</label>
+                </div>
+                <div class="form-conts">
+                  <input
+                    type="text"
+                    id=""
+                    class="krds-input"
+                    value="홍길동"
+                    readonly
+                  />
+                </div>
+              </div>
+              <!-- //폼그룹 -->
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="select_name"
+                    >분류 <span class="red-point">*</span></label
+                  >
+                </div>
+                <div class="form-conts">
+                  <select
+                    id="select_name"
+                    class="krds-form-select"
+                    title="선택"
+                  >
+                    <option value="">선택해주세요.</option>
+                    <option value="">항목1</option>
+                    <option value="">항목2</option>
+                    <option value="">항목3</option>
+                    <option value="">항목4</option>
+                  </select>
+                </div>
+                <p class="form-hint-invalid">분류를 선택해 주세요.</p>
+              </div>
+              <!-- //폼그룹 -->
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">제목<span class="red-point">*</span></label>
+                </div>
+                <div class="form-conts">
+                  <input
+                    type="text"
+                    id=""
+                    class="krds-input"
+                    placeholder="제목을 입력하세요."
+                  />
+                </div>
+                <p class="form-hint-invalid">제목을 입력해 주세요.</p>
+              </div>
+              <!-- //폼그룹 -->
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="textarea"
+                    >내용<span class="red-point">*</span></label
+                  >
+                </div>
+                <div class="form-conts">
+                  <div class="textarea-wrap">
+                    <textarea
+                      class="krds-input"
+                      placeholder="내용을 입력하세요."
+                      id="textarea"
+                    ></textarea>
+                    <div class="justify-between">
+                      <p class="form-hint-invalid">내용을 입력해 주세요.</p>
+                      <p class="textarea-count">
+                        <span class="count-now">0</span
+                        ><span class="count-total">/1000</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //폼그룹 -->
+            </fieldset>
+          </div>
+        </div>
+
+        <!-- file upload -->
+        <div class="krds-file-upload line">
+          <!-- 파일 업로드 상단 -->
+          <div class="file-head">
+            <h3 class="tit">첨부파일</h3>
+          </div>
+          <!-- //파일 업로드 상단 -->
+
+          <!-- 파일 리스트 영역 -->
+          <div id="fileArea" class="file-list">
+            <div class="upload-item">
+              <input type="file" class="file-input" hidden />
+              <button class="krds-btn secondary">파일선택</button>
+              <input
+                type="text"
+                class="krds-input"
+                value="2025년08월경기도고용동향.zip"
+                readonly
+              />
+              <button class="krds-btn secondary btn-file-add">추가</button>
+            </div>
+          </div>
+          <!-- //파일 리스트 영역 -->
+        </div>
+        <!-- //file upload -->
+      </div>
+      <!-- //컨텐츠 영역-->
+
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column">
+        <button class="krds-btn xlarge tertiary">취소</button>
+        <div class="btn-wrap">
+          <button class="krds-btn xlarge primary">저장</button>
+        </div>
+      </div>
+      <!-- //페이지 버튼 영역 -->
+    </div>
+  </div>
+</div>

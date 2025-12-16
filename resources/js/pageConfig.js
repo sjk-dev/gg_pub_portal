@@ -112,8 +112,32 @@ const pageConfig = {
   mypage: {
     file: "pages/mypage/main.html",
   },
+  // 나의 문의내역
+  qna_list: {
+    file: "pages/mypage/qna/list.html",
+  },
+  qna_detail: {
+    file: "pages/mypage/qna/detail.html",
+  },
+  mypage_qna_write: {
+    file: "pages/mypage/qna/write.html",
+  },
+  // 나의 활용 갤러리
+  gallery: {
+    file: "pages/mypage/gallery/list.html",
+  },
+  gallery_detail: {
+    file: "pages/mypage/gallery/detail.html",
+  },
+  gallery_write: {
+    file: "pages/mypage/gallery/write.html",
+  },
+  // 나의 신청관리
+  open_api: {
+    file: "pages/mypage/open-api/main.html",
+  },
   // 나의 정보관리
-  account_pw_check: {
+  account: {
     file: "pages/mypage/account/pw-check.html",
   },
   account_my_info: {
@@ -121,5 +145,42 @@ const pageConfig = {
   },
   account_delete: {
     file: "pages/mypage/account/account-delete.html",
+  },
+  // 서비스안내
+  // 홍보관
+  promo: {
+    file: "pages/service-info/promo/main.html",
+  },
+  // 갤러리
+  // 분석갤러리
+  anal_list: {
+    file: "pages/service-info/gallery/anal-list.html",
+  },
+  anal_detail: {
+    file: "pages/service-info/gallery/anal-detail.html",
+  },
+  // 활용갤러리
+  use_list: {
+    file: "pages/service-info/gallery/use-list.html",
+  },
+  use_detail: {
+    file: "pages/service-info/gallery/use-detail.html",
+  },
+  use_write: {
+    file: "pages/service-info/gallery/use-write.html",
+  },
+  use_edit: {
+    file: "pages/service-info/gallery/use-edit.html",
+  },
+  // 데이터시각화
+  visual_list: {
+    file: "pages/service-info/gallery/visual-list.html",
+  },
+  visual_detail: {
+    file: "pages/service-info/gallery/visual-detail.html",
+  },
+  // 관련사이트
+  site: {
+    file: "pages/service-info/site.html",
   },
 };

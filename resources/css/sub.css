@@ -374,7 +374,9 @@
   }
 }
 
-/* 마이페이지 */
+/* --------------------------------------------------------------------------
+    마이페이지
+   -------------------------------------------------------------------------- */
 .mypage {
   display: flex;
   justify-content: space-between;
@@ -385,26 +387,42 @@
   width: calc(100% - 24rem - 2.4rem);
   flex: 1;
 }
+.mypage .mypage-left .structured-item .flex-col {
+  min-height: 5rem;
+}
 .mypage .mypage-right {
   width: 24rem;
+  height: auto;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-}
-.mypage .mypage-right .krds-structured-list.type-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: var(--krds-mobile-padding-card-medium);
+}
+.mypage .mypage-left .structured-item {
+  box-shadow:
+  0 0 2px 0 rgba(0, 0, 0, 0.15),
+  0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+.mypage .mypage-right .card {
   flex: 1;
   width: 100%;
-  min-height: 0;
+  height: 100%;
+  min-height: 15rem;
+  padding: 0 !important;
 }
-.mypage .mypage-right .krds-structured-list.type-col .structured-item {
-  width: 24rem;
-  flex: 1 !important;
-  min-height: 0;
+.mypage .mypage-right .card .flex-col {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: var(--krds-gap-5);
+}
+.mypage .mypage-right .card:hover {
+  background-color: var(--krds-color-light-gray-5);
+}
+.mypage .mypage-right .card .txt {
+  font-weight: 700;
+  color: var(--krds-color-light-gray-70);
 }
 .mypage .structured-item .c-date {
   color: var(--krds-color-light-gray-70);
@@ -438,6 +456,76 @@
   display: none;
 }
 
+.svg-icon.ico-mypage-del {
+  width: 5rem;
+  height: 5rem;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-del.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-del.svg);
+}
+.svg-icon.ico-mypage-profile {
+  width: 5rem;
+  height: 5rem;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-profile.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-profile.svg);
+}
+.svg-icon.ico-mypage-sns-login {
+  width: 5rem;
+  height: 5rem;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-sns-login.svg);
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico-mypage-sns-login.svg);
+}
+
+.conts-area .tit-sub {
+  position: relative;
+  font-size: var(--krds-pc-font-size-body-large);
+  margin-left: 1.6rem;
+}
+.conts-area .tit-sub::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1.6rem;
+  top: calc(50% - 1rem);
+  width: 0.1rem;
+  height: 1.6rem;
+  background-color: var(--krds-color-light-gray-40);
+}
+.conts-area .tit-sub .point {
+  color: var(--krds-color-light-primary-60);
+
+}
+
+/* 나의 정보관리 */
+.any-id-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--krds-gap-7);
+  font-size: var(--krds-pc-font-size-body-large);
+}
+.any-id-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.any-id-list p {
+  min-width: 11.8rem;
+  font-weight: 700;
+}
+
+.btn-mem-del .svg-icon.ico-angle {
+  transform: rotate(-90deg) !important;
+}
+
+
 /* 모바일 */ 
 @media (max-width:767px) {
   .mypage {
@@ -453,8 +541,35 @@
   .mypage .mypage-right {
     width: 100%;
   }
-  .mypage .mypage-right .krds-structured-list.type-col,
-  .mypage .mypage-right .krds-structured-list.type-col .structured-item {
-    width: 100%;
+  .conts-area .tit-sub {
+    display: none;
   }
+}
+
+
+/* --------------------------------------------------------------------------
+    service info
+   -------------------------------------------------------------------------- */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 (9/16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px; /* 선택 */
+}
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.toon-wrap {
+  width: 100%;
+  height: auto;
+}
+.toon-wrap img {
+  width: 100%;
 }

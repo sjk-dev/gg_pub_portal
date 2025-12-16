@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- <base href="/gg_pub_portal/" /> -->
     <meta charset="UTF-8" />
     <title>작업용 페이지 리스트</title>
 
@@ -22,6 +23,10 @@
       type="text/css"
       href="./resources/css/pub-list.css"
     />
+
+    <link rel="stylesheet" href="resources/css/plugin/swiper-bundle.min.css" />
+
+    <script src="resources/js/plugin/swiper-bundle.min.js"></script>
     <style>
       table {
         cursor: auto !important;
@@ -95,6 +100,188 @@
                   >
                 </td>
               </tr>
+              <!-- 마이페이지 -->
+              <tr style="border-top: 2px solid #000">
+                <td>마이페이지</td>
+                <td>마이페이지 홈</td>
+                <td>FR-I1000</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/main.html"
+                    data-preview
+                    >main.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 문의내역 목록</td>
+                <td>FR-I2100</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/qna/list.html"
+                    data-preview
+                    >list.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 문의내역 상세</td>
+                <td>FR-I2200</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/qna/detail.html"
+                    data-preview
+                    >detail.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 문의내역 문의</td>
+                <td>FR-I2300</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/qna/write.html"
+                    data-preview
+                    >write.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 문의내역 수정</td>
+                <td>FR-I2400</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/qna/edit.html"
+                    data-preview
+                    >edit.html</a
+                  >
+                </td>
+              </tr>
+
+              <!-- 나의 활용갤러리 -->
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 활용갤러리 목록</td>
+                <td>FR-I3100</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/gallery/list.html"
+                    data-preview
+                    >list.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 활용갤러리 상세</td>
+                <td>FR-I3200</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/gallery/detail.html"
+                    data-preview
+                    >detail.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 활용갤러리 등록</td>
+                <td>FR-I3300</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/gallery/write.html"
+                    data-preview
+                    >write.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 활용갤러리 수정</td>
+                <td>FR-I3400</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/gallery/edit.html"
+                    data-preview
+                    >edit.html</a
+                  >
+                </td>
+              </tr>
+              <!-- //나의 활용갤러리 -->
+              <!-- 나의 신청관리 -->
+              <tr>
+                <td>마이페이지</td>
+                <td>
+                  나의 신청관리 <br />
+                  Open API 인증키 발급 관리
+                </td>
+                <td>FR-I4110</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/open-api/main.html"
+                    data-preview
+                    >main.html</a
+                  >
+                </td>
+              </tr>
+              <!-- //나의 신청관리 -->
+              <!-- 나의 정보관리 -->
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 정보관리 비밀번호 확인</td>
+                <td>FR-I5100</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/account/pw-check.html"
+                    data-preview
+                    >pw-check.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 정보관리 회원 정보</td>
+                <td>FR-I5200</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/account/my-info.html"
+                    data-preview
+                    >my-info.html</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>마이페이지</td>
+                <td>나의 정보관리 회원 정보</td>
+                <td>FR-I5300</td>
+                <td>
+                  <a
+                    class="file-link"
+                    href="pages/mypage/account/account-delete.html"
+                    data-preview
+                    >account-delete.html</a
+                  >
+                </td>
+              </tr>
+              <!-- //나의 정보관리 -->
+              <!-- //마이페이지 -->
+
               <!-- 참여 / 소통 -->
               <tr style="border-top: 2px solid #000">
                 <td>참여·소통</td>
@@ -468,6 +655,30 @@
               krds_modal.init();
               krds_tab.init();
               krds_accordion.init();
+
+              /* swiper */
+              var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+              var swiper2 = new Swiper(".mySwiper2", {
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                  swiper: swiper,
+                },
+              });
             });
         });
       });

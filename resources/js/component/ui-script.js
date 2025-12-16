@@ -2719,3 +2719,81 @@ document.addEventListener("click", function (e) {
     e.target.parentElement.remove();
   }
 });
+
+/* 마이페이지 나의활용갤러리 인증키 행 삽입 */
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("btn-auth-add")) {
+    const row = document.createElement("div");
+    row.classList.add("form-group", "auth-row");
+
+    row.innerHTML = `
+      <div class="form-tit font-normal">
+        <label for="form_delete">인증키</label>
+      </div>
+      <div class="form-conts">
+        <div class="input-group m-column">
+          <input
+            type="text"
+            class="krds-input"
+            placeholder="인증키"
+          />
+          <button class="krds-btn tertiary btn-row-del">
+            삭제
+          </button>
+        </div>
+      </div>
+    `;
+
+    document.querySelector("#keyArea").appendChild(row);
+  }
+
+  if (e.target.classList.contains("btn-row-del")) {
+    const el = e.target.closest(".form-group");
+    if (el) el.remove();
+  }
+});
+
+/* 마이페이지 나의활용갤러리 연결정보 행 삽입 */
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("btn-row-add")) {
+    const row = document.createElement("div");
+    row.classList.add("form-row");
+
+    row.innerHTML = `
+      <div class="form-group auth-row col-6">
+        <div class="form-tit font-normal">
+          <label for="">연결명</label>
+        </div>
+        <div class="form-conts">
+          <input
+            type="text"
+            class="krds-input"
+            placeholder="연결명을 입력해주세요."
+          />
+        </div>
+      </div>
+      <div class="form-group auth-row col-6">
+        <div class="form-tit font-normal">
+          <label for="">URL</label>
+        </div>
+        <div class="form-conts">
+          <input
+            type="text"
+            class="krds-input"
+            placeholder="URL을 입력해주세요."
+          />
+        </div>
+      </div>
+      <div class="flex-col justify-end">
+        <button class="krds-btn tertiary btn-row-del">삭제</button>
+      </div>
+    `;
+
+    document.querySelector("#addArea").appendChild(row);
+  }
+
+  if (e.target.classList.contains("btn-row-del")) {
+    const el = e.target.closest(".form-row");
+    if (el) el.remove();
+  }
+});

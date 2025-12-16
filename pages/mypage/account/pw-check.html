@@ -1,0 +1,148 @@
+<div class="container">
+  <div class="inner in-between">
+    <!-- side navigation -->
+    <nav class="krds-side-navigation">
+      <h2 class="lnb-tit">마이페이지</h2>
+      <!-- lnb-list -->
+      <ul class="lnb-list" role="menubar">
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">마이페이지 홈</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 문의내역</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem"
+            >나의 활용갤러리</a
+          >
+        </li>
+        <li class="lnb-item" role="none">
+          <button
+            type="button"
+            class="lnb-btn lnb-toggle"
+            role="menuitem"
+            aria-controls="lnbmenu-6"
+            aria-expanded="false"
+          >
+            나의 신청관리
+          </button>
+          <!-- lnb-submenu -->
+          <div class="lnb-submenu">
+            <ul id="lnbmenu-6" role="menu">
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >Open API 인증키 발급 관리</a
+                >
+              </li>
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >분석 센터 신청 관리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //lnb-submenu -->
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link active" role="menuitem"
+            >나의 정보관리</a
+          >
+        </li>
+      </ul>
+      <!-- //lnb-list -->
+    </nav>
+    <!-- side navigation -->
+
+    <div class="contents">
+      <!-- breadcrumb -->
+      <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home"><a href="#" class="txt">홈</a></li>
+          <li><a href="#" class="txt on">마이페이지</a></li>
+        </ol>
+      </nav>
+      <!-- breadcrumb -->
+
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">나의 정보관리</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
+
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area">
+        <div class="section-4">
+          <h2 class="sec-tit">비밀번호 확인</h2>
+          <div class="desc">
+            회원정보 보호를 위해 비밀번호를 한 번 더 입력해주세요. <br />
+            SNS로 가입한 회원은 아래 간편 로그인 버튼을 눌러 비밀번호를
+            인증해주세요.
+          </div>
+
+          <div class="card filled">
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-tit lg">
+                <label for="">비밀번호</label>
+              </div>
+              <div class="form-conts">
+                <div class="input-group m-column">
+                  <input
+                    type="password"
+                    id=""
+                    class="krds-input"
+                    placeholder="비밀번호를 입력하세요."
+                  />
+                  <button
+                    type="button"
+                    class="krds-btn large secondary"
+                    onclick="navigate('account_my_info'); return false"
+                  >
+                    확인
+                  </button>
+                </div>
+              </div>
+              <!-- <p class="form-hint info">아이디를 입력해 주세요.</p> -->
+              <p class="form-hint-invalid">비밀번호가 일치하지 않습니다.</p>
+            </div>
+            <!-- //폼그룹 -->
+          </div>
+        </div>
+
+        <div class="divider-wrap">
+          <div class="divider-x"></div>
+        </div>
+
+        <h3 class="sec-tit mb-0">간편 로그인으로 비밀번호 인증하기</h3>
+        <div class="any-id">
+          <ul class="certify-type grid-2">
+            <li>
+              <a href="#" class="login-link naver">네이버로 로그인</a>
+            </li>
+            <li>
+              <a href="#" class="login-link google">구글로 로그인</a>
+            </li>
+            <li>
+              <a href="#" class="login-link kakao">카카오톡으로 로그인</a>
+            </li>
+            <li>
+              <a href="#" class="login-link facebook">페이스북으로 로그인</a>
+            </li>
+            <li>
+              <a href="#" class="login-link line">라인으로 로그인</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="login-link mail btn-open"
+                data-popup="#loginByMailPopup"
+                >메일주소로 로그인</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역-->
+    </div>
+  </div>
+</div>

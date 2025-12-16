@@ -1,0 +1,171 @@
+<div class="container">
+  <div class="inner in-between">
+    <!-- side navigation -->
+    <nav class="krds-side-navigation">
+      <h2 class="lnb-tit">마이페이지</h2>
+      <!-- lnb-list -->
+      <ul class="lnb-list" role="menubar">
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">마이페이지 홈</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem">나의 문의내역</a>
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link" role="menuitem"
+            >나의 활용갤러리</a
+          >
+        </li>
+        <li class="lnb-item" role="none">
+          <button
+            type="button"
+            class="lnb-btn lnb-toggle"
+            role="menuitem"
+            aria-controls="lnbmenu-6"
+            aria-expanded="false"
+          >
+            나의 신청관리
+          </button>
+          <!-- lnb-submenu -->
+          <div class="lnb-submenu">
+            <ul id="lnbmenu-6" role="menu">
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >Open API 인증키 발급 관리</a
+                >
+              </li>
+              <li class="lnb-subitem" role="none">
+                <a href="#" class="lnb-btn lnb-link" role="menuitem"
+                  >분석 센터 신청 관리</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- //lnb-submenu -->
+        </li>
+        <li class="lnb-item" role="none">
+          <a href="#" class="lnb-btn lnb-link active" role="menuitem"
+            >나의 정보관리</a
+          >
+        </li>
+      </ul>
+      <!-- //lnb-list -->
+    </nav>
+    <!-- side navigation -->
+
+    <div class="contents">
+      <!-- breadcrumb -->
+      <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="home"><a href="#" class="txt">홈</a></li>
+          <li><a href="#" class="txt on">마이페이지</a></li>
+        </ol>
+      </nav>
+      <!-- breadcrumb -->
+
+      <!-- 페이지 타이틀 영역 -->
+      <div class="page-title-wrap">
+        <h1 class="h-tit">나의 정보관리</h1>
+      </div>
+      <!-- //페이지 타이틀 영역 -->
+
+      <!-- 컨텐츠 영역 -->
+      <div class="conts-area">
+        <div class="section-1">
+          <div class="section-4">
+            <h2 class="sec-tit">회원탈퇴</h2>
+
+            <div class="card filled pd-24">
+              회원탈퇴를 하면 경기데이터플랫폼의 회원약관 및 개인정보제공·활용에
+              관한 동의가 모두 철회되며, 모든 회원 서비스 및 웹사이트로부터
+              탈퇴됩니다.<br />
+              회원탈퇴를 진행하기 전, 아래 안내사항을 확인해주세요.
+            </div>
+          </div>
+
+          <div class="section-4">
+            <h3 class="sec-tit mb-0 fz-b-large">안내사항</h3>
+            <!-- krds-info-list -->
+            <ul class="krds-info-list decimal">
+              <li>
+                회원탈퇴를 하면 가입 시 입력한 개인정보는 모두 삭제되며, 삭제된
+                데이터는 복구되지 않습니다.
+              </li>
+              <li>
+                내가 작성한 게시글, 수강평 등과 진행한 설문은 삭제되지 않고
+                유지됩니다.
+              </li>
+              <li>
+                삭제를 원하는 항목이 있는 경우, 탈퇴 전 반드시 삭제하시길
+                바랍니다.
+              </li>
+              <li>
+                탈퇴가 완료된 후에는 회원정보가 삭제되기 때문에 본인 여부를
+                확인할 수 없습니다.
+              </li>
+              <li>
+                게시글을 임의로 삭제해드릴 수 없으니 이 점을 반드시 유의해주시길
+                바랍니다.
+              </li>
+            </ul>
+            <!-- //krds-info-list -->
+          </div>
+
+          <div class="section-4 card outline">
+            <h3 class="sec-tit mb-0 fz-b-large">탈퇴 사유</h3>
+            <div class="fieldset">
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <label class="sr-only" for="account_del_reason"
+                  >서비스 탈퇴 사유</label
+                >
+                <p class="atomic-msg">
+                  서비스 탈퇴 사유를 알려주시면, 보다 좋은 서비스 제공을 위해
+                  노력하겠습니다.
+                </p>
+                <div class="form-conts">
+                  <select
+                    id="account_del_reason"
+                    aria-controls="etc-reason"
+                    class="krds-form-select large"
+                  >
+                    <option value="" selected>선택해 주세요.</option>
+                    <option value="">OpenAPI 목적으로 한시적 사용</option>
+                    <option value="">원하는 콘텐츠가 없음</option>
+                    <option value="">콘텐츠 품질 불만족</option>
+                    <option value="">서비스 이용 불편</option>
+                    <option value="">개인정보에 대한 유출 우려</option>
+                    <option value="">자주 사용하지 않음</option>
+                    <option value="">기타</option>
+                  </select>
+                </div>
+                <div id="etc-reason" class="form-group mt-16" hidden>
+                  <label class="sr-only" for="etcText">기타 사유</label>
+                  <div class="form-conts">
+                    <input
+                      type="text"
+                      id="etcText"
+                      class="krds-input"
+                      placeholder="기타(직접입력)"
+                    />
+                  </div>
+                </div>
+                <p class="form-hint-invalid">탈퇴 사유를 입력해 주세요.</p>
+              </div>
+              <!-- //폼그룹 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //컨텐츠 영역-->
+
+      <!-- 페이지 버튼 영역 -->
+      <div class="page-btn-wrap both m-column justify-end">
+        <div class="btn-wrap">
+          <button class="krds-btn xlarge primary">회원탈퇴</button>
+        </div>
+      </div>
+      <!-- //페이지 버튼 영역 -->
+    </div>
+  </div>
+</div>
