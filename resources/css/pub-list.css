@@ -3,7 +3,7 @@ body {
   padding: 20px !important;
   box-sizing: border-box;
 }
-a:hover {
+.pub-table a:hover {
   text-decoration: underline;
 }
 .pub-wrap {
