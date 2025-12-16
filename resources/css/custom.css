@@ -770,7 +770,7 @@ a.btn-txt:hover {
 .page-btn-wrap.both .btn-wrap {
   display: flex;
   align-items: center;
-  gap: var(--krds-pc-gap-layout-button-medium);
+  gap: var(--krds-gap-5);
   width: auto;
 }
 @media (max-width:767px) {
