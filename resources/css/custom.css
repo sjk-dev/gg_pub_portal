@@ -162,17 +162,6 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
   background-color: var(--krds-color-light-gray-20);
 }
 
-/* breadcrumb */
-.krds-breadcrumb-wrap .breadcrumb .home .txt::before {
-  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_bread_home.svg);
-}
-.krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
-  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
-}
-/* sort */
-.krds-form-select-sort {
-  background-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
-}
 
 /* header */
 #krds-masthead img {
@@ -1175,6 +1164,10 @@ textarea.krds-input {
 
 @media (max-width: 767px) {
   .card { padding: 2.4rem !important; }
+  .tab-scroll-wrap .tab-scroll li button {
+    padding: 0 2.8rem !important;
+    box-sizing: border-box;
+  }
 }
 
 /* form */
@@ -1845,9 +1838,274 @@ table.mobile .tds a.link {
   width: 100%;
   height: auto;
 }
+/* footer */
+#krds-footer .foot-quick .inner .link {
+  width: 100% !important;
+}
+
+/* 모바일 푸터 */
+@media (max-width: 767px) {
+  #krds-footer .foot-quick .inner.relation-site ul {
+    width: 100%;
+  }
+
+  #krds-footer .foot-quick .inner.relation-site ul li {
+    width: 100% !important;
+  }
+}
+
+#krds-footer .footer-related {
+  border: 1px solid var(--krds-color-light-gray-20);
+  border-width: 1px 0;
+  background-color: #fff;
+}
+
+#krds-footer .inner.relation-site ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 1.2rem;
+}
+
+#krds-footer .inner.relation-site ul > li {
+  flex-shrink: 0;
+  width: calc((100% - 3.6rem) / 4);
+  margin: 0;
+  padding: 0;
+}
+
+#krds-footer .inner.relation-site ul > li > a {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  text-align: center;
+  border: 1px solid var(--krds-color-light-gray-10);
+  border-radius: 0.8rem;
+}
+
+#krds-footer .inner.relation-site ul > li > a > span {
+  font-size: 17px;
+}
+
+#krds-footer .inner.relation-site ul .btn-related {
+  display: block;
+  width: 100%;
+  height: 5.4rem;
+  margin: 0;
+  padding: 0 5.2rem 0 2.4rem;
+  text-align: left;
+  color: var(--krds-color-light-gray-90);
+  border: 0;
+  background: #fff no-repeat right 2.4rem center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #krds-footer .footer-related .inner-wrap {
+    padding: 0;
+  }
+
+  #krds-footer .inner.relation-site ul {
+    flex-direction: column;
+    gap: 1.2rem 0;
+  }
+
+  #krds-footer .inner.relation-site ul > li {
+    width: 100%;
+    border-width: 1px 0 0 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  #krds-footer .inner.relation-site ul > li:first-child {
+    border-top: 0;
+  }
+
+  #krds-footer .inner.relation-site ul .btn-related {
+    display: block;
+    width: 100%;
+    height: 5.4rem;
+    margin: 0;
+    padding: 0 5.2rem 0 2.4rem;
+    text-align: left;
+    color: var(--krds-color-light-gray-90);
+    border: 0;
+    background: #fff no-repeat right 2.4rem center;
+  }
+}
+
+.relation-layer {
+  display: none;
+  position: absolute;
+  bottom: 6rem;
+  z-index: 10;
+}
+
+.relation-layer .relation-dialog {
+  position: relative;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--krds-color-light-gray-30);
+  box-shadow: 0 16px 24px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+.relation-layer .relation-dialog .relation-header {
+  padding: 0 3.2rem 1.6rem 0;
+}
+
+.relation-layer .relation-dialog .relation-header .relation-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--krds-color-light-gray-90);
+}
+
+.relation-layer .relation-dialog .relation-btn {
+  position: absolute;
+  right: 2.4rem;
+  top: 2.5rem;
+}
+
+.relation-layer.on {
+  display: block;
+}
+
+.relation-layer.relation-modal {
+  left: 0;
+  width: 100%;
+}
+
+.relation-layer.footer-policy {
+  left: 25%;
+  min-width: 45rem;
+  max-width: 79.2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .relation-layer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999991;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .relation-layer.on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .relation-layer .relation-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .relation-layer .relation-wrap .relation-dialog {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    min-height: 19.6rem;
+    margin: 0;
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    background-color: #fff;
+  }
+
+  .relation-layer .relation-wrap .relation-dialog:focus {
+    outline-offset: 0.4rem;
+    outline: 0.2rem solid rgba(255, 255, 255, 0.9);
+  }
+
+  .relation-layer .relation-wrap .relation-dialog .relation-body {
+    overflow: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    max-height: 100%;
+    padding: 0.8rem 0;
+  }
+
+  .relation-layer.relation-modal {
+    left: 0;
+    width: 100%;
+  }
+  .relation-layer.footer-policy {
+    left: 0;
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+.relation-modal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.relation-modal-list > li {
+  width: calc((100% - 3.6rem) / 4);
+}
+
+.relation-modal-list > li a {
+  display: block;
+  width: 100%;
+  line-height: 0;
+  text-align: center;
+  border: 1px solid var(--krds-color-light-gray-10);
+  border-radius: 0.8rem;
+}
+
+.relation-modal-list > li a img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .relation-modal-list > li {
+    width: calc((100% - 1.2rem) / 2);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .relation-modal-list {
+    flex-direction: column;
+    gap: 1.2rem 0;
+  }
+  .relation-modal-list > li {
+    width: 100%;
+  }
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.hidden {
+  display: none !important;
+}
+
 
 /* git 이미지 안나와서 share용에만 추가 */
 .swiper-button-next::after, .swiper-button-prev::after {
   -webkit-mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
   mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
+/* breadcrumb */
+.krds-breadcrumb-wrap .breadcrumb .home .txt::before {
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_bread_home.svg);
+}
+.krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
+/* sort */
+.krds-form-select-sort {
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
 }
