@@ -550,6 +550,37 @@
 /* --------------------------------------------------------------------------
     service info
    -------------------------------------------------------------------------- */
+.img-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-area.bg-gray {
+  background-color: var(--krds-color-light-gray-5);
+}
+.img-area.border {
+  border: 0.1rem solid var(--krds-color-light-gray-30);
+}
+.service-agreement {
+  height: 40rem;
+}
+.service-agreement h4 { 
+  font-size: var(--krds-pc-font-size-heading-small);
+  padding-bottom: var(--krds-padding-6);
+  box-sizing: border-box;
+}
+.service-agreement ol.scroll {
+  height: calc(100% - 5.4rem);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.service-agreement ol.scroll li p {
+  margin-top: 0.8rem !important;
+}
+
+/* 홍보관 */
 .video-wrap {
   position: relative;
   width: 100%;
@@ -572,4 +603,42 @@
 }
 .toon-wrap img {
   width: 100%;
+}
+.tab-btn-wrap {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.tab-btn-wrap.prev {
+  left: 0;
+}
+.tab-btn-wrap.next {
+  right: 0;
+}
+.tab-btn-wrap .wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+}
+.tab-btn-wrap .wrap button {
+  width: fit-content;
+  height: fit-content;
+}
+.square.prev {
+  width: 2rem;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.square.next {
+  width: 2rem;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+.tab-btn-wrap.prev button:focus-visible {
+  position: relative;
+  z-index: 2;
 }

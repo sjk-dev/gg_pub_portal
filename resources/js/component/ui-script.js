@@ -2797,3 +2797,80 @@ document.addEventListener("click", function (e) {
     if (el) el.remove();
   }
 });
+
+/* tab next, prev */
+const tabScroll = {
+  init() {
+    this.scrollWrap = document.querySelector(".tab-scroll");
+    this.btnPrev = document.querySelector(".btn-tab-arrow.prev");
+    this.btnNext = document.querySelector(".btn-tab-arrow.next");
+    this.tablist = document.querySelector(".tablist");
+
+    if (!this.scrollWrap || !this.btnPrev || !this.btnNext || !this.tablist) {
+      return;
+    }
+
+    this.bindEvents();
+    this.updateArrowState();
+  },
+
+  getStep() {
+    return this.scrollWrap.clientWidth;
+  },
+
+  bindEvents() {
+    document.addEventListener("click", this.onClick.bind(this));
+    this.scrollWrap.addEventListener(
+      "scroll",
+      this.updateArrowState.bind(this)
+    );
+    window.addEventListener("resize", this.updateArrowState.bind(this));
+  },
+
+  onClick(e) {
+    const tab = e.target.closest('.tablist [role="tab"]');
+    if (tab && this.tablist.contains(tab)) {
+      tab.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
+      return;
+    }
+
+    const arrowBtn = e.target.closest(".btn-tab-arrow");
+    if (!arrowBtn) return;
+
+    if (arrowBtn.classList.contains("is-disabled")) return;
+
+    requestAnimationFrame(() => {
+      this.scrollWrap.scrollTo({
+        left: arrowBtn.classList.contains("next")
+          ? this.scrollWrap.scrollLeft + this.getStep()
+          : this.scrollWrap.scrollLeft - this.getStep(),
+        behavior: "smooth",
+      });
+    });
+  },
+
+  updateArrowState() {
+    const isPrevDisabled = this.scrollWrap.scrollLeft <= 0;
+    const isNextDisabled =
+      this.scrollWrap.scrollLeft + this.scrollWrap.clientWidth >=
+      this.scrollWrap.scrollWidth;
+
+    this.btnPrev.classList.toggle("is-disabled", isPrevDisabled);
+    this.btnPrev.setAttribute("aria-disabled", isPrevDisabled);
+
+    this.btnNext.classList.toggle("is-disabled", isNextDisabled);
+    this.btnNext.setAttribute("aria-disabled", isNextDisabled);
+  },
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    tabScroll.init();
+  });
+} else {
+  tabScroll.init();
+}

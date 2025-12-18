@@ -1,0 +1,412 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">서비스안내</a></li>
+        <li><a href="#" class="txt on">갤러리</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">데이터시각화</h1>
+      <div class="desc card filled pd-24">
+        다양한 시각화 차트와 인포그래픽으로 데이터를 알기 쉽게 풀어줍니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <!-- tab -->
+      <div class="krds-tab-area layer">
+        <!-- 탭 리스트 -->
+        <div class="tab fill full">
+          <ul role="tablist">
+            <li
+              id="tab01"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tabpanel01"
+              class="active"
+            >
+              <button type="button" class="btn-tab">
+                전체<i class="sr-only">선택됨</i>
+              </button>
+            </li>
+            <li
+              id="tab02"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabpanel02"
+            >
+              <button type="button" class="btn-tab">인포그래픽</button>
+            </li>
+            <li
+              id="tab03"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabpanel03"
+            >
+              <button type="button" class="btn-tab">차트</button>
+            </li>
+          </ul>
+        </div>
+        <!-- //탭 리스트 -->
+
+        <!-- 탭 콘텐츠 -->
+        <div class="tab-conts-wrap">
+          <section
+            id="tabpanel01"
+            role="tabpanel"
+            aria-labelledby="tab01"
+            class="tab-conts active"
+          >
+            <h2 class="sr-only">전체</h2>
+            <!-- 검색결과 : 리스트 상단 -->
+            <div class="search-list-top mt-0">
+              <ul class="sch-info" aria-live="polite">
+                <li>검색 결과 <span class="point">24</span>개</li>
+              </ul>
+              <ul class="sch-sort">
+                <li>
+                  <div>
+                    <select class="krds-form-select-sort" id="sort">
+                      <option>최신순</option>
+                      <option>데이터명순</option>
+                      <option>높은조회순</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <select
+                    class="krds-form-select-sort"
+                    id="search_result_count"
+                  >
+                    <option>10개</option>
+                  </select>
+                </li>
+              </ul>
+            </div>
+            <!-- //검색 결과 : 리스트 상단 -->
+            <!-- table -->
+            <div class="krds-table-wrap">
+              <table class="tbl col data center-table mobile">
+                <caption>
+                  데이터시각화 제공 서비스 목록
+                </caption>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col" class="text-left">분류</th>
+                    <th scope="col" class="text-left">제목</th>
+                    <th scope="col">등록일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 검색 결과 없을 시 -->
+                  <!-- <tr>
+                    <td colspan="6" class="no-pointer">
+                      <strong>검색 결과가 없습니다.</strong>
+                    </td>
+                  </tr> -->
+                  <!-- //검색 결과 없을 시 -->
+
+                  <tr onclick="navigate('visual_detail'); return false">
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">1</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"><a href="#">자동차 등록 현황</a></span>
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">2</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"><a href="#">온실가스 현황</a></span>
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">3</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">남녀학생 통계 현황</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">4</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">차트</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">경기데이터드림 인기 검색어</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">5</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"><a href="#">자동차 등록 현황</a></span>
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">6</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"><a href="#">온실가스 현황</a></span>
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">7</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">남녀학생 통계 현황</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">8</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">차트</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">경기데이터드림 인기 검색어</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">9</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">인포그래픽</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">남녀학생 통계 현황</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="add-head">번호</span>
+                      <span class="tds">10</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">분류</span
+                      ><span class="tds">차트</span>
+                    </td>
+                    <td class="text-left">
+                      <span class="add-head">제목</span>
+                      <span class="tds"
+                        ><a href="#">경기데이터드림 인기 검색어</a></span
+                      >
+                    </td>
+                    <td>
+                      <span class="add-head">등록일</span>
+                      <span class="tds">2025.07.29</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- //table -->
+          </section>
+          <section
+            id="tabpanel02"
+            role="tabpanel"
+            aria-labelledby="tab02"
+            class="tab-conts"
+          >
+            <h2 class="sr-only">인포그래픽</h2>
+            인포그래픽 내용
+          </section>
+          <section
+            id="tabpanel03"
+            role="tabpanel"
+            aria-labelledby="tab03"
+            class="tab-conts"
+          >
+            <h2 class="sr-only">차트</h2>
+            차트 내용
+          </section>
+        </div>
+        <!-- //탭 콘텐츠 -->
+      </div>
+      <!-- //tab -->
+
+      <!-- pagination -->
+      <div class="pagination-wrap">
+        <div class="krds-pagination">
+          <a class="page-navi first disabled" href="#">처음</a>
+          <a class="page-navi prev" href="#">이전</a>
+          <div class="page-links">
+            <a class="page-link" href="#">1</a>
+            <a class="page-link" href="#">2</a>
+            <a class="page-link" href="#">3</a>
+            <a class="page-link active" href="#"
+              ><span class="sr-only">현재페이지 </span>4</a
+            >
+            <a class="page-link" href="#">5</a>
+            <a class="page-link" href="#">6</a>
+            <a class="page-link" href="#">7</a>
+            <a class="page-link" href="#">8</a>
+            <a class="page-link" href="#">9</a>
+            <span class="page-link link-dot"></span>
+            <a class="page-link" href="#">99</a>
+          </div>
+          <a class="page-navi next" href="#">다음</a>
+          <a class="page-navi last" href="#">끝</a>
+        </div>
+
+        <!-- 직접 이동 -->
+        <div class="page-jump-area">
+          <input
+            type="number"
+            min="1"
+            max="99"
+            class="krds-input small text-center"
+          />
+          <p>/ <span>99</span></p>
+          <button type="button" class="krds-btn secondary small">이동</button>
+        </div>
+        <!-- //직접 이동 -->
+      </div>
+      <!-- //pagination -->
+
+      <!-- 하단 검색바 -->
+      <div class="search-top-box">
+        <div class="sch-filter-box">
+          <div class="filter-form">
+            <!-- 폼그룹 -->
+            <div class="form-group">
+              <div class="form-tit m-hide">
+                <label for="form_delete" class="font-bold">검색어</label>
+              </div>
+              <div class="sch-input w-100">
+                <input
+                  type="text"
+                  class="krds-input"
+                  placeholder="검색어를 입력해주세요"
+                  title="검색어 입력"
+                />
+                <button type="button" class="krds-btn medium icon ico-search">
+                  <span class="sr-only">검색</span>
+                  <i class="svg-icon ico-sch"></i>
+                </button>
+              </div>
+            </div>
+            <!-- //폼그룹 -->
+          </div>
+        </div>
+      </div>
+      <!-- //하단 검색바 -->
+    </div>
+    <!-- //컨텐츠 영역-->
+  </div>
+</div>
