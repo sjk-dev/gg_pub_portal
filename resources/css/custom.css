@@ -169,7 +169,10 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
 .krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
   mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
 }
-
+/* sort */
+.krds-form-select-sort {
+  background-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
 
 /* header */
 #krds-masthead img {
@@ -1104,6 +1107,38 @@ textarea.krds-input {
 /* tab */
 .krds-tab-area {
   gap: var(--krds-gap-9);
+}
+.tab-scroll-wrap .tab-scroll li button {
+  padding: 0 4.2rem !important;
+  box-sizing: border-box;
+}
+.tab-scroll-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.tab-scroll {
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  flex: 1;
+}
+
+.tab-scroll ul[role="tablist"] {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.btn-tab-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
 }
 
 /* card */
