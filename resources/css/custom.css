@@ -84,11 +84,14 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
 .mt-80 {
   margin-top: 8rem;
 }
-.mt-24 {
-  margin-top: 2.4rem;
+.mt-64 {
+  margin-top: 6.4rem;
 }
 .mt-40 {
   margin-top: 4rem;
+}
+.mt-24 {
+  margin-top: 2.4rem;
 }
 .mt-16 {
   margin-top: 1.6rem;
@@ -99,7 +102,6 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
 .mb-0 {
   margin-bottom: 0 !important;
 }
-
 .mb-2 {
   margin-bottom: 0.4rem !important;
 }
@@ -1855,7 +1857,7 @@ dd.tag-link a{
   border-bottom-right-radius: 0 !important;
 }
 .accordion-body > div {
-  background-color: #fff !important;
+  background-color: #fff;
   padding: var(--krds-padding-6) var(--krds-padding-8);
 }
 
