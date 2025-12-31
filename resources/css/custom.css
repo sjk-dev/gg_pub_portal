@@ -558,8 +558,6 @@ a.btn-txt:hover {
   }
 }
 
-/* bread crumb */
-.breadcrumb li a.on { background-color: #d6e0eb !important; cursor: auto;}
 
 /* side menu */
 .lnb-btn.active {
@@ -2436,4 +2434,8 @@ dd.tag-link a{
 /* sort */
 .krds-form-select-sort {
   background-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
+}
+
+.krds-accordion .accordion-item .btn-accordion::after {
+  mask-image: url(/gg_pub_portal/resources/img/component/icon/ico_angle.svg);
 }
