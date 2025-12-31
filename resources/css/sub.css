@@ -642,3 +642,481 @@
   position: relative;
   z-index: 2;
 }
+
+
+/* --------------------------------------------------------------------------
+    개방
+   -------------------------------------------------------------------------- */
+/* 데이터셋 */
+.dataset .sch-filter-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--krds-gap-7);
+  align-self: stretch;
+  margin-top: 0;
+}
+.dataset .wrap .btn-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: var(--krds-gap-4);
+  width: fit-content;
+}
+.dataset .wrap .sch-input {
+  width: 100%;
+}
+.dataset .filter-chip {
+  align-items: unset;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-top: none !important;
+}
+.dataset .filter-chip dt {
+  min-height: 4rem;
+}
+.dataset .filter-chip dt button.krds-btn {
+  margin-left: 1.6rem;
+}
+.dataset .filter-chip dd .krds-btn {
+  min-width: 4rem;
+}
+.dataset .ico-refresh {
+  width: 1.6rem !important;
+}
+
+/* 아코디언 */
+.krds-accordion.dataset .accordion-item {
+  border-top: 0;
+  padding-bottom: var(--krds-padding-7);
+}
+.krds-accordion.dataset .accordion-item .accordion-header .btn-accordion {
+  padding-top: 0;
+}
+.krds-accordion.dataset .accordion-item .accordion-header .btn-accordion:after {
+  top: 0;
+}
+.krds-accordion.dataset .accordion-body {
+  padding: var(--krds-padding-10) !important;
+}
+.krds-accordion.dataset .accordion-body .filter-group .form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--krds-gap-7);
+  flex: 1 1 0;
+}
+.krds-accordion.dataset .accordion-body .filter-group .form-group .form-tit {
+  min-width: 14rem !important;
+  margin-bottom: 0;
+}
+.krds-accordion.dataset .accordion-body .krds-form-check label{
+  font-weight: 400;
+}
+.krds-accordion.dataset .accordion-body .form-group .form-tit {
+  width: fit-content !important;
+}
+.krds-accordion.dataset .accordion-body .krds-check-area {
+  flex-wrap: wrap;
+  column-gap: var(--krds-gap-9);
+  row-gap: var(--krds-gap-5);
+}
+.krds-accordion.dataset .btn-accordion {
+  font-size: var(--krds-pc-font-size-heading-medium);
+}
+
+/* 연관데이터셋 아코디언 */
+.krds-accordion.related_dataset .accordion-item{
+  border-top: none;
+}
+.krds-accordion.related_dataset ul {
+  padding: var(--krds-padding-6) 0;
+  background-color: var(--krds-color-light-gray-0);
+}
+.krds-accordion.related_dataset ul li {
+  display: flex;
+  flex-direction: row;
+  gap: var(--krds-gap-5);
+  padding: var(--krds-padding-5) var(--krds-padding-8);
+  border-bottom: 0.1rem solid #DDDDDD;
+}
+.krds-accordion.related_dataset ul li span {
+  color: var(--krds-color-light-gray-70);
+  font-size: var(--krds-pc-font-size-heading-xsmall);
+  font-weight: 700;
+  min-width: 8rem;
+}
+.krds-accordion.related_dataset ul li span::before {
+  content: "•";
+  margin-right: 0.8rem;
+}
+.krds-accordion.related_dataset ul li:last-child {
+  border-bottom: none;
+}
+
+ul.data-info-link li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--krds-padding-6);
+  box-sizing: border-box;
+  border: 1px solid var(--krds-color-light-gray-30);
+  border-radius: 1.2rem;
+  background: #fff;
+}
+ul.data-info-link li button.krds-btn {
+  white-space: nowrap;
+}
+.guide-txt {
+  color: var(--krds-color-light-gray-70);
+  font-size: var(--krds-pc-font-size-body-small);
+  font-weight: 700;
+  word-break: keep-all;
+}
+.guide-txt::before {
+  content: "•";
+}
+
+
+/* 데이터 정보 / 상세검색 */
+.detail-sch-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--krds-gap-5) var(--krds-gap-7);
+}
+.detail-sch-wrap li {
+  display: flex;
+  justify-content: flex-start;
+}
+.detail-sch-wrap li .form-group {
+  align-items: center;
+}
+.detail-sch-wrap li .form-tit {
+  margin-bottom: 0;
+}
+.detail-sch-wrap li .sch-input {
+  width: 100%;
+}
+/* 데이터 정보 / chart */
+.data-info-chart .fieldset {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--krds-gap-7);
+}
+.data-info-chart .form-group {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: var(--krds-gap-4);
+  align-items: center;
+  min-width: 20.8rem;
+  width: auto;
+}
+.data-info-chart .form-group .form-tit {
+  width: fit-content !important;
+  margin-bottom: 0;
+}
+.data-info-chart .form-group select {
+  width: 20.8rem
+}
+
+
+.title-link .tds a {
+  display: flex;
+  flex-direction: column;
+}
+td.type {
+  vertical-align: middle;
+}
+td.type .tds {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center;
+}
+td.type .tds .badge-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 0.4rem;
+}
+td.type .tds .badge-wrap .krds-badge {
+  width: 5.6rem;
+  box-sizing: border-box;
+}
+td.category .tds .krds-badge {
+  width: 6.8rem !important;
+}
+
+/* 팝업 */
+.krds-check-area.grid-col-3 {
+  width: 100%;
+}
+.grid-col-3 .krds-form-check {
+  width: 100%;
+}
+#providing_org_popup .modal-conts {
+  max-height: 53rem;
+  overflow-y: unset;
+}
+#providing_org_popup .modal-conts .conts-area {
+  height: max-content;
+  overflow-y: auto;
+}
+.krds-modal .krds-form-check label {
+  font-weight: 400 !important;
+}
+.krds-modal .modal-dialog .modal-btn.justify-between {
+  justify-content: space-between;
+}
+.krds-modal .modal-dialog .modal-btn.justify-between > .wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--krds-gap-3);
+}
+
+@media (max-width: 767px) {
+  .dataset .wrap {
+    flex-wrap: wrap;
+  }
+  .dataset .wrap .btn-wrap {
+    width: 100% !important;
+  }
+  .dataset .wrap .sch-input {
+    flex: 3 1 0;
+    min-width: 0;
+  }
+  .dataset .wrap .btn-wrap button {
+    flex: 1 1;
+  }
+  .dataset .filter-chip {
+    flex-direction: column;
+  }
+  .dataset .filter-chip dd {
+    flex-direction: column;
+  }
+  /* accordion */
+  .krds-accordion.dataset .accordion-body {
+    padding: var(--krds-padding-8) !important;
+  }
+  .krds-accordion.dataset .accordion-body dt {
+    margin-right: 0;
+    white-space: nowrap;
+  }
+  .krds-accordion.dataset .accordion-body .form-group {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .krds-accordion.dataset .accordion-body .filter-group .form-group .form-tit {
+    margin-bottom: 1.6rem;
+  }
+  .krds-accordion.dataset .fz-h-large {
+    font-size: var(--krds-mobile-font-size-heading-large) !important;
+  }
+
+  /* table */
+  td.type .tds {
+    justify-content: flex-end !important;
+  }
+  
+  .krds-check-area.grid-col-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .krds-modal .modal-dialog .modal-btn.justify-between > .wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .krds-modal .modal-dialog .modal-btn.justify-between > .wrap button {
+    width: 100% !important;
+  }
+
+
+  /* 데이터 정보 / 상세검색 */
+  .detail-sch-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .detail-sch-wrap li .form-group {
+    align-items: start;
+  }
+
+  /* 데이터정보 / chart */
+  .data-info-chart .fieldset {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* 멀티미디어 데이터 */
+.multimedia-list li:not(.no-data):hover {
+  outline: 0.2rem solid var(--krds-color-light-primary-50);
+  outline-offset: -0.1rem !important;
+}
+
+.multimedia-list li .right .c-wrap {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--krds-gap-4);
+}
+.multimedia-list li .right .c-wrap .c-date {
+  position: relative;
+}
+.multimedia-list li .right .c-wrap .c-date::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: calc(50% - 0.8rem);
+  display: block;
+  width: 0.1rem;
+  height: 1.6rem;
+  background-color: var(--krds-color-light-gray-40);
+}
+.multimedia-list li .right .c-wrap .c-date .value {
+  margin-right: 1.2rem;
+}
+.multimedia-list li .left {
+  width: 24rem !important;
+  height: 24rem !important;
+  overflow: hidden;
+}
+.multimedia-list li .in .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.multimedia-list.type-img li .in {
+  grid-template-columns: 24rem 1fr !important;
+}
+
+/* 생애주기 맞춤형 데이터 */
+.data-left-list-mobile {
+  display: none;
+}
+.data-left-list-mobile > button {
+  width: 100%;
+}
+.customdata ul li {
+  position: relative;
+  border: 0.1rem solid var(--krds-color-high-contrast-gray-20);
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.customdata ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--krds-gap-5);
+  width: 100%;
+  padding: var(--krds-padding-6);
+  border-radius: 0.8rem;
+  transition: all 0.1s ease-in-out;
+}
+.customdata ul li a:hover {
+  outline: 0.2rem solid var(--krds-color-light-primary-50);
+}
+.customdata ul li .num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+  background: var(--krds-color-light-secondary-70);
+  color: var(--krds-color-light-gray-0);
+  font-size: var(--krds-pc-font-size-body-xsmall);
+  font-weight: 700;
+}
+.customdata ul li a .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.customdata ul li img {
+  display: inline-block;
+}
+.data-left-list li .num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 2.2rem;
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+  background: var(--krds-color-light-secondary-70);
+  color: var(--krds-color-light-gray-0);
+  font-size: var(--krds-pc-font-size-body-xsmall);
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.data-left-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--krds-gap-3);
+}
+.data-left-list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--krds-gap-2);
+}
+.data-left-list li button {
+  width: 100%;
+  padding: var(--krds-padding-2) var(--krds-padding-3);
+  border-radius: 0.4rem;
+  text-align: left;
+}
+.data-left-list li button:hover {
+  background-color: var(--krds-color-light-secondary-5);
+}
+.data-left-list li button.active {
+  background-color: var(--krds-color-light-secondary-5);
+  font-weight: bold;
+  color: var(--krds-color-light-secondary-80);
+}
+
+/* 우리 지역 데이터 찾기 */
+.city-list .form-group {
+  display: inline-flex !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--krds-gap-5);
+  width: auto !important;
+}
+.city-list .form-group .form-tit {
+  width: auto;
+  margin-bottom: 0;
+}
+.city-list .form-group .krds-form-select {
+  width: 20.8rem !important;
+}
+
+/* 과거 데이터 보기 */
+.data-info-area {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--krds-gap-4);
+  align-items: center;
+}
+.data-info-area .date::before {
+  content: "";
+  position: absolute;
+  top: calc( 50% - 0.8rem );
+  width: 0.1rem;
+  height: 1.6rem;
+  background-color: var(--krds-color-light-gray-40);
+}
+.data-info-area .date span {
+  margin-left: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .data-left-list {
+    display: none;
+  }
+  .data-left-list-mobile {
+    display: block;
+  }
+}

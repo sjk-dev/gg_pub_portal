@@ -1,0 +1,1177 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">개방</a></li>
+        <li><a href="#" class="txt on">데이터</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">데이터셋</h1>
+      <div class="desc card filled pd-24">
+        데이터의 특성을 고려하여 Sheet, Chart, Map, File, Link 서비스와 개발자를
+        위한 Open API 서비스 등 편리하게 데이터를 활용할 수 있도록 다양한
+        방식으로 서비스를 제공합니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <div class="section-2">
+        <!-- 검색 입력폼 -->
+        <div class="search-top-box dataset">
+          <div class="sch-filter-box">
+            <div class="filter-form">
+              <div class="wrap">
+                <div class="sch-input">
+                  <input
+                    type="text"
+                    class="krds-input"
+                    placeholder="검색어를 입력해주세요"
+                    title="검색어 입력"
+                  />
+                  <button type="button" class="krds-btn medium icon ico-search">
+                    <span class="sr-only">검색</span>
+                    <i class="svg-icon ico-sch"></i>
+                  </button>
+                </div>
+                <button class="krds-btn primary">적용하기</button>
+                <div class="btn-wrap">
+                  <button
+                    class="krds-btn secondary"
+                    data-target="providing_org_popup"
+                  >
+                    보유기관
+                  </button>
+                  <button class="krds-btn secondary">인기태그</button>
+                </div>
+              </div>
+            </div>
+            <dl class="filter-chip">
+              <dt>
+                선택된 키워드 <span class="num">2</span>
+
+                <button type="button" class="krds-btn xlarge icon border">
+                  <span class="sr-only">새로고침</span>
+                  <i class="svg-icon ico-refresh"></i>
+                </button>
+              </dt>
+              <dd>
+                <div class="chip-wrap krds-tag-wrap large">
+                  <span class="krds-btn-tag">
+                    유아
+                    <button type="button" class="btn-delete">
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                  <span class="krds-btn-tag">
+                    임신출산
+                    <button type="button" class="btn-delete">
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                  <span class="krds-btn-tag">
+                    아동청소년
+                    <button type="button" class="btn-delete">
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                  <span class="krds-btn-tag">
+                    아동청소년
+                    <button type="button" class="btn-delete">
+                      <span class="sr-only">삭제</span>
+                    </button>
+                  </span>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <!-- //검색 입력폼 -->
+
+        <!-- tab -->
+        <div class="krds-tab-area layer mt-24">
+          <!-- 탭 리스트 -->
+          <div class="tab fill full">
+            <ul role="tablist">
+              <li
+                id="tab01"
+                role="tab"
+                aria-selected="true"
+                aria-controls="tabpanel01"
+                class="active"
+              >
+                <button type="button" class="btn-tab">
+                  전체<i class="sr-only">선택됨</i>
+                </button>
+              </li>
+              <li
+                id="tab02"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel02"
+              >
+                <button type="button" class="btn-tab">일반데이터</button>
+              </li>
+              <li
+                id="tab03"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel03"
+              >
+                <button type="button" class="btn-tab">AI학습데이터</button>
+              </li>
+              <li
+                id="tab04"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tabpanel04"
+              >
+                <button type="button" class="btn-tab">민간공익데이터</button>
+              </li>
+            </ul>
+          </div>
+          <!-- //탭 리스트 -->
+
+          <!-- 탭 콘텐츠 -->
+          <div class="tab-conts-wrap">
+            <section
+              id="tabpanel01"
+              role="tabpanel"
+              aria-labelledby="tab01"
+              class="tab-conts active"
+            >
+              <h3 class="sr-only">전체</h3>
+
+              <div class="section-2">
+                <!-- accordion -->
+                <div class="krds-accordion type-line dataset">
+                  <div class="accordion-item active">
+                    <h3 class="accordion-header">
+                      <button
+                        type="button"
+                        id="detailSearchHeader"
+                        class="btn-accordion active"
+                        aria-controls="detailSearchPanel"
+                        aria-expanded="true"
+                      >
+                        상세검색
+                      </button>
+                    </h3>
+                    <div
+                      id="detailSearchPanel"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="detailSearchHeader"
+                    >
+                      <div class="accordion-body">
+                        <!-- accordion contents -->
+
+                        <fieldset class="filter-group">
+                          <legend>상세검색</legend>
+
+                          <div class="section-4">
+                            <!-- 분류 1 -->
+                            <div
+                              class="form-group"
+                              aria-labelledby="group-sch-01"
+                            >
+                              <div class="form-tit font-bold" id="group-sch-01">
+                                분류 체계
+                              </div>
+                              <div class="form-conts">
+                                <div class="krds-check-area">
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_01"
+                                    />
+                                    <label for="sch_category1_01"
+                                      >공공질서 및 안전</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_02"
+                                    />
+                                    <label for="sch_category1_02"
+                                      >과학기술</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_03"
+                                    />
+                                    <label for="sch_category1_03">교육</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_04"
+                                    />
+                                    <label for="sch_category1_04"
+                                      >교통 및 물류</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_05"
+                                    />
+                                    <label for="sch_category1_05"
+                                      >농림해양수산</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_06"
+                                    />
+                                    <label for="sch_category1_06"
+                                      >문화체육관광</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_07"
+                                    />
+                                    <label for="sch_category1_07">보건</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_08"
+                                    />
+                                    <label for="sch_category1_08"
+                                      >사회복지</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_09"
+                                    />
+                                    <label for="sch_category1_09"
+                                      >산업·통상·중소기업</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_10"
+                                    />
+                                    <label for="sch_category1_10"
+                                      >일반공공행정</label
+                                    >
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category1"
+                                      id="sch_category1_11"
+                                    />
+                                    <label for="sch_category1_11"
+                                      >재정·세제·금융</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- //분류 1 -->
+
+                            <div class="divider-x-light"></div>
+
+                            <!-- 분류 2 -->
+                            <div
+                              class="form-group"
+                              role="group"
+                              aria-labelledby="group-sch-02"
+                            >
+                              <div class="form-tit font-bold" id="group-sch-02">
+                                서비스유형
+                              </div>
+
+                              <div class="form-conts">
+                                <div class="krds-check-area">
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_01"
+                                    />
+                                    <label for="sch_category2_01">Sheet</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_02"
+                                    />
+                                    <label for="sch_category2_02">Chart</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_03"
+                                    />
+                                    <label for="sch_category2_03">Map</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_04"
+                                    />
+                                    <label for="sch_category2_04">File</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_05"
+                                    />
+                                    <label for="sch_category2_05">API</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input
+                                      type="checkbox"
+                                      name="sch_category2"
+                                      id="sch_category2_06"
+                                    />
+                                    <label for="sch_category2_06">Link</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- //분류 2 -->
+                          </div>
+                        </fieldset>
+
+                        <!-- //accordion contents -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //accordion -->
+
+                <div class="section-4">
+                  <!-- table -->
+                  <div class="krds-table-wrap">
+                    <!-- 검색결과 : 리스트 상단 -->
+                    <div class="search-list-top mt-0">
+                      <ul class="sch-info" aria-live="polite">
+                        <li>검색 결과 <span class="point">24</span>개</li>
+                      </ul>
+                      <ul class="sch-sort">
+                        <li>
+                          <div>
+                            <select class="krds-form-select-sort" id="sort">
+                              <option>관련도순</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li>
+                          <select
+                            class="krds-form-select-sort"
+                            id="search_result_count"
+                          >
+                            <option>10개</option>
+                          </select>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //검색 결과 : 리스트 상단 -->
+                    <table class="tbl col data center-table mobile">
+                      <caption>
+                        데이터셋 전체 목록
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">분류</th>
+                          <th scope="col">서비스</th>
+                          <th scope="col">서비스유형</th>
+                          <th scope="col">조회수</th>
+                          <th scope="col">
+                            등록일자 <br />
+                            최종 수정일자
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- 검색 결과 없을 시 -->
+                        <!-- <tr>
+                          <td colspan="6" class="no-pointer">
+                            <strong>검색 결과가 없습니다.</strong>
+                          </td>
+                        </tr> -->
+                        <!-- //검색 결과 없을 시 -->
+
+                        <tr onclick="navigate('dataset_detail'); return false;">
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >과학기술</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >성남시 분당구 병원안심동행서비스
+                                  이용현황</strong
+                                >
+                                <span
+                                  >1인가구병원 안심동행 서비스 이용건수 및
+                                  이용자수</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >농림해양</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계
+                                </strong>
+                                <span
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >교육</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title">지방세 과세현황 </strong>
+                                <span
+                                  >경기도 본청의 연도별 지방세 과세 및 유형별
+                                  부과된 현황을 제공합니다.</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >재정금융</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계
+                                </strong>
+                                <span
+                                  >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >교육</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계
+                                </strong>
+                                <span
+                                  >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >File</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Link</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >교육</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >GH 소프트웨어사업 과업심의위원회 개최 현황
+                                </strong>
+                                <span
+                                  >경기주택도시공사 2021년부터의 소프트웨어
+                                  사업의 과업심의위원회 개최 현황 데이터</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >File</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Link</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >과학기술</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >성남시 분당구 병원안심동행서비스
+                                  이용현황</strong
+                                >
+                                <span
+                                  >1인가구병원 안심동행 서비스 이용건수 및
+                                  이용자수</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >API</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Link</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >산업</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계
+                                </strong>
+                                <span
+                                  >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Map</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >File</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >복지</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title">지방세 과세현황 </strong>
+                                <span
+                                  >경기도 본청의 연도별 지방세 과세 및 유형별
+                                  부과된 현황을 제공합니다.</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Link</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span class="add-head">분류</span>
+                            <span class="tds"
+                              ><span class="krds-badge bg-light-primary"
+                                >보건</span
+                              ></span
+                            >
+                          </td>
+                          <td class="text-left title-link">
+                            <span class="add-head">서비스</span
+                            ><span class="tds"
+                              ><a href="#">
+                                <strong class="title"
+                                  >경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계
+                                </strong>
+                                <span
+                                  >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                                  집계</span
+                                >
+                              </a></span
+                            >
+                          </td>
+                          <td class="type">
+                            <span class="add-head">서비스유형</span>
+                            <span class="tds">
+                              <div class="badge-wrap">
+                                <span class="krds-badge bg-light-secondary"
+                                  >Sheet</span
+                                >
+                                <span class="krds-badge bg-light-secondary"
+                                  >Chart</span
+                                >
+                              </div></span
+                            >
+                          </td>
+                          <td>
+                            <span class="add-head">조회수</span
+                            ><span class="tds">2,157</span>
+                          </td>
+                          <td>
+                            <span class="add-head"
+                              >등록일 <br />최종수정일</span
+                            >
+                            <span class="tds"
+                              >2025.07.29 <br />
+                              2025.09.30
+                            </span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- pagination -->
+                    <div class="pagination-wrap">
+                      <div class="krds-pagination">
+                        <a class="page-navi first disabled" href="#">처음</a>
+                        <a class="page-navi prev" href="#">이전</a>
+                        <div class="page-links">
+                          <a class="page-link" href="#">1</a>
+                          <a class="page-link" href="#">2</a>
+                          <a class="page-link" href="#">3</a>
+                          <a class="page-link active" href="#"
+                            ><span class="sr-only">현재페이지 </span>4</a
+                          >
+                          <a class="page-link" href="#">5</a>
+                          <a class="page-link" href="#">6</a>
+                          <a class="page-link" href="#">7</a>
+                          <a class="page-link" href="#">8</a>
+                          <a class="page-link" href="#">9</a>
+                          <span class="page-link link-dot"></span>
+                          <a class="page-link" href="#">99</a>
+                        </div>
+                        <a class="page-navi next" href="#">다음</a>
+                        <a class="page-navi last" href="#">끝</a>
+                      </div>
+
+                      <!-- 직접 이동 -->
+                      <div class="page-jump-area">
+                        <input
+                          type="number"
+                          min="1"
+                          max="99"
+                          class="krds-input small text-center"
+                        />
+                        <p>/ <span>99</span></p>
+                        <button type="button" class="krds-btn secondary small">
+                          이동
+                        </button>
+                      </div>
+                      <!-- //직접 이동 -->
+                    </div>
+                    <!-- //pagination -->
+                  </div>
+                  <!-- //table -->
+                </div>
+              </div>
+            </section>
+            <section
+              id="tabpanel02"
+              role="tabpanel"
+              aria-labelledby="tab02"
+              class="tab-conts"
+            >
+              <h3 class="sr-only">일반데이터</h3>
+              일반데이터 내용
+            </section>
+            <section
+              id="tabpanel03"
+              role="tabpanel"
+              aria-labelledby="tab03"
+              class="tab-conts"
+            >
+              <h3 class="sr-only">AI학습데이터</h3>
+              AI학습데이터 내용
+            </section>
+            <section
+              id="tabpanel04"
+              role="tabpanel"
+              aria-labelledby="tab04"
+              class="tab-conts"
+            >
+              <h3 class="sr-only">민간공익데이터</h3>
+              민간공익데이터 내용
+            </section>
+          </div>
+          <!-- //탭 콘텐츠 -->
+        </div>
+        <!-- //tab -->
+
+        <!-- 하단 검색바 -->
+        <div class="search-top-box">
+          <div class="sch-filter-box mt-0">
+            <div class="filter-form">
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit m-hide">
+                  <label for="form_delete" class="font-bold">검색어</label>
+                </div>
+                <div class="sch-input w-100">
+                  <input
+                    type="text"
+                    class="krds-input"
+                    placeholder="검색어를 입력해주세요"
+                    title="검색어 입력"
+                  />
+                  <button type="button" class="krds-btn medium icon ico-search">
+                    <span class="sr-only">검색</span>
+                    <i class="svg-icon ico-sch"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- //폼그룹 -->
+            </div>
+          </div>
+        </div>
+        <!-- //하단 검색바 -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  보유기관 모달 팝업
+  인기태그 모달 구조 동일
+-->
+<section
+  id="providing_org_popup"
+  class="krds-modal fade m-bottom-sheet"
+  role="dialog"
+  aria-labelledby="tit_providing_org_popup"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_providing_org_popup" class="modal-title">보유기관</h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <!-- checkbox -->
+          <div class="fieldset">
+            <div class="form-group">
+              <div class="form-conts">
+                <div class="krds-check-area grid-col-3">
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_1" />
+                    <label for="chk_1">KINTEX</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_2" />
+                    <label for="chk_2">건강보험심사평가원</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_3" />
+                    <label for="chk_3">경기관광공사</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_4" />
+                    <label for="chk_4">경기교육청</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_5" />
+                    <label for="chk_1">경기교통공사</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_6" />
+                    <label for="chk_2">경기농식품유통진흥원</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_7" />
+                    <label for="chk_3">경기도</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_8" />
+                    <label for="chk_4">경기도가족여성연구원</label>
+                  </div>
+                  <div class="krds-form-check">
+                    <input type="checkbox" name="chk_1" id="chk_9" />
+                    <label for="chk_4">경기도경제과학진흥원</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //checkbox -->
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap justify-between">
+        <button type="button" class="krds-btn medium tertiary close-modal">
+          취소
+        </button>
+        <div class="wrap">
+          <button type="button" class="krds-btn medium secondary close-modal">
+            초기화
+          </button>
+          <button type="button" class="krds-btn medium primary close-modal">
+            저장
+          </button>
+        </div>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>

@@ -1,0 +1,646 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">개방</a></li>
+        <li><a href="#" class="txt on">데이터</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">멀티미디어 데이터</h1>
+      <div class="desc card filled pd-24">
+        경기도가 보유한 이미지, 동영상 등 멀티미디어 데이터를 제공합니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <div class="section-2">
+        <!-- 상세검색 accordion -->
+        <div class="krds-accordion type-line dataset">
+          <div class="accordion-item active">
+            <h2 class="accordion-header">
+              <button
+                type="button"
+                id="detailSearchHeader"
+                class="btn-accordion active"
+                aria-controls="detailSearchPanel"
+                aria-expanded="true"
+              >
+                상세검색
+              </button>
+            </h2>
+            <div
+              id="detailSearchPanel"
+              class="accordion-collapse collapse"
+              aria-labelledby="detailSearchHeader"
+            >
+              <div class="accordion-body">
+                <!-- accordion contents -->
+
+                <fieldset class="filter-group">
+                  <legend>상세검색</legend>
+
+                  <div class="section-4">
+                    <!-- 분류 1 -->
+                    <div class="form-group" aria-labelledby="group-sch-01">
+                      <div class="form-tit font-bold" id="group-sch-01">
+                        유형선택
+                      </div>
+                      <div class="form-conts">
+                        <div class="krds-check-area">
+                          <div class="krds-form-check">
+                            <input
+                              type="checkbox"
+                              name="sch_category1"
+                              id="sch_category1_01"
+                            />
+                            <label for="sch_category1_01">전체</label>
+                          </div>
+                          <div class="krds-form-check">
+                            <input
+                              type="checkbox"
+                              name="sch_category1"
+                              id="sch_category1_02"
+                            />
+                            <label for="sch_category1_02">동영상</label>
+                          </div>
+                          <div class="krds-form-check">
+                            <input
+                              type="checkbox"
+                              name="sch_category1"
+                              id="sch_category1_03"
+                            />
+                            <label for="sch_category1_03">이미지</label>
+                          </div>
+                          <div class="krds-form-check">
+                            <input
+                              type="checkbox"
+                              name="sch_category1"
+                              id="sch_category1_04"
+                            />
+                            <label for="sch_category1_04">VR/AR</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- //분류 1 -->
+                  </div>
+                </fieldset>
+
+                <!-- //accordion contents -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //상세검색 accordion -->
+
+        <div class="conts-wrap">
+          <!-- 검색결과 : 리스트 상단 -->
+          <div class="search-list-top mt-0">
+            <ul class="sch-info" aria-live="polite">
+              <li>검색 결과 <span class="point">24</span>개</li>
+            </ul>
+            <ul class="sch-sort">
+              <li>
+                <div>
+                  <select class="krds-form-select-sort" id="sort">
+                    <option>관련도순</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <select class="krds-form-select-sort" id="search_result_count">
+                  <option>10개</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <!-- //검색 결과 : 리스트 상단 -->
+
+          <!-- 구조화 목록 -->
+          <ul class="krds-structured-list multimedia-list type-img type-full">
+            <!-- 데이터 없을 때 -->
+            <li class="structured-item no-data">
+              <span>등록하신 게시물이 없습니다.</span>
+            </li>
+            <!-- //데이터 없을 때 -->
+
+            <li
+              class="structured-item"
+              onclick="navigate('multimedia_detail'); return false;"
+            >
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+            <li class="structured-item">
+              <div class="in">
+                <div class="left">
+                  <img
+                    src="/gg_pub_portal/resources/img/bg/dummy-image.svg"
+                    alt="이미지 정보 설명"
+                  />
+                </div>
+
+                <!-- right -->
+                <div class="right">
+                  <div class="card-top mb-16">
+                    <span class="krds-badge bg-light-primary">이미지</span>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="c-text">
+                      <p class="c-tit">
+                        <span class="span"
+                          >노동없는 미래를 대비한 데이터 배당의 가치</span
+                        >
+                      </p>
+                      <p class="c-txt no-ellipsis">
+                        미래 일자리에 대한 논점은 기술변화가 노동력을 덜 필요로
+                        하는 경제를 창출할 것 2. 데이터 배당을 통해 데이터 추출
+                        수익금을 공정하게 재분재하는 것이야말로 활기찬 경제와
+                        번영하는 사회를 보장하는 중요한 방법이 될 것
+                      </p>
+                      <div class="c-wrap">
+                        <p class="c-date">
+                          <strong class="key">개방일</strong>
+                          <span class="value">2025.12.16</span>
+                        </p>
+                        <p class="c-count">
+                          <strong class="key">조회수</strong>
+                          <span class="value">395</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- //right -->
+              </div>
+            </li>
+          </ul>
+          <!-- 구조화 목록 -->
+
+          <!-- pagination -->
+          <div class="pagination-wrap">
+            <div class="krds-pagination">
+              <a class="page-navi first disabled" href="#">처음</a>
+              <a class="page-navi prev" href="#">이전</a>
+              <div class="page-links">
+                <a class="page-link" href="#">1</a>
+                <a class="page-link" href="#">2</a>
+                <a class="page-link" href="#">3</a>
+                <a class="page-link active" href="#"
+                  ><span class="sr-only">현재페이지 </span>4</a
+                >
+                <a class="page-link" href="#">5</a>
+                <a class="page-link" href="#">6</a>
+                <a class="page-link" href="#">7</a>
+                <a class="page-link" href="#">8</a>
+                <a class="page-link" href="#">9</a>
+                <span class="page-link link-dot"></span>
+                <a class="page-link" href="#">99</a>
+              </div>
+              <a class="page-navi next" href="#">다음</a>
+              <a class="page-navi last" href="#">끝</a>
+            </div>
+
+            <!-- 직접 이동 -->
+            <div class="page-jump-area">
+              <input
+                type="number"
+                min="1"
+                max="99"
+                class="krds-input small text-center"
+              />
+              <p>/ <span>99</span></p>
+              <button type="button" class="krds-btn secondary small">
+                이동
+              </button>
+            </div>
+            <!-- //직접 이동 -->
+          </div>
+          <!-- //pagination -->
+
+          <!-- 하단 검색바 -->
+          <div class="search-top-box">
+            <div class="sch-filter-box">
+              <div class="filter-form">
+                <!-- 폼그룹 -->
+                <div class="form-group">
+                  <div class="form-tit m-hide">
+                    <label for="form_delete" class="font-bold">검색어</label>
+                  </div>
+                  <div class="sch-input w-100">
+                    <input
+                      type="text"
+                      class="krds-input"
+                      placeholder="검색어를 입력해주세요"
+                      title="검색어 입력"
+                    />
+                    <button
+                      type="button"
+                      class="krds-btn medium icon ico-search"
+                    >
+                      <span class="sr-only">검색</span>
+                      <i class="svg-icon ico-sch"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- //폼그룹 -->
+              </div>
+            </div>
+          </div>
+          <!-- //하단 검색바 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

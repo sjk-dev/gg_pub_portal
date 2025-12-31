@@ -1,0 +1,644 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">개방</a></li>
+        <li><a href="#" class="txt on">맞춤형 데이터</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">과거 데이터 보기</h1>
+      <div class="desc card filled pd-24">
+        데이터셋의 변경된 이력을 저장하여 특정 시점의 상세 데이터를 확인할 수
+        있도록 제공합니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area mobile">
+      <div class="section-2">
+        <div class="conts-wrap">
+          <!-- 검색결과 : 리스트 상단 -->
+          <div class="search-list-top mt-0">
+            <ul class="sch-info" aria-live="polite">
+              <li>검색 결과 <span class="point">1,998</span>개</li>
+            </ul>
+            <ul class="sch-sort">
+              <li>
+                <div>
+                  <select class="krds-form-select-sort" id="sort">
+                    <option>관련도순</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <select class="krds-form-select-sort" id="search_result_count">
+                  <option>10개</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <!-- //검색 결과 : 리스트 상단 -->
+
+          <!-- table -->
+          <div class="krds-table-wrap">
+            <table class="tbl col data center-table mobile">
+              <caption>
+                과거 데이터 보기 - 서비스,이력/적재건수,최근이력/적재일자,분류
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">분류</th>
+                  <th scope="col">서비스</th>
+                  <th scope="col">조회수</th>
+                  <th scope="col">
+                    등록일자 <br />
+                    최종 수정일자
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 검색 결과 없을 시 -->
+                <!-- <tr>
+                          <td colspan="6" class="no-pointer">
+                            <strong>검색 결과가 없습니다.</strong>
+                          </td>
+                        </tr> -->
+                <!-- //검색 결과 없을 시 -->
+
+                <tr onclick="navigate('pastdata_detail'); return false;">
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >과학기술</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >성남시 분당구 병원안심동행서비스 이용현황</strong
+                        >
+                        <span
+                          >1인가구병원 안심동행 서비스 이용건수 및
+                          이용자수</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >농림해양</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원 집계
+                        </strong>
+                        <span
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원
+                          집계</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >교육</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title">지방세 과세현황 </strong>
+                        <span
+                          >경기도 본청의 연도별 지방세 과세 및 유형별 부과된
+                          현황을 제공합니다.</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >재정금융</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원 집계
+                        </strong>
+                        <span
+                          >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                          집계</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >교육</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원 집계
+                        </strong>
+                        <span
+                          >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                          집계</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >교육</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >GH 소프트웨어사업 과업심의위원회 개최 현황
+                        </strong>
+                        <span
+                          >경기주택도시공사 2021년부터의 소프트웨어 사업의
+                          과업심의위원회 개최 현황 데이터</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >과학기술</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >성남시 분당구 병원안심동행서비스 이용현황</strong
+                        >
+                        <span
+                          >1인가구병원 안심동행 서비스 이용건수 및
+                          이용자수</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >산업</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원 집계
+                        </strong>
+                        <span
+                          >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                          집계</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >복지</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title">지방세 과세현황 </strong>
+                        <span
+                          >경기도 본청의 연도별 지방세 과세 및 유형별 부과된
+                          현황을 제공합니다.</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="add-head">분류</span>
+                    <span class="tds"
+                      ><span class="krds-badge bg-light-primary"
+                        >보건</span
+                      ></span
+                    >
+                  </td>
+                  <td class="text-left title-link">
+                    <span class="add-head">서비스</span
+                    ><span class="tds"
+                      ><a href="#">
+                        <strong class="title"
+                          >경기도 성남시 분당구 정류소 별 승.하자 인원 집계
+                        </strong>
+                        <span
+                          >1경기도 성남시 분당구 정류소 별 승.하자 인원
+                          집계</span
+                        >
+                      </a></span
+                    >
+                  </td>
+                  <td>
+                    <span class="add-head">조회수</span
+                    ><span class="tds">2,157</span>
+                  </td>
+                  <td>
+                    <span class="add-head">등록일 <br />최종수정일</span>
+                    <span class="tds"
+                      >2025.07.29 <br />
+                      2025.09.30
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+
+          <!-- pagination -->
+          <div class="pagination-wrap">
+            <div class="krds-pagination">
+              <a class="page-navi first disabled" href="#">처음</a>
+              <a class="page-navi prev" href="#">이전</a>
+              <div class="page-links">
+                <a class="page-link" href="#">1</a>
+                <a class="page-link" href="#">2</a>
+                <a class="page-link" href="#">3</a>
+                <a class="page-link active" href="#"
+                  ><span class="sr-only">현재페이지 </span>4</a
+                >
+                <a class="page-link" href="#">5</a>
+                <a class="page-link" href="#">6</a>
+                <a class="page-link" href="#">7</a>
+                <a class="page-link" href="#">8</a>
+                <a class="page-link" href="#">9</a>
+                <span class="page-link link-dot"></span>
+                <a class="page-link" href="#">99</a>
+              </div>
+              <a class="page-navi next" href="#">다음</a>
+              <a class="page-navi last" href="#">끝</a>
+            </div>
+
+            <!-- 직접 이동 -->
+            <div class="page-jump-area">
+              <input
+                type="number"
+                min="1"
+                max="99"
+                class="krds-input small text-center"
+              />
+              <p>/ <span>99</span></p>
+              <button type="button" class="krds-btn secondary small">
+                이동
+              </button>
+            </div>
+            <!-- //직접 이동 -->
+          </div>
+          <!-- //pagination -->
+
+          <!-- 하단 검색바 -->
+          <div class="search-top-box">
+            <div class="sch-filter-box">
+              <div class="filter-form">
+                <!-- 폼그룹 -->
+                <div class="form-group">
+                  <div class="form-tit m-hide">
+                    <label for="form_delete" class="font-bold">검색어</label>
+                  </div>
+                  <div class="sch-input w-100">
+                    <input
+                      type="text"
+                      class="krds-input"
+                      placeholder="검색어를 입력해주세요"
+                      title="검색어 입력"
+                    />
+                    <button
+                      type="button"
+                      class="krds-btn medium icon ico-search"
+                    >
+                      <span class="sr-only">검색</span>
+                      <i class="svg-icon ico-sch"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- //폼그룹 -->
+              </div>
+            </div>
+          </div>
+          <!-- //하단 검색바 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 선택된 데이터 이력 목록 팝업 -->
+<section
+  id="statusHistory"
+  class="krds-modal fade m-bottom-sheet"
+  role="dialog"
+  aria-labelledby="tit_statusHistory"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_statusHistory" class="modal-title">
+          의료기기 판매(임대)업체 현황 이력
+        </h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <!-- table -->
+          <div class="krds-table-wrap overflow-x-unset">
+            <table class="tbl col data center-table">
+              <caption>
+                <!-- 선택된 데이터 셋 title 이력 목록 -->
+                의료기기 판매(임대)업체 현황 이력 목록
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">이력일자</th>
+                  <th scope="col">정보항목수</th>
+                  <th scope="col">데이터건수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- 검색 결과 없을 시 -->
+                <!-- <tr>
+                          <td colspan="6" class="no-pointer">
+                            <strong>검색 결과가 없습니다.</strong>
+                          </td>
+                        </tr> -->
+                <!-- //검색 결과 없을 시 -->
+
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+                <tr>
+                  <td>2024.06.07</td>
+                  <td>6</td>
+                  <td class="text-right">359,226</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap justify-between"></div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>

@@ -1,0 +1,157 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">개방</a></li>
+        <li><a href="#" class="txt">Open API</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">인증키발급</h1>
+      <div class="desc card filled pd-24">
+        Open API 호출 건 당 최대 1,000건 이상을 요청 할 수 없습니다. 데이터의 총
+        건수가 1,000건 이상일 경우 나누어 호출 하시기 바랍니다. 발급 받은
+        인증키를 활용하여 만들어진 서비스 등은 활용갤러리에 등록하여 홍보하실 수
+        있습니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <div class="section-2">
+        <h2>Open API 인증키 이용 안내</h2>
+        <div class="section-4">
+          <h3>Open API 서비스의 제한</h3>
+          <ol class="krds-info-list ordered">
+            <li>
+              <span class="num">1. </span>경기도는 특정 Open API 서비스의 범위를
+              제한하거나 별도의 이용가능 시간 또는 이용가능 횟수를 지정할 수
+              있으며, 관련 법률 개정으로 인해 Open API 서비스 제공 대상이
+              변경되어 더 이상 활용을 할 수 없을 경우, 서비스 활용으로 인해
+              제공기관의 업무에 지장을 초래하거나 인프라 성능 등의 이유로 서비스
+              제공 상의 성능 문제가 발생한 경우 활용을 제한할 수 있습니다. 이
+              경우 이를 회원에게 사전에 고지하여야 합니다.
+            </li>
+            <li>
+              <span class="num">2. </span>경기도는 회원이 Open API 서비스를
+              이용함에 있어 법령을 위반하거나 약관 또는 서비스 이용기준 등을
+              위반한 경우, 제공된 정보를 임의로 위조·변조하여 저작권을 위반하는
+              경우에는 제 1항의 규정에도 불구하고 즉시 인증 Key의 이용을
+              정지하는 등의 조치를 취할 수 있습니다.
+            </li>
+            <li>
+              <span class="num">3. </span>경기도는 회원이 Open API 서비스에 대한
+              불법적인 해킹 시도, 비정상적인 방식을 통한 오남용 시도, 네트워크
+              사용 초과 등의 시도를 하는 경우 제 1항의 규정에도 불구하고 즉시
+              인증 Key의 사용을 정지시킬 수 있습니다.
+            </li>
+            <li>
+              <span class="num">4. </span>경기도는 회원이 Open API 서비스를
+              활용함에 있어, 일정량 이상의 트래픽을 유발하는 경우, Open API
+              활용사례 등록을 강제화 할 수 있습니다. 이러한 규정에도 불구하고,
+              활용사례를 등록하지 않을 경우 해당 인증 Key의 사용을 제한할 수
+              있습니다.
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-4 mt-24">
+          <h3>인증 Key의 이용 및 관리</h3>
+          <ol class="krds-info-list ordered">
+            <li>
+              <span class="num">1. </span>회원은 발급 받은 인증 Key를 타인에게
+              제공·공개하거나 공유할 수 없으며, 발급 받은 회원 본인에 한하여
+              이를 사용할 수 있습니다.
+            </li>
+            <li>
+              <span class="num">2. </span>경기도는 인증 Key를 발급함에 있어
+              이용기간을 지정할 수 있으며, 이용기간을 변경하고자 하는 경우에는
+              사전에 이를 고지하여야 합니다.
+            </li>
+          </ol>
+
+          <div class="card outline">
+            <fieldset class="section-4">
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for="">활용용도<span class="red-point">*</span></label>
+                </div>
+                <div class="form-conts">
+                  <select class="krds-form-select large">
+                    <option value="">선택하세요.</option>
+                    <option value="">항목</option>
+                    <option value="">항목</option>
+                  </select>
+                </div>
+                <p class="form-hint-invalid">활용용도를 선택해 주세요.</p>
+              </div>
+              <!-- //폼그룹 -->
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit lg">
+                  <label for=""
+                    >활용(사용)URL<span class="red-point">*</span></label
+                  >
+                </div>
+                <div class="form-conts">
+                  <input
+                    type="text"
+                    id=""
+                    class="krds-input"
+                    placeholder="활용(사용)URL을 입력하세요."
+                  />
+                </div>
+                <p class="form-hint-invalid">활용(사용)URL을 입력해 주세요.</p>
+              </div>
+              <!-- //폼그룹 -->
+
+              <!-- 폼그룹 -->
+              <div class="form-group">
+                <div class="form-tit">
+                  <label for="textarea"
+                    >내용 <span class="red-point">*</span></label
+                  >
+                </div>
+                <div class="form-conts">
+                  <div class="textarea-wrap">
+                    <div class="textarea-bd">
+                      <textarea
+                        class="krds-input"
+                        placeholder="내용을 입력하세요."
+                        id="textarea"
+                      ></textarea>
+                    </div>
+                    <div class="justify-between">
+                      <p class="form-hint-invalid">내용을 입력해 주세요.</p>
+                      <p class="textarea-count">
+                        <span class="count-now">0</span
+                        ><span class="count-total">/1000</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //폼그룹 -->
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //컨텐츠 영역 -->
+
+    <!-- 페이지 버튼 영역 -->
+    <div class="page-btn-wrap both m-column justify-end">
+      <div class="btn-wrap">
+        <button class="krds-btn xlarge primary">인증키 발급 요청</button>
+      </div>
+    </div>
+    <!-- //페이지 버튼 영역 -->
+  </div>
+</div>

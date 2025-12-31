@@ -1,0 +1,158 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">개방</a></li>
+        <li><a href="#" class="txt">Open API</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">Open API 사용방법</h1>
+      <div class="desc card filled pd-24">
+        경기도가 보유한 정보 중 민간 수요가 많은 공공데이터를 Open API로
+        개발하여, 개발자가 스마트기기의 모바일 앱 등으로 개발이 용이하도록
+        제공합니다.
+      </div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <div class="section-2">
+        <div class="section-4">
+          <h2>1. 사용 할 Open API 정하기</h2>
+
+          <div>
+            경기데이터플랫폼을 검색합니다. Open API로 이용할 공공데이터를
+            찾습니다.
+          </div>
+        </div>
+
+        <div class="section-4 mt-24">
+          <h2>2. 명세서를 다운로드 받습니다.</h2>
+          <div>
+            명세서에는 Open API를 사용하기 위한 설명이 포함되어 있습니다.
+          </div>
+          <div class="img-area border pd-y-40">
+            <img
+              src="/resources/img/content/open_api_guide_1.png"
+              alt="명세서 다운로드에 대한 설명 그림"
+            />
+          </div>
+          <ol class="krds-info-list ordered">
+            <li>
+              <span class="num">1. </span>요청제한횟수 : 경기데이터플랫폼은
+              OpenAPI요청 횟수에 제한을 두고있지 않습니다.
+            </li>
+            <li>
+              <span class="num">2. </span>기본인자 : Key(인증키), Type(xml, json
+              중 선택/ 기본값 : xml) 등 API를 호출하기 위한 기본인자 입니다.
+            </li>
+            <li>
+              <span class="num">3. </span>요청인자 : 데이터셋의 특정데이터만
+              호출하기 위한 인자들 입니다. 예를들어 요청인자에
+              시군코드(SIGUN_CD) 입력시 해당 시군만 호출됩니다.
+            </li>
+            <li>
+              <span class="num">4. </span>출력값 : API호출로 출력되는 데이터셋의
+              항목의 나열로, 출력 항목명과 항목에 대한 설명을 확인 가능 합니다.
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-4 mt-24">
+          <h2>3. 인증키 발급</h2>
+          <div>
+            경기데이터플랫폼에서 제공하는 Open API는 RESTful 방식의 웹서비스
+            입니다. RESTful 웹서비스는 HTTP를 사용하는 웹기반 인터페이스로 GET
+            또는 POST 방식의 URI를 통해 서비스 되기에 파라미터의 값을 URL에
+            표기하여 페이지를 로딩합니다. 인증키를 발급 받기 위해서는 로그인을
+            하셔야 합니다.
+          </div>
+          <div class="img-area border pd-40">
+            <img
+              src="/gg_pub_portal/resources/img/content/open_api_guide_2.png"
+              alt="인증키 발급에 대한 설명 그림"
+            />
+          </div>
+
+          <ol class="krds-info-list ordered">
+            <li><span class="num">1. </span>활용용도를 입력합니다.</li>
+            <li><span class="num">2. </span>활용(사용)URL을 입력합니다.</li>
+            <li><span class="num">3. </span>내용을 입력합니다.</li>
+            <li>
+              <span class="num">4. </span>인증키 발급 요청을 클릭하면 자동으로
+              인증키가 발급됩니다.
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-4 mt-24">
+          <h2>4. URL 등록</h2>
+          <div class="img-area border pd-y-40">
+            <img
+              src="/gg_pub_portal/resources/img/content/open_api_guide_3.png"
+              alt="URL 등록에 대한 설명 그림"
+            />
+          </div>
+
+          <ol class="krds-info-list ordered">
+            <li>
+              <span class="num">1. </span>Open API URL : 경기데이터플랫폼의 Open
+              API 주소는 https://openapi.gg.go.kr 입니다.
+            </li>
+            <li>
+              <span class="num">2. </span>Open API 명 : 경기데이터플랫폼의 Open
+              API 서비스는 고유명을 가지고 있습니다. 다운로드 받으신 명세표에
+              요청 주소가 표기되어 있습니다.
+            </li>
+            <li>
+              <span class="num">3. </span>기본인자 : 기본인자를 생략하면
+              명세표의 기본값으로 결과를 표기합니다. 인증키(KEY)는 발급을 받으신
+              후 발급 받은 인증키를 추가하여야 합니다. 만약 인증키가 없다면
+              기본값은 sample로 처리되어 5건 만 출력되므로 반드시 인증키를
+              입력하셔야 합니다. 호출문서(Type)은 xml 이나 json 등 출력하고자
+              하는 타입의 형태를 지정합니다. 기본값은 xml입니다. 페이지
+              위치(pIndex)는 출력하고자 하는 페이지 입니다. 데이터 수가 많은
+              경우에는 페이지 위치를 증가시키면서 여러 번에 나누어 호출하셔야
+              합니다. 페이지당 요청숫자(pSize)는 한 페이지에 출력될 건수입니다.
+              경기데이터드림은 1회 요청에 최대 1,000건 까지 데이터를 제공하므로
+              1~1,000 범위로 지정되어야 합니다.
+            </li>
+            <li>
+              <span class="num">4. </span>요청인자 : 경기데이터플랫폼의 각
+              서비스 별로 별도로 지정한 인자 값 입니다. 이 요청인자는 요청인자가
+              제공되는 서비스만 가능합니다. 예를 들어 구리시의 데이터만
+              검색하고자 한다면 요청인자(SIGUN_CD)의 값을 “41310”으로 지정하여
+              URL을 요청하면 구리시의 내용만 Open API에 제공됩니다.
+            </li>
+          </ol>
+        </div>
+
+        <div class="section-4 mt-24">
+          <h2>5. APP에서 Open API 요청</h2>
+          <div>
+            이제 Open API를 활용하여 새로운 App을 개발하였습니다. 개발 된
+            App에서 요청한 데이터가 여러분께서 만든 앱의 내용에 표시됩니다.
+          </div>
+          <div class="img-area border pd-y-40">
+            <img
+              src="/gg_pub_portal/resources/img/content/open_api_guide_4.png"
+              alt="APP에서 Open API 요청에 대한 설명 그림"
+            />
+          </div>
+          <div>
+            Open API를 활용하여 만든 App이나 서비스는 경기데이터플랫폼의
+            활용갤러리에 등록하여 홍보하실 수 있습니다.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //컨텐츠 영역 -->
+  </div>
+</div>
