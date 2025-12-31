@@ -13,6 +13,9 @@ h3 { font-size: var(--krds-pc-font-size-heading-medium); } /* 2.4rem */
 .bg-white {
   background-color: #fff;
 }
+.bg-clear {
+  background-color: transparent !important;
+}
 
 /* flex */
 .flex {
@@ -1852,7 +1855,7 @@ dd.tag-link a{
   border-bottom-right-radius: 0 !important;
 }
 .accordion-body > div {
-  background-color: #fff;
+  background-color: #fff !important;
   padding: var(--krds-padding-6) var(--krds-padding-8);
 }
 
