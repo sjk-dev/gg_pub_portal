@@ -795,6 +795,7 @@ ul.data-info-link li button.krds-btn {
 .detail-sch-wrap li .sch-input {
   width: 100%;
 }
+
 /* 데이터 정보 / chart */
 .data-info-chart .fieldset {
   display: flex;
@@ -1118,5 +1119,321 @@ td.category .tds .krds-badge {
   }
   .data-left-list-mobile {
     display: block;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+    통계
+   -------------------------------------------------------------------------- */
+/* 경기도바로알기 */
+.ggday-list .txt {
+  display: flex;
+  justify-content: center;
+  font-size: var(--krds-pc-font-size-heading-small);
+  font-weight: 700;
+}
+.ggday-list .card-top p {
+  color: var(--krds-color-light-gray-40);
+}
+.ggday-list .txt .num {
+  color: var(--krds-color-light-primary-60);
+}
+.tab-month .tab {
+  width: 100%;
+}
+.tab-month .tablist {
+  overflow-x: auto !important;
+}
+.tab-month .tablist li button{
+  min-width: 6rem;
+  padding: 0 2.4rem !important;
+}
+.tab-month .krds-form-select-sort {
+  height: 4.4rem !important;
+  padding-right: 4rem;
+  font-weight: 700;
+}
+.tab-month-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .tab-month .tab{
+    width: 100%;
+  }
+  .tab-month .justify-between {
+    flex-direction: column;
+    overflow-x: auto;
+  }
+  .tab-month .krds-form-select-sort {
+    width: 100%;
+    border: 0.1rem solid var(--krds-color-light-gray-60);
+    font-weight: normal;
+  }
+
+  /* month tab */
+  .tab-month ul.tablist {
+    display: none;
+  }
+  .tab-month-mobile {
+    display: block;
+    width: 100%;
+  }
+  .tab-month-mobile .krds-form-select {
+    width: 100%;
+    height: 4.4rem;
+  }
+}
+
+/* 통계DB */
+.layout-stats {
+  display: flex;
+  gap: var(--krds-gap-11);
+  width: 100%;
+}
+.layout-stats .box-1,
+.layout-stats .box-2 {
+  width: 20rem;
+  flex-shrink: 0;
+  border-top: 0.3rem solid var(--krds-color-light-secondary-70);
+}
+.layout-stats .box-3 {
+  flex: 1;
+  min-width: 0;
+  border-top: 0.3rem solid var(--krds-color-light-success-50);
+}
+.layout-stats .box .top {
+  padding: var(--krds-padding-8) var(--krds-padding-3);
+}
+.layout-stats .box .top .txt {
+  font-size: var(--krds-pc-font-size-body-xsmall);
+}
+.layout-stats .box .top h3 {
+  color: var(--krds-color-light-gray-70);
+}
+.layout-stats .btm {
+  padding-top: 2.4rem;
+  border-top: 0.1rem solid var(--krds-color-light-gray-20);
+}
+.stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--krds-gap-3);
+  padding-bottom: 2.4rem;
+  box-sizing: border-box;
+  max-height: 78rem;
+  overflow-y: auto;
+}
+.stats-list li {
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+.stats-list.radius-none li {
+  border-radius: 0 !important;
+}
+.stats-list li.active {
+  background-color: var(--krds-color-light-secondary-5);
+  color: var(--krds-color-light-secondary-70);
+  font-weight: 700;
+}
+.stats-list li:hover {
+  background-color: var(--krds-color-light-secondary-5);
+  cursor: pointer;
+}
+.stats-list li .align-center span {
+  display: inline;
+}
+.stats-list li .align-center span button {
+  display: inline;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+  white-space: normal;
+  height: 2.4rem;
+}
+.stats-list li .align-center span button i.ico-tooltip {
+  width: 2rem;
+  height: 2rem;
+}
+.stats-list li.align-center > button {
+  height: 2.4rem;
+}
+.stats-list li a > button {
+  height: 2.4rem;
+}
+.stats-list li > button:not(:has(> i.svg-icon)) {
+  width: 100%;
+  text-align: left;
+}
+
+.stats-list.line {
+  padding-top: 0 !important;
+  gap: 0 !important;
+}
+.stats-list.line li {
+  border-bottom: 0.1rem solid var(--krds-color-light-gray-20);
+  padding: 0 !important;
+}
+.stats-list.line li:hover {
+  background-color: #fff;
+}
+.stats-list.line li .wrap {
+  margin: 1.2rem 0;
+  border-radius: 0.4rem;
+  padding: 0 0.8rem;
+}
+.stats-list.line li .wrap a {
+  min-height: 3.15rem;
+}
+.stats-list.line li .wrap:hover {
+  background-color: var(--krds-color-light-secondary-5);
+  cursor: pointer;
+}
+.highlight {
+  background-color: var(--krds-color-light-primary-10);
+  color: var(--krds-color-light-primary-60);
+  padding: 0 0.2rem;
+  font-weight: bold;
+  padding-top: 0 !important;
+}
+#modal_stats_db_info .modal-header .btn-wrap {
+    width: auto;
+  }
+
+@media (max-width: 767px) {
+  #modal_stats_db_info .modal-dialog .modal-content {
+    padding-top: 3.2rem;
+  }
+  #modal_stats_db_info .modal-header {
+    flex-direction: column;
+  }
+  #modal_stats_db_info .modal-header .btn-wrap {
+    justify-content: flex-end;
+  }
+}
+
+
+
+/* 테마통계 */
+.stats-theme {
+  gap: var(--krds-gap-7) !important;
+}
+.stats-theme .card {
+  position: relative;
+}
+.stats-theme .card a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--krds-gap-4);
+}
+.stats-theme .card .txt {
+  color: var(--krds-color-light-gray-70);
+  text-align: center;
+}
+.stats-theme .card .ico-link {
+  position: absolute;
+  top: 4.4rem;
+  right: 3.2rem;
+}
+
+/* 통계보고서 */
+.stats-ebook {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--krds-gap-6);
+  row-gap: var(--krds-gap-7);
+  padding-top: 2.4rem;
+}
+.stats-ebook li {
+  max-width: 29.6rem;
+}
+.stats-ebook li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:var(--krds-gap-5);
+}
+.stats-ebook li .img-area {
+  width: 100%;
+  max-height: 40.5rem;
+  overflow: hidden;
+  border: 0.1rem solid var(--krds-color-light-gray-30);
+  box-sizing: border-box;
+}
+.stats-ebook li .img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.stats-ebook li a h2 {
+  font-size: var(--krds-pc-font-size-heading-xsmall);
+}
+
+.stats-list-mobile {
+  display: none;
+}
+
+
+@media (max-width: 1023px) {
+  .layout-stats {
+    flex-direction: column;
+    gap: 0;
+  }
+  .layout-stats .box-1, .layout-stats .box-2 {
+    width: 100%;
+  }
+  .layout-stats .box-1, .layout-stats .box-2, .layout-stats .box-3 {
+    border-top: 0;
+  }
+  .layout-stats .btm {
+    padding-top: 0rem;
+    border-top: 0;
+  }
+  .box-1 .stats-list,
+  .box-2 .stats-list {
+    display: none;
+  }
+  .stats-list-mobile {
+    display: block;
+    width: 100%;
+  }
+  .stats-list-mobile .krds-form-select {
+    width: 100%;
+  }
+  .stats-report .box-3 .btm {
+    margin-top: 2.4rem;
+  }
+  .stats-ebook {
+    margin-top: 2.4rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .stats-ebook {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .stats-ebook {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stats-ebook li {
+    max-width: 100%;
+  }
+
+  .tab.line > ul {
+    flex-wrap: nowrap;
+  }
+  .tab.line > ul > li {
+    width: fit-content;
+    flex: none !important;
+  }
+  .tab.line > ul > li button {
+    padding: 0 2rem !important;
   }
 }

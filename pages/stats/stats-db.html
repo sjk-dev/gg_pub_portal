@@ -1,0 +1,1006 @@
+<div class="container">
+  <div class="inner">
+    <!-- breadcrumb -->
+    <nav class="krds-breadcrumb-wrap" aria-label="현재 경로" id="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="home"><a href="#" class="txt">홈</a></li>
+        <li><a href="#" class="txt">통계</a></li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+
+    <!-- 페이지 타이틀 영역 -->
+    <div class="page-title-wrap">
+      <h1 class="h-tit">통계DB</h1>
+      <div class="desc card filled pd-24">임시 텍스트 자리입니다.</div>
+    </div>
+    <!-- //페이지 타이틀 영역 -->
+
+    <!-- 컨텐츠 영역 -->
+    <div class="conts-area">
+      <!-- tab -->
+      <div class="krds-tab-area layer">
+        <!-- 탭 리스트 -->
+        <div class="tab fill full">
+          <ul role="tablist">
+            <li
+              id="tab01"
+              role="tab"
+              aria-selected="true"
+              aria-controls="tabpanel01"
+              class="active"
+            >
+              <button type="button" class="btn-tab">
+                주제별<i class="sr-only">선택됨</i>
+              </button>
+            </li>
+            <li
+              id="tab02"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabpanel02"
+            >
+              <button type="button" class="btn-tab">통계별</button>
+            </li>
+            <li
+              id="tab03"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tabpanel03"
+            >
+              <button type="button" class="btn-tab">도정주요통계</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 탭 콘텐츠 -->
+        <div class="tab-conts-wrap">
+          <section
+            id="tabpanel01"
+            role="tabpanel"
+            aria-labelledby="tab01"
+            class="tab-conts active"
+          >
+            <h3 class="sr-only">주제별</h3>
+
+            <div class="section-2">
+              <div class="section-4">
+                <div class="justify-between align-center">
+                  <h2 class="sec-tit mb-0">통계표 목록 검색</h2>
+                  <div class="card-btn">
+                    <div class="krds-contextual-help bottom right">
+                      <div class="tooltip-action">
+                        <button
+                          type="button"
+                          class="krds-btn medium text tooltip-btn"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">공유하기</span>
+                          <i class="svg-icon ico-share"></i> 공유하기
+                        </button>
+                        <div class="tooltip-popover" role="tooltip">
+                          <h4 class="tooltip-title">공유하기</h4>
+                          <div class="tooltip-contents">
+                            <ul class="share-list">
+                              <li class="facebook">
+                                <a href="#">
+                                  <span class="sr-only">새 창 열림</span>
+                                </a>
+                              </li>
+                              <li class="twitter">
+                                <a href="#">
+                                  <span class="sr-only">새 창 열림</span>
+                                </a>
+                              </li>
+                              <li class="band">
+                                <a href="#">
+                                  <span class="sr-only">새 창 열림</span>
+                                </a>
+                              </li>
+                              <li class="blog">
+                                <a href="#">
+                                  <span class="sr-only">새 창 열림</span>
+                                </a>
+                              </li>
+                              <li class="kakao">
+                                <a href="#">
+                                  <span class="sr-only">새 창 열림</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <div class="btn-wrap">
+                              <div class="justify-between">
+                                <input
+                                  type="text"
+                                  class="krds-input small"
+                                  value="https://data.gg.go.kr/portal/data/multimedia/searchMultimediaPage.do"
+                                  readonly=""
+                                />
+                                <button class="krds-btn small secondary">
+                                  복사
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            class="krds-btn xsmall icon tooltip-close"
+                          >
+                            <span class="sr-only">닫기</span>
+                            <i class="svg-icon ico-modal-close"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 검색바 -->
+                <div class="search-top-box">
+                  <div class="sch-filter-box mt-0">
+                    <div class="filter-form">
+                      <!-- 폼그룹 -->
+                      <div class="form-group">
+                        <div class="form-tit m-hide">
+                          <label for="form_delete" class="font-bold"
+                            >검색어</label
+                          >
+                        </div>
+                        <div class="sch-input w-100">
+                          <input
+                            type="text"
+                            class="krds-input"
+                            placeholder="검색어를 입력해주세요"
+                            title="검색어 입력"
+                          />
+                          <button
+                            type="button"
+                            class="krds-btn medium icon ico-search"
+                          >
+                            <span class="sr-only">검색</span>
+                            <i class="svg-icon ico-sch"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- //폼그룹 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- //검색바 -->
+              </div>
+
+              <div class="section-4 mt-24">
+                <div class="layout-stats">
+                  <div class="box box-1">
+                    <div class="top">
+                      <p class="txt">Step.01</p>
+                      <h3>분야별 검색</h3>
+                    </div>
+                    <div class="btm">
+                      <ul class="stats-list">
+                        <li class="active">
+                          <button type="button">인구</button>
+                        </li>
+                        <li><button type="button">토지 및 기후</button></li>
+                        <li><button type="button">노동</button></li>
+                        <li><button type="button">농림수산업</button></li>
+                        <li>
+                          <button type="button">광업・제조업 및 에너지</button>
+                        </li>
+                        <li>
+                          <button type="button">
+                            유통.금융.보험 및 기타 서비스
+                          </button>
+                        </li>
+                        <li><button type="button">주택・건설</button></li>
+                        <li><button type="button">교통 관광</button></li>
+                        <li><button type="button">보건 및 사회보장</button></li>
+                        <li><button type="button">환경</button></li>
+                        <li><button type="button">사업체</button></li>
+                        <li><button type="button">전기·가스·수도</button></li>
+                        <li>
+                          <button type="button">
+                            경기도시군단위지역내 총생산(GRDP)
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="stats-list-mobile">
+                        <select id="" class="krds-form-select">
+                          <option value="">인구</option>
+                          <option value="">토지 및 기후</option>
+                          <option value="">노동</option>
+                          <option value="">농림수산업</option>
+                          <option value="">광업・제조업 및 에너지</option>
+                          <option value="">
+                            유통.금융.보험 및 기타 서비스
+                          </option>
+                          <option value="">주택・건설</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box box-2">
+                    <div class="top">
+                      <p class="txt">Step.02</p>
+                      <h3>상세분야 검색</h3>
+                    </div>
+                    <div class="btm">
+                      <ul class="stats-list">
+                        <li class="active">
+                          <button type="button">주민등록인구</button>
+                        </li>
+                        <li><button type="button">인구추이</button></li>
+                        <li><button type="button">인구동태</button></li>
+                        <li><button type="button">인구동향</button></li>
+                        <li><button type="button">인구이동</button></li>
+                        <li><button type="button">인구구조</button></li>
+                        <li><button type="button">외국인 인구</button></li>
+                      </ul>
+                      <div class="stats-list-mobile">
+                        <select id="" class="krds-form-select">
+                          <option value="">주민등록인구</option>
+                          <option value="">인구추이</option>
+                          <option value="">인구동태</option>
+                          <option value="">인구동향</option>
+                          <option value="">인구이동</option>
+                          <option value="">인구구조</option>
+                          <option value="">외국인 인구</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box box-3">
+                    <div class="top">
+                      <p class="txt">Step.03</p>
+                      <h3>통계표 검색 결과</h3>
+                    </div>
+                    <div class="btm">
+                      <ul class="stats-list">
+                        <li class="active">
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="justify-between align-center"
+                          >
+                            <div class="align-center">
+                              <span>
+                                시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08
+                                <button>
+                                  <i class="svg-icon ico-tooltip"></i>
+                                </button>
+                              </span>
+                            </div>
+                            <button>
+                              <i class="svg-icon ico-go"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="justify-between align-center"
+                          >
+                            <div class="align-center">
+                              <span>
+                                시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08
+                                <button>
+                                  <i class="svg-icon ico-tooltip"></i>
+                                </button>
+                              </span>
+                            </div>
+                            <button>
+                              <i class="svg-icon ico-go"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="justify-between align-center"
+                          >
+                            <div class="align-center">
+                              <span>
+                                시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08시군별 세대 및 인구 수록기간 (월,
+                                년)2005~2025.08
+                                <button>
+                                  <i class="svg-icon ico-tooltip"></i>
+                                </button>
+                              </span>
+                            </div>
+                            <button>
+                              <i class="svg-icon ico-go"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="justify-between align-center"
+                          >
+                            <div class="align-center">
+                              <span>
+                                연령(5세계급) 및 성별인구 수록기간 (년)2001~2023
+                                <button>
+                                  <i class="svg-icon ico-tooltip"></i>
+                                </button>
+                              </span>
+                            </div>
+                            <button>
+                              <i class="svg-icon ico-go"></i>
+                            </button>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            target="_blank"
+                            class="justify-between align-center"
+                          >
+                            <div class="align-center">
+                              <span>
+                                읍면동별 세대 및 인구 수록기간 (년)1992~2024
+                                <button>
+                                  <i class="svg-icon ico-tooltip"></i>
+                                </button>
+                              </span>
+                            </div>
+                            <button>
+                              <i class="svg-icon ico-go"></i>
+                            </button>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id="tabpanel02"
+            role="tabpanel"
+            aria-labelledby="tab02"
+            class="tab-conts"
+          >
+            <h3 class="sr-only">통계별</h3>
+            통계별 내용
+          </section>
+          <section
+            id="tabpanel03"
+            role="tabpanel"
+            aria-labelledby="tab03"
+            class="tab-conts"
+          >
+            <h3 class="sr-only">도정주요통계</h3>
+
+            <!-- 도정주요통계 secondary 탭 -->
+            <div class="krds-tab-area layer">
+              <!-- 탭 리스트 -->
+              <div class="tab tab-scroll-wrap">
+                <div class="tab-btn-wrap prev">
+                  <div class="wrap">
+                    <button
+                      type="button"
+                      class="btn-tab-arrow prev"
+                      aria-label="이전 탭"
+                    >
+                      <i class="svg-icon ico-angle left"></i>
+                    </button>
+                  </div>
+                  <div class="square prev"></div>
+                </div>
+
+                <div class="tab fill tab-scroll stats-con-tab">
+                  <ul role="tablist" class="tablist">
+                    <li
+                      id="mainStats_01"
+                      role="tab"
+                      aria-selected="true"
+                      aria-controls="mainStatsPanel_01"
+                      class="active"
+                    >
+                      <button type="button" class="btn-tab">
+                        인구<i class="sr-only">선택됨</i>
+                      </button>
+                    </li>
+                    <li
+                      id="mainStats_02"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_02"
+                    >
+                      <button type="button" class="btn-tab">
+                        행정구역조직·공무원수
+                      </button>
+                    </li>
+                    <li
+                      id="mainStats_03"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_03"
+                    >
+                      <button type="button" class="btn-tab">예산</button>
+                    </li>
+                    <li
+                      id="mainStats_04"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_04"
+                    >
+                      <button type="button" class="btn-tab">
+                        보건·복지·여성
+                      </button>
+                    </li>
+                    <li
+                      id="mainStats_05"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_05"
+                    >
+                      <button type="button" class="btn-tab">산업·경제</button>
+                    </li>
+                    <li
+                      id="mainStats_06"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_06"
+                    >
+                      <button type="button" class="btn-tab">
+                        지역내 총 생산
+                      </button>
+                    </li>
+                    <li
+                      id="mainStats_07"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_07"
+                    >
+                      <button type="button" class="btn-tab">
+                        문화·관광·체육
+                      </button>
+                    </li>
+                    <li
+                      id="mainStats_08"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_08"
+                    >
+                      <button type="button" class="btn-tab">농정</button>
+                    </li>
+                    <li
+                      id="mainStats_09"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_09"
+                    >
+                      <button type="button" class="btn-tab">건설·교통</button>
+                    </li>
+                    <li
+                      id="mainStats_10"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="mainStatsPanel_10"
+                    >
+                      <button type="button" class="btn-tab">도시·주택</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-btn-wrap next">
+                  <div class="square next"></div>
+                  <div class="wrap">
+                    <button
+                      type="button"
+                      class="btn-tab-arrow next"
+                      aria-label="다음 탭"
+                    >
+                      <i class="svg-icon ico-angle right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- //탭 리스트 -->
+
+              <!-- 탭 콘텐츠 -->
+              <div class="tab-conts-wrap">
+                <section
+                  id="mainStatsPanel_01"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_01"
+                  class="tab-conts active"
+                >
+                  <h3 class="sr-only">인구</h3>
+                  <div class="section-2">
+                    <div class="justify-between align-center mt-24">
+                      <h2 class="sec-tit mb-0">인구</h2>
+                      <div class="card-btn">
+                        <div class="krds-contextual-help bottom right">
+                          <div class="tooltip-action">
+                            <button
+                              type="button"
+                              class="krds-btn medium text tooltip-btn"
+                              aria-expanded="false"
+                            >
+                              <span class="sr-only">공유하기</span>
+                              <i class="svg-icon ico-share"></i> 공유하기
+                            </button>
+                            <div class="tooltip-popover" role="tooltip">
+                              <h4 class="tooltip-title">공유하기</h4>
+                              <div class="tooltip-contents">
+                                <ul class="share-list">
+                                  <li class="facebook">
+                                    <a href="#">
+                                      <span class="sr-only">새 창 열림</span>
+                                    </a>
+                                  </li>
+                                  <li class="twitter">
+                                    <a href="#">
+                                      <span class="sr-only">새 창 열림</span>
+                                    </a>
+                                  </li>
+                                  <li class="band">
+                                    <a href="#">
+                                      <span class="sr-only">새 창 열림</span>
+                                    </a>
+                                  </li>
+                                  <li class="blog">
+                                    <a href="#">
+                                      <span class="sr-only">새 창 열림</span>
+                                    </a>
+                                  </li>
+                                  <li class="kakao">
+                                    <a href="#">
+                                      <span class="sr-only">새 창 열림</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                                <div class="btn-wrap">
+                                  <div class="justify-between">
+                                    <input
+                                      type="text"
+                                      class="krds-input small"
+                                      value="https://data.gg.go.kr/portal/data/multimedia/searchMultimediaPage.do"
+                                      readonly=""
+                                    />
+                                    <button class="krds-btn small secondary">
+                                      복사
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                class="krds-btn xsmall icon tooltip-close"
+                              >
+                                <span class="sr-only">닫기</span>
+                                <i class="svg-icon ico-modal-close"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- dummy -->
+                    <div class="img-area">
+                      <img
+                        src="/gg_pub_portal/resources/img/bg/dummy-stats-db.png"
+                        alt="통계db 더미 이미지"
+                      />
+                    </div>
+                    <!-- dummy -->
+                  </div>
+                </section>
+                <section
+                  id="mainStatsPanel_02"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_02"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">행정구역조직·공무원수</h3>
+
+                  행정구역조직·공무원수 내용
+                </section>
+                <section
+                  id="mainStatsPanel_03"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_03"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">예산</h3>
+                  예산 내용
+                </section>
+                <section
+                  id="mainStatsPanel_04"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_04"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">보건·복지·여성</h3>
+
+                  보건·복지·여성 내용
+                </section>
+                <section
+                  id="mainStatsPanel_05"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_05"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">산업·경제</h3>
+                  산업·경제 5화
+                </section>
+                <section
+                  id="mainStatsPanel_06"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_06"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">지역내 총 생산</h3>
+
+                  지역내 총 생산 내용
+                </section>
+                <section
+                  id="mainStatsPanel_07"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_07"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">문화·관광·체육</h3>
+
+                  문화·관광·체육 내용
+                </section>
+                <section
+                  id="mainStatsPanel_08"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_08"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">농정</h3>
+                  농정 내용
+                </section>
+                <section
+                  id="mainStatsPanel_09"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_09"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">건설·교통</h3>
+                  건설·교통 내용
+                </section>
+                <section
+                  id="mainStatsPanel_10"
+                  role="tabpanel"
+                  aria-labelledby="mainStats_10"
+                  class="tab-conts"
+                >
+                  <h3 class="sr-only">도시·주택</h3>
+                  도시·주택 내용
+                </section>
+              </div>
+              <!-- 탭 콘텐츠 -->
+            </div>
+            <!-- // 도정주요통계 secondary 탭 -->
+          </section>
+        </div>
+      </div>
+      <!-- //tab -->
+    </div>
+  </div>
+</div>
+
+<!-- 통계DB 검색 결과 모달 팝업 -->
+<section
+  id="modal_stats_db_result"
+  class="krds-modal fade m-bottom-sheet no-ellipsis"
+  role="dialog"
+  aria-labelledby="tit_modal_stats_db_result"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_modal_stats_db_result" class="modal-title">
+          통계별 '<span class="point">세대</span>'에 대한 검색결과가
+          <span class="point">25</span>건입니다
+        </h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <ul class="stats-list line radius-none">
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      시군별 <span class="highlight">세대</span> 및 인구
+                      수록기간 (월, 년)2005~2025.08
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      시군별 <span class="highlight">세대</span> 및 인구
+                      수록기간 (월, 년)2005~2025.08
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      시군별 <span class="highlight">세대</span> 및 인구
+                      수록기간 (월, 년)2005~2025.08
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      읍면동별 <span class="highlight">세대</span> 및 인구
+                      수록기간 (년)1992~2024
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      연령(5세계급) 및 성별인구 수록기간 (년)2001~2023
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="wrap">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="justify-between align-center"
+                >
+                  <div class="align-center">
+                    <span>
+                      시군별 <span class="highlight">세대</span> 및 인구
+                      수록기간 (월, 년)2005~2025.08
+                      <button>
+                        <i class="svg-icon ico-tooltip"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <button>
+                    <i class="svg-icon ico-go"></i>
+                  </button>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          닫기
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>
+<!-- //통계DB 검색 결과 모달 팝업 -->
+
+<!-- 통계DB 검색 결과 모달 팝업 -->
+<!-- 검색 결과 없을 경우 -->
+<section
+  id="modal_stats_db_result"
+  class="krds-modal fade m-bottom-sheet no-ellipsis"
+  role="dialog"
+  aria-labelledby="tit_modal_stats_db_result"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_modal_stats_db_result" class="modal-title">
+          통계별 '<span class="point">세대</span>'에 대한 검색결과가
+          <span class="point">0</span>건입니다
+        </h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area"></div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          닫기
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>
+
+<!-- 통계DB 검색 결과 인포 모달 팝업 -->
+<section
+  id="modal_stats_db_info"
+  class="krds-modal fade m-bottom-sheet no-ellipsis"
+  role="dialog"
+  aria-labelledby="tit_modal_stats_db_info"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header justify-between flex">
+        <h2 id="tit_modal_stats_db_info" class="modal-title">
+          시군별 세대 및 인구
+        </h2>
+        <div class="btn-wrap flex">
+          <button class="krds-btn tertiary small">
+            통계표보기 <i class="svg-icon ico-go"></i>
+          </button>
+        </div>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <!-- table -->
+          <div class="krds-table-wrap">
+            <table class="tbl row data no-pointer mobile">
+              <caption>
+                통계표 검색 결과 인포
+              </caption>
+              <colgroup>
+                <col style="width: 30%" />
+                <col />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">출처정보</th>
+                  <td>주민등록인구통계</td>
+                </tr>
+                <tr>
+                  <th scope="row">수록정보</th>
+                  <td>(월, 년)2005~2025.10</td>
+                </tr>
+                <tr>
+                  <th scope="row">유의사항</th>
+                  <td>
+                    <ul class="krds-info-list decimal">
+                      <li>
+                        내국인: 행정안저부 당해년도 매월말 현재 주민등록 인구
+                        현황
+                      </li>
+                      <li>
+                        외국인: 법무부 출입국·외국인 정책본부, 당해년도 매월말
+                        현재
+                        <ul class="krds-info-list dash">
+                          <li>
+                            외국인 등록현황 등록 외국인의 시군별 남여현황은
+                            분기별로 집계 공표
+                          </li>
+                          <li>
+                            등록 외국인의 시군별 남여현황은 분기별로 집계 공표
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium primary close-modal">
+          닫기
+        </button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back in"></div>
+</section>
+<!-- //통계DB 검색 결과 모달 팝업 -->
